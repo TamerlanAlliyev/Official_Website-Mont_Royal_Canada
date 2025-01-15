@@ -25,13 +25,14 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: 10px !important;
-  padding: 20px !important;
+    display: none !important;
+    /* width: 10px !important; */
+    /* padding: 20px !important; */
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 10px !important;
+  /* font-size: 10px !important; */
 }
 
 .box {

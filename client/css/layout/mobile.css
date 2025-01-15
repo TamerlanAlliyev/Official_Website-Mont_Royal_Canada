@@ -285,3 +285,71 @@ body {
   font-size: var(--font-size-s);
   color: var(--color-blue);
 }
+
+/*
+========================================
+         HEADER MENU -  START
+========================================
+*/
+
+.header{
+  display: flex;
+  padding:  var(--padding-main);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.header.scroll{
+  background: transparent;
+  background: var(--color-blue);
+  top: 0;
+}
+
+
+
+
+
+
+
+.header .logo a{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.header .burger{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.header .burger i{
+  font-size: 14px;
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .logo img{
+  width: 43%;
+}
+
+.header .menu{
+  display: none;
+}
+
+.header .auth{
+  display: none;
+}
+
+.header .empty{
+  display: flex;
+  width: 14px;
+}

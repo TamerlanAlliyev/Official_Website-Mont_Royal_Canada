@@ -40,7 +40,7 @@
     <title>Mont-Royal Canada</title>
   </head>
   <body>
-    <section class="subheader">
+    <aside class="subheader">
       <div class="contact-us">
         <a href="#"> Contact us</a>
       </div>
@@ -99,8 +99,70 @@
           </div>
         </div>
       </div>
-    </section>
+    </aside>
 
+    <header class="header">
+      <div class="burger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="logo">
+        <a href="#">
+          <img src="./client/images/settings/logo.svg" alt="logo" />
+        </a>
+      </div>
+
+      <div class="menu"></div>
+      <div class="auth"></div>
+      <div class="empty"></div>
+    </header>
+
+    <section class="main-slider">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./client/images/image 12 (1).png" alt="" />
+            <div class="box">
+              <div class="title" data-swiper-parallax="-300">
+                Connecting Azerbaijan and Canada for Global Success
+              </div>
+              <a href="#" class="subtitle" data-swiper-parallax="-200"
+                >Join Us</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./client/images/image 12 (1).png" alt="" />
+            <div class="box">
+              <div class="title" data-swiper-parallax="-300">
+                Connecting Azerbaijan and Canada for Global Success
+              </div>
+              <a href="#" class="subtitle" data-swiper-parallax="-200"
+                >Join Us</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./client/images/image 12 (1).png" alt="" />
+            <div class="box">
+              <div class="title" data-swiper-parallax="-300">
+                Connecting Azerbaijan and Canada for Global Success
+              </div>
+              <a href="#" class="subtitle" data-swiper-parallax="-200"
+                >Join Us</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  
     <section class="main-slider">
       <!-- Swiper -->
       <div class="swiper mySwiper">
@@ -155,10 +217,10 @@
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 5,
         loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        // },
         speed: 600,
         parallax: true,
         hashNavigation: {
@@ -172,6 +234,16 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+
+      const headerSection = document.querySelector(".header");
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          headerSection.classList.add("scroll");
+        } else {
+          headerSection.classList.remove("scroll");
+        }
+        
       });
     </script>
 
