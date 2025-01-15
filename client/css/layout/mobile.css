@@ -6,6 +6,12 @@
 }
 
 
+a {
+  -webkit-tap-highlight-color: transparent; 
+  user-select: none; 
+}
+
+
 :root {/* _____ COLORS _____ */
   --color-white: #fff;
   --color-white-soft: #dfdfdf;
@@ -361,7 +367,6 @@ body {
 /* ----- BURGER MENU ----- */
 
 /* BURGER MENU */
-/* BURGER MENU */
 .burger-menu {
   position: fixed;
   display: flex;
@@ -376,7 +381,7 @@ body {
 }
 
 .burger-menu.active {
-  left: 0; /* Açıldığında menü görünsün */
+  left: 0; 
 }
 
 
