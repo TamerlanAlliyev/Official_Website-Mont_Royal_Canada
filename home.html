@@ -6,6 +6,22 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./client/css/layout/mobile.css" />
+    <link rel="stylesheet" href="./client/css/layout/tablet.css" />
+    <link rel="stylesheet" href="./client/css/layout/laptop.css" />
+    <link rel="stylesheet" href="./client/css/layout/deskrop.css" />
+    <link rel="stylesheet" href="./client/css/home/mobile.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
 
     <!-- Google - Outfit Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -82,12 +98,66 @@
             </div>
           </div>
         </div>
-
-        
       </div>
     </section>
 
-    <script></script>
+    <section class="main-slider">
+      <!-- Swiper -->
+      <div
+        class="swiper mySwiper" >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./client/images/image 12 (1).png" alt="" />
+            <div class="box">
+              <div class="title" data-swiper-parallax="-300">Connecting Azerbaijan and Canada for Global Success</div>
+              <div class="subtitle" data-swiper-parallax="-200">Join Us</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./client/images/image 12 (1).png" alt="" />
+            <div class="box"><div class="title" data-swiper-parallax="-300">Slide 3</div>
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div></div>
+          </div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        // loop: true,
+        // autoplay: {
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        // },
+        speed: 600,
+        parallax: true,
+        hashNavigation: {
+          watchState: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <script src="./client/js/layout.js"></script>
   </body>

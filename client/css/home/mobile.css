@@ -1,0 +1,71 @@
+@import url(../layout/mobile.css);
+
+.swiper {
+  width: 100%;
+  min-height: 555px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 555px;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  min-height: 555px;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 10px !important;
+  padding: 20px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 10px !important;
+}
+
+.box {
+  position: absolute;
+  left: 20px;
+
+  bottom: 44px;
+  padding: 12px;
+  font-size: 50px;
+
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-white);
+  border-radius: 10px;
+  background: var(--Dark-Blue---Soft, rgba(6, 22, 48, 0.5));
+
+  /* Blur/Overlay */
+  backdrop-filter: blur(calc(var(--sds-size-blur-100) / 2));
+}
+
+.title {
+  font-size: 14px;
+}
+
+.subtitle {
+  max-width: max-content;
+  display: flex;
+  padding: 6px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: var(--soft-blue, #2b5fc1);
+  font-size: 14px;
+}

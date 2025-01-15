@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+
+    :root {/* _____ FONT SIZE _____ */
+        --font-size-xs: 12px;
+        --font-size-s: 14px;
+        --font-size-m: 16px;
+      
+        /*
+        --font-size-l: 16px;
+        --font-size-xl: 20px; */
+      }
+      
+      
+      :root {/* _____ FONT WEIGHT _____ */
+        --font-weight-s: 400;
+      }
+      
+      
+      :root {/* _____ PADDING _____ */
+        --padding-main: 24px;
+        --padding-xs: 10px;
+        --padding-input-small: 0px 18px;
+        --padding-input: 14px 18px;
+      }
+      
+      :root {/* _____ GAP _____ */
+        --gap-xs: 6px;
+        --gap-s: 8px;
+        --gap-m: 16px;
+      }
+      
+      :root {/* _____ BORDER RADIUS _____ */
+        --border-radius-xs: 6px;
+        --border-radius-xs: 8px;
+      }
+      
+  }
