@@ -1,3 +1,26 @@
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--color-main-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-blue);
+  border-radius: 4px;
+  border: 1px solid var(--color-main-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-dark-blue);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--color-main-color);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +46,7 @@
   --font-size-xs: 8px;
   --font-size-s: 10px;
   --font-size-m: 12px;
+  --font-size-l: 14px;
 
   /*
   --font-size-l: 16px;
@@ -46,7 +70,7 @@
   /* _____ GAP _____ */
   --gap-xs: 4px;
   --gap-s: 6px;
-  --gap-m: 14px;
+  --gap-m: 12px;
 }
 
 :root {
@@ -368,12 +392,13 @@ body {
 .burger-menu .menu-header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: var(--padding-main);
   background: var(--color-blue);
   color: var(--color-white);
 }
 
-.burger-menu .menu-header .logo a {
+.burger-menu .menu-header .logo a,
+.burger-menu .menu-header .close {
   display: flex;
   justify-content: center;
   max-width: max-content;
@@ -388,19 +413,22 @@ body {
 .burger-menu .menu-header .logo img {
   width: 140px;
 }
+
 .burger-menu .menu-header i {
-  font-size: 14px;
+  font-size: var(--font-size-l);
 }
 
 /* BURGER MENU - LIST */
 
-.menu-list {
+.burger-menu .menu-list {
   display: flex;
   flex-direction: column;
   padding: var(--padding-main);
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  max-height: 90vh; 
+  overflow-y: auto;
 }
 
 .menu-list .pages {
@@ -409,7 +437,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 12px;
+  gap: var(--gap-m);
 }
 .menu-list .pages hr {
   width: 100%;
@@ -441,7 +469,7 @@ body {
   gap: 6px;
 }
 .menu-list .pages .menu-list-li .sub-list a {
-  font-size: 12px;
+  font-size: var(--font-size-m);
   color: var(--color-grey);
   font-weight: 400;
 }
@@ -459,14 +487,14 @@ body {
 /* AUTH */
 .burger-menu .auth {
   display: flex;
-  padding: 12px 16px;
+  padding: var(--padding-input);
   background: var(--color-blue);
   max-width: max-content;
   border-radius: 10px;
-  gap: 12px;
+  gap: var(--gap-m);
   color: var(--color-white);
   align-items: center;
-  font-size: 14px;
+  font-size: var(--font-size-l);
 }
 .burger-menu .auth .auth-user {
   display: flex;
@@ -483,27 +511,4 @@ body {
 }
 
 
-
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--color-main-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--color-blue);
-  border-radius: 4px;
-  border: 1px solid var(--color-main-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-dark-blue);
-}
-
-::-webkit-scrollbar-corner {
-  background-color: var(--color-main-color);
-}
-
-::-webkit-scrollbar-button {
-  display: none;
-}
 
