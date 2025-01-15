@@ -107,7 +107,7 @@
       </div>
 
       <div class="logo">
-        <a href="#">
+        <a href="">
           <img src="./client/images/settings/logo.svg" alt="logo" />
         </a>
       </div>
@@ -116,6 +116,137 @@
       <div class="auth"></div>
       <div class="empty"></div>
     </header>
+
+    <div class="burger-menu active">
+      <div class="menu-header">
+        <div class="close">
+          <i class="fa-solid fa-times"></i>
+        </div>
+
+        <div class="logo">
+          <a href="">
+            <img src="./client/images/settings/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="empty"></div>
+      </div>
+
+      <div class="menu-list">
+        <ul class="pages">
+          <li class="menu-list-li">
+            <a href="#">Home</a>
+          </li>
+          <hr/>
+          <li class="menu-list-li">
+            <a href="#">About Us</a>
+
+            <ul class="sub-list">
+              <li>
+                <a href="#">Our Mission & Key Policy</a>
+              </li>
+              <li>
+                <a href="#">Association</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+            </ul>
+
+          </li>
+      
+          <hr/>
+
+          <li class="menu-list-li">
+            <a href="#">Services</a>
+            <ul class="sub-list">
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Market Entry Assistance</a>
+              </li>
+              <li>
+                <a href="#">Import of Country Products</a>
+              </li>
+            </ul>
+          </li>
+
+          <hr/>
+
+          <li class="menu-list-li">
+            <a href="#">Doing Business</a>
+            <ul class="sub-list">
+              <li>
+                <a href="#">Business in Canada</a>
+              </li>
+              <li>
+                <a href="#">Business in Azerbaijan</a>
+              </li>
+              <li>
+                <a href="#">Sector of Activity</a>
+              </li>
+            </ul>
+          </li>
+
+          <hr/>
+
+          <li class="menu-list-li">
+            <a href="#">Partnerships</a>
+            <ul class="sub-list">
+              <li>
+                <a href="#">Partners</a>
+              </li>
+              <li>
+                <a href="#">How to Become a Partner</a>
+              </li>
+              <li>
+                <a href="#">Benefits of Partnership</a>
+              </li>
+              <li>
+                <a href="#">Supplier Partnerships</a>
+              </li>
+              <li>
+                <a href="#">Distribution Partnerships</a>
+              </li>
+              <li>
+                <a href="#">Strategic Alliances</a>
+              </li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+            </ul>
+          </li>
+          
+          <hr/>
+          
+          <li class="menu-list-li">
+            <a href="#">Partnerships</a>
+            <ul class="sub-list">
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Networking Opportunities</a>
+              </li>
+            </ul>
+          </li>
+          
+          <hr/> 
+
+          <li class="menu-list-li">
+            <a href="#">News</a>
+          </li>
+          
+          <hr/>
+
+        </ul>
+
+        <div class="auth">a</div>
+      </div>
+    </div>
 
     <section class="main-slider">
       <!-- Swiper -->
@@ -162,7 +293,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-  
+
     <section class="main-slider">
       <!-- Swiper -->
       <div class="swiper mySwiper">
@@ -212,8 +343,25 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
+
+// Burger Menu
+
+const burgerMenu = document.querySelector(".burger-menu");
+
+const burgerBtb = document.querySelector(".burger");
+const burgerCloseBtn = document.querySelector(".burger-menu .close");
+
+burgerBtb.addEventListener("click", () => {
+  burgerMenu.classList.add("active");
+});
+
+burgerCloseBtn.addEventListener("click", () => {
+  burgerMenu.classList.remove("active");
+});
+
+  // Initialize Swiper
+
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 5,
         loop: true,
@@ -243,8 +391,41 @@
         } else {
           headerSection.classList.remove("scroll");
         }
-        
       });
+
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+  const menuItems = document.querySelectorAll(".menu-list-li");
+
+  menuItems.forEach((item) => {
+    const subList = item.querySelector(".sub-list");
+
+    if (subList) {
+      // Sublist'i başlangıçta kapalı yap
+      subList.classList.remove("open");
+
+      // Tıklama olayını dinle
+      item.addEventListener("click", () => {
+        const isOpen = subList.classList.contains("open");
+
+        // Tüm sublist'leri kapat
+        menuItems.forEach((menuItem) => {
+          const otherSubList = menuItem.querySelector(".sub-list");
+          if (otherSubList) {
+            otherSubList.classList.remove("open");
+          }
+        });
+
+        // Tıklanan sublist'i aç/kapat
+        if (!isOpen) {
+          subList.classList.add("open");
+        }
+      });
+    }
+  });
+});
+
     </script>
 
     <script src="./client/js/layout.js"></script>
