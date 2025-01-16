@@ -2,24 +2,25 @@
 
 .swiper {
   width: 100%;
-  min-height: 555px;
+  min-height: 74vh;
+  max-height: 94vh;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #9c7373;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 555px;
+  min-height: 74vh;max-height: 94vh;
   position: relative;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
-  min-height: 555px;
+  min-height: 74vh;max-height: 94vh;
   object-fit: cover;
 }
 
