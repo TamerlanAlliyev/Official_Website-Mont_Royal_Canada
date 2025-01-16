@@ -112,12 +112,129 @@
         </a>
       </div>
 
-      <div class="menu"></div>
-      <div class="auth"></div>
+
+
+      <ul class="menu">
+        <li class="menu-list-li">
+          <a href="#">Home</a>
+        </li>
+
+        <li class="menu-list-li">
+          <a href="#">About Us</a>
+
+          <!-- <ul class="sub-list">
+            <li>
+              <a href="#">Our Mission & Key Policy</a>
+            </li>
+            <li>
+              <a href="#">Association</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Privacy policy</a>
+            </li>
+          </ul> -->
+        </li>
+
+
+        <li class="menu-list-li">
+          <a href="#">Services</a>
+          <!-- <ul class="sub-list">
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Market Entry Assistance</a>
+            </li>
+            <li>
+              <a href="#">Import of Country Products</a>
+            </li>
+          </ul> -->
+        </li>
+
+
+        <li class="menu-list-li">
+          <a href="#">Doing Business</a>
+          <!-- <ul class="sub-list">
+            <li>
+              <a href="#">Business in Canada</a>
+            </li>
+            <li>
+              <a href="#">Business in Azerbaijan</a>
+            </li>
+            <li>
+              <a href="#">Sector of Activity</a>
+            </li>
+          </ul> -->
+        </li>
+
+
+        <li class="menu-list-li">
+          <a href="#">Partnerships</a>
+          <!-- <ul class="sub-list">
+            <li>
+              <a href="#">Partners</a>
+            </li>
+            <li>
+              <a href="#">How to Become a Partner</a>
+            </li>
+            <li>
+              <a href="#">Benefits of Partnership</a>
+            </li>
+            <li>
+              <a href="#">Supplier Partnerships</a>
+            </li>
+            <li>
+              <a href="#">Distribution Partnerships</a>
+            </li>
+            <li>
+              <a href="#">Strategic Alliances</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+          </ul> -->
+        </li>
+
+
+        <li class="menu-list-li">
+          <a href="#">Partnerships</a>
+          <!-- <ul class="sub-list">
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Networking Opportunities</a>
+            </li>
+          </ul> -->
+        </li>
+
+
+        <li class="menu-list-li">
+          <a href="#">News</a>
+        </li>
+
+      </ul>
+
+
+
+      <div class="auth">
+        <i class="fa-solid fa-user"></i>
+        <div class="auth-user">
+          <a href="">Log in</a>
+          <p>|</p>
+          <a href="">Sign up</a>
+        </div>
+      </div>
+      
       <div class="empty"></div>
+
+
     </header>
 
-    <div class="burger-menu active">
+    <div class="burger-menu">
       <div class="menu-header">
         <div class="close">
           <i class="fa-solid fa-times"></i>
@@ -128,6 +245,7 @@
             <img src="./client/images/settings/logo.svg" alt="logo" />
           </a>
         </div>
+
         <div class="empty"></div>
       </div>
 
@@ -136,7 +254,7 @@
           <li class="menu-list-li">
             <a href="#">Home</a>
           </li>
-          <hr/>
+          <hr />
           <li class="menu-list-li">
             <a href="#">About Us</a>
 
@@ -154,10 +272,9 @@
                 <a href="#">Privacy policy</a>
               </li>
             </ul>
-
           </li>
-      
-          <hr/>
+
+          <hr />
 
           <li class="menu-list-li">
             <a href="#">Services</a>
@@ -174,7 +291,7 @@
             </ul>
           </li>
 
-          <hr/>
+          <hr />
 
           <li class="menu-list-li">
             <a href="#">Doing Business</a>
@@ -191,7 +308,7 @@
             </ul>
           </li>
 
-          <hr/>
+          <hr />
 
           <li class="menu-list-li">
             <a href="#">Partnerships</a>
@@ -219,9 +336,9 @@
               </li>
             </ul>
           </li>
-          
-          <hr/>
-          
+
+          <hr />
+
           <li class="menu-list-li">
             <a href="#">Partnerships</a>
             <ul class="sub-list">
@@ -233,15 +350,14 @@
               </li>
             </ul>
           </li>
-          
-          <hr/> 
+
+          <hr />
 
           <li class="menu-list-li">
             <a href="#">News</a>
           </li>
-          
-          <hr/>
 
+          <hr />
         </ul>
 
         <div class="auth">
@@ -252,7 +368,6 @@
             <a href="">Sign up</a>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -352,26 +467,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+      // Burger Menu
 
-// Burger Menu
+      const burgerMenu = document.querySelector(".burger-menu");
 
-const burgerMenu = document.querySelector(".burger-menu");
+      const burgerBtb = document.querySelector(".burger");
+      const burgerCloseBtn = document.querySelector(".burger-menu .close");
 
-const burgerBtb = document.querySelector(".burger");
-const burgerCloseBtn = document.querySelector(".burger-menu .close");
+      burgerBtb.addEventListener("click", () => {
+        burgerMenu.classList.add("active");
+      });
 
-burgerBtb.addEventListener("click", () => {
-  burgerMenu.classList.add("active");
-});
+      burgerCloseBtn.addEventListener("click", () => {
+        burgerMenu.classList.remove("active");
+      });
 
-burgerCloseBtn.addEventListener("click", () => {
-  burgerMenu.classList.remove("active");
-});
-
-  // Initialize Swiper
+      // Initialize Swiper
 
       var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 5,
+        // spaceBetween: 5,
         loop: true,
         // autoplay: {
         //   delay: 5000,
@@ -401,39 +515,36 @@ burgerCloseBtn.addEventListener("click", () => {
         }
       });
 
-
-
       document.addEventListener("DOMContentLoaded", () => {
-  const menuItems = document.querySelectorAll(".menu-list-li");
+        const menuItems = document.querySelectorAll(".menu-list-li");
 
-  menuItems.forEach((item) => {
-    const subList = item.querySelector(".sub-list");
+        menuItems.forEach((item) => {
+          const subList = item.querySelector(".sub-list");
 
-    if (subList) {
-      // Sublist'i başlangıçta kapalı yap
-      subList.classList.remove("open");
+          if (subList) {
+            // Sublist'i başlangıçta kapalı yap
+            subList.classList.remove("open");
 
-      // Tıklama olayını dinle
-      item.addEventListener("click", () => {
-        const isOpen = subList.classList.contains("open");
+            // Tıklama olayını dinle
+            item.addEventListener("click", () => {
+              const isOpen = subList.classList.contains("open");
 
-        // Tüm sublist'leri kapat
-        menuItems.forEach((menuItem) => {
-          const otherSubList = menuItem.querySelector(".sub-list");
-          if (otherSubList) {
-            otherSubList.classList.remove("open");
+              // Tüm sublist'leri kapat
+              menuItems.forEach((menuItem) => {
+                const otherSubList = menuItem.querySelector(".sub-list");
+                if (otherSubList) {
+                  otherSubList.classList.remove("open");
+                }
+              });
+
+              // Tıklanan sublist'i aç/kapat
+              if (!isOpen) {
+                subList.classList.add("open");
+              }
+            });
           }
         });
-
-        // Tıklanan sublist'i aç/kapat
-        if (!isOpen) {
-          subList.classList.add("open");
-        }
       });
-    }
-  });
-});
-
     </script>
 
     <script src="./client/js/layout.js"></script>

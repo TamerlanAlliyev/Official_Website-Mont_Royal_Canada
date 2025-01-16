@@ -1,37 +1,61 @@
-  @media (min-width: 390px) and (max-width: 768px){
-
-    :root {/* _____ FONT SIZE _____ */
-        --font-size-xs: 10px;
-        --font-size-s: 12px;
-        --font-size-m: 14px;
-      
-        /*
-        --font-size-l: 16px;
-        --font-size-xl: 20px; */
-      }
-      
-      
-      :root {/* _____ FONT WEIGHT _____ */
-        --font-weight-s: 400;
-      }
-      
-      
-      :root {/* _____ PADDING _____ */
-        --padding-main: 24px;
-        --padding-xs: 10px;
-        --padding-input-small: 0px 18px;
-        --padding-input: 14px 18px;
-      }
-      
-      :root {/* _____ GAP _____ */
-        --gap-xs: 6px;
-        --gap-s: 8px;
-        --gap-m: 16px;
-      }
-      
-      :root {/* _____ BORDER RADIUS _____ */
-        --border-radius-xs: 6px;
-  --border-radius-s: 8px;
-      }
-      
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    /* _____ FONT SIZE _____ */
+    --font-size-xs: 10px; /**/
+    --font-size-s: 12px; /**/
+    --font-size-m: 14px; /**/
+    --font-size-l: 16px; /**/
+    --font-size-xl: 18px;/**/
   }
+
+  :root {
+    /* _____ FONT WEIGHT _____ */
+    --font-weight-s: 400;
+  }
+
+  :root {
+    /* _____ PADDING _____ */
+    --padding-main: 24px; /**/
+    --padding-input: 14px 16px;/**/
+    --padding-button: 8px 10px;/**/
+    --padding-button-xl: 10px 12px;/**/
+
+    --padding-xs: 10px; /**/
+  }
+
+  :root {
+    /* _____ GAP _____ */
+    --gap-section: 40px;
+
+    --gap-xs: 6px; /**/
+    --gap-s: 8px; /**/
+    --gap-m: 10px; /**/
+    --gap-l: 14px; /**/
+  }
+
+  :root {
+    /* _____ BORDER RADIUS _____ */
+    --border-radius-xs: 4px;
+    --border-radius-s: 6px;
+    --border-radius-m: 8px;
+  }
+
+  :root {
+    /* _____ WIDTH _____ */
+    --width-flag: 20px; /**/
+    --width-logo: 200px;/**/
+  }
+
+
+
+
+  /* AUTH */
+ .header .auth {
+    display: flex !important;
+  }
+ 
+
+  .header .empty{
+    display: none !important;
+  }
+}
