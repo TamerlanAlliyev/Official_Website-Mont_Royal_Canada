@@ -3,57 +3,47 @@
 
   :root {
     /* _____ FONT SIZE _____ */
-    --font-size-xs: 10px; /**/
-    --font-size-s: 12px; /**/
-    --font-size-m: 14px; /**/
-    --font-size-l: 16px; /**/
-    --font-size-xl: 18px;/**/
-  }
-
-  :root {
-    /* _____ FONT WEIGHT _____ */
-    --font-weight-s: 400;
+    --font-size-xs: 12px; 
+    --font-size-s: 14px; 
+    --font-size-m: 16px; 
+    --font-size-l: 18px; 
+    --font-size-xl: 20px;  
   }
 
   :root {
     /* _____ PADDING _____ */
-    --padding-main: 24px; /**/
-    --padding-input: 14px 16px;/**/
-    --padding-button: 8px 10px;/**/
-    --padding-button-xl: 10px 12px;/**/
+    --padding-main: 46px;  
+    --padding-main-top: 24px; 
+    --padding-list: 14px 20px;
+    --padding-input: 14px 16px; 
+    --padding-button: 8px 10px; 
+    --padding-button-xl: 10px 12px; 
 
-    --padding-xs: 10px; /**/
+    --padding-xs: 10px; 
   }
 
   :root {
     /* _____ GAP _____ */
-    --gap-section: 40px;
+    --gap-section: 80px; 
 
-    --gap-xs: 6px; /**/
-    --gap-s: 8px; /**/
-    --gap-m: 10px; /**/
-    --gap-l: 14px; /**/
+    --gap-xs: 6px; 
+    --gap-s: 8px; 
+    --gap-m: 10px; 
+    --gap-l: 14px; 
   }
 
   :root {
     /* _____ BORDER RADIUS _____ */
-    --border-radius-xs: 4px;
-    --border-radius-s: 6px;
-    --border-radius-m: 8px;
+    --border-radius-xs: 6px;
+    --border-radius-s: 8px;
+    --border-radius-m: 10px;
   }
 
   :root {
     /* _____ WIDTH _____ */
-    --width-flag: 20px; /**/
-    --width-logo: 200px;/**/
+    --width-flag: 26px; 
+    --width-logo: 240px; 
   }
-
-
-
-
-
-
-
 
 
 

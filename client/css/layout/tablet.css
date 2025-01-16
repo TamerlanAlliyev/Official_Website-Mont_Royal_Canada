@@ -7,20 +7,17 @@
     --font-size-s: 12px; /**/
     --font-size-m: 14px; /**/
     --font-size-l: 16px; /**/
-    --font-size-xl: 18px;/**/
-  }
-
-  :root {
-    /* _____ FONT WEIGHT _____ */
-    --font-weight-s: 400;
+    --font-size-xl: 18px; /**/
   }
 
   :root {
     /* _____ PADDING _____ */
     --padding-main: 24px; /**/
-    --padding-input: 14px 16px;/**/
-    --padding-button: 8px 10px;/**/
-    --padding-button-xl: 10px 12px;/**/
+    --padding-main-top: 20px; /**/
+    --padding-list: 10px 16px;
+    --padding-input: 14px 16px; /**/
+    --padding-button: 8px 10px; /**/
+    --padding-button-xl: 10px 12px; /**/
 
     --padding-xs: 10px; /**/
   }
@@ -33,6 +30,7 @@
     --gap-s: 8px; /**/
     --gap-m: 10px; /**/
     --gap-l: 14px; /**/
+    --gap-xl: 16px; /**/
   }
 
   :root {
@@ -45,25 +43,17 @@
   :root {
     /* _____ WIDTH _____ */
     --width-flag: 20px; /**/
-    --width-logo: 200px;/**/
+    --width-logo: 220px; /**/
   }
 
-  
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-blue) var(--color-blue);
-  }
-  
-
-  .header .burger i {
-    font-size: var(--font-size-l);
-    color: var();
+  .header {
+    padding: var(--padding-main-top) var(--padding-main);
   }
 
   .header .menu {
-    display: none ;
+    display: none;
   }
-    
+
   .header .empty {
     display: none;
   }
@@ -74,8 +64,4 @@
     cursor: pointer;
     color: var(--color-white);
   }
-
-  
-
-
 }

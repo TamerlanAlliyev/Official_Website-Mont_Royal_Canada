@@ -136,3 +136,63 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+// PAGES NAVBAR
+
+const menuItems = document.querySelectorAll(".parent-row");
+let currentSubList = null; 
+let currentParentRow = null;
+
+menuItems.forEach((menuItem) => {
+  let timeoutId;
+
+  menuItem.addEventListener("mouseover", () => {
+    const subList = menuItem.nextElementSibling;
+    if (subList && subList.classList.contains("sub-list")) {
+      if (currentSubList && currentSubList !== subList) {
+        currentSubList.style.display = "none";
+        currentParentRow.classList.remove("active");
+      }
+
+      currentSubList = subList; 
+      currentParentRow = menuItem; 
+      subList.style.display = "flex";
+      menuItem.classList.add("active");
+    }
+  });
+
+  menuItem.addEventListener("mouseout", () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      const subList = menuItem.nextElementSibling;
+      if (
+        subList &&
+        subList.classList.contains("sub-list") &&
+        !menuItem.matches(":hover") &&
+        !subList.matches(":hover")
+      ) {
+        subList.style.display = "none";
+        menuItem.classList.remove("active"); 
+      }
+    }, 100);
+  });
+
+  const subList = menuItem.nextElementSibling;
+  if (subList && subList.classList.contains("sub-list")) {
+    subList.addEventListener("mouseover", () => {
+      clearTimeout(timeoutId);
+      subList.style.display = "flex";
+      menuItem.classList.add("active");
+    });
+
+    subList.addEventListener("mouseout", () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        subList.style.display = "none";
+        menuItem.classList.remove("active"); 
+      }, 100);
+    });
+  }
+});

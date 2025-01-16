@@ -5,50 +5,46 @@
   :root {
     /* _____ FONT SIZE _____ */
     --font-size-xs: 12px; /**/
+    --font-size-s: 14px; /**/
     --font-size-m: 16px; /**/
     --font-size-l: 18px; /**/
-    --font-size-s: 14px; /**/
     --font-size-xl: 20px; /**/ 
   }
 
   :root {
-    /* _____ FONT WEIGHT _____ */
-    --font-weight-s: 400;
-    --font-weight-m: 500;
-  }
-
-  :root {
     /* _____ PADDING _____ */
-    --padding-main: 14px 46px; /**/ 
+    --padding-main: 46px; /**/ 
+    --padding-main-top: 24px; /**/
+    --padding-list: 24px !important;/**/
     --padding-input: 14px 16px; 
     --padding-button: 8px 10px; 
     --padding-button-xl: 10px 12px; 
-    --padding-list: 14px 20px;
 
-    --padding-xs: 10px; 
+    --padding-xs: 12px !important; /**/ 
   }
 
   :root {
     /* _____ GAP _____ */
     --gap-section: 80px;/**/ 
 
-    --gap-xs: 6px; 
-    --gap-s: 8px; 
-    --gap-m: 10px; 
-    --gap-l: 14px; 
+    --gap-xs: 8px;/**/ 
+    --gap-s: 10px;/**/ 
+    --gap-m: 12px;/**/ 
+    --gap-l: 16px;/**/ 
+    --gap-xl: 18px;/**/ 
   }
 
   :root {
     /* _____ BORDER RADIUS _____ */
-    --border-radius-xs: 4px;
-    --border-radius-s: 6px;
-    --border-radius-m: 8px;
+    --border-radius-xs: 6px;/**/
+    --border-radius-s: 8px;/**/
+    --border-radius-m: 10px;/**/
   }
 
   :root {
     /* _____ WIDTH _____ */
     --width-flag: 26px; 
-    --width-logo: 200px; 
+    --width-logo: 220px; 
   }
 
 
@@ -56,19 +52,14 @@
     display: none;
   }
 
-  .header{
-    padding: 14px var(--padding-main);
-  }
-
-
 
 
 .header .menu {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  gap: 20px;
-  font-size: 16px;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-m);
   padding: 0;
   margin: 0;
 }
@@ -76,17 +67,15 @@
 .menu-list-li a.parent-row {
   color: #ccc;
   text-decoration: none;
-  font-weight: 400;
   position: relative;
   display: inline-block;
-  padding-bottom: 5px;
   transition: color 0.3s ease;
 }
 
 .menu-list-li a.parent-row::after {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -8px;
   left: 0;
   width: 0;
   height: 2px;
@@ -114,8 +103,10 @@
   list-style: none;
   display: none; 
   flex-direction: column;
-  gap: var(--gap-s);
+  gap: var(--gap-l);
   top: 100%;
+  width: max-content;
+  max-height: max-content;
 }
 
 .sub-list a {
