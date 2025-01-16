@@ -1,4 +1,6 @@
-@media (min-width: 769px) and (max-width: 1024px) {
+@import url(./mobile.css);
+
+@media (min-width: 769px) {
   :root {
     /* _____ FONT SIZE _____ */
     --font-size-xs: 10px; /**/
@@ -46,16 +48,34 @@
     --width-logo: 200px;/**/
   }
 
-
-
-
-  /* AUTH */
- .header .auth {
-    display: flex !important;
+  
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-blue) var(--color-blue);
   }
- 
+  
 
-  .header .empty{
-    display: none !important;
+  .header .burger i {
+    font-size: var(--font-size-l);
+    color: var();
   }
+
+  .header .menu {
+    display: none ;
+  }
+    
+  .header .empty {
+    display: none;
+  }
+
+  .header .burger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-white);
+  }
+
+  
+
+
 }

@@ -1,10 +1,53 @@
+@import url(./laptop.css);
 @media (min-width: 1280px) {
 
-:root {
+  :root {
+    /* _____ FONT SIZE _____ */
+    --font-size-xs: 10px; /**/
+    --font-size-s: 12px; /**/
+    --font-size-m: 14px; /**/
+    --font-size-l: 16px; /**/
+    --font-size-xl: 18px;/**/
+  }
+
+  :root {
+    /* _____ FONT WEIGHT _____ */
+    --font-weight-s: 400;
+  }
+
+  :root {
+    /* _____ PADDING _____ */
+    --padding-main: 24px; /**/
+    --padding-input: 14px 16px;/**/
+    --padding-button: 8px 10px;/**/
+    --padding-button-xl: 10px 12px;/**/
+
+    --padding-xs: 10px; /**/
+  }
+
+  :root {
+    /* _____ GAP _____ */
+    --gap-section: 40px;
+
+    --gap-xs: 6px; /**/
+    --gap-s: 8px; /**/
+    --gap-m: 10px; /**/
+    --gap-l: 14px; /**/
+  }
+
+  :root {
+    /* _____ BORDER RADIUS _____ */
+    --border-radius-xs: 4px;
+    --border-radius-s: 6px;
+    --border-radius-m: 8px;
+  }
+
+  :root {
     /* _____ WIDTH _____ */
     --width-flag: 20px; /**/
-    --width-logo: 180px;
+    --width-logo: 200px;/**/
   }
+
 
 
 
