@@ -7,7 +7,7 @@ var swiper = new Swiper(".mySwiper", {
     delay: 10000,
     disableOnInteraction: false,
   },
-  speed: 1200,
+  speed: 1000,
   parallax: true,
   hashNavigation: {
     watchState: true,
