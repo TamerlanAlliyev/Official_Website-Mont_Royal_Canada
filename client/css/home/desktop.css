@@ -1,6 +1,6 @@
-@media (min-width: 769px) {
+@media (min-width: 1280px) {
   .main-slider .swiper .swiper-slide .box {
-    max-width: 44%;
+    max-width: 38%;
     width: max-content;
   }
 }

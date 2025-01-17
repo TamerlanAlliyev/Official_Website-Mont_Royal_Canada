@@ -33,77 +33,77 @@ body {
   background: var(--color-main-color);
 }
 
-/* _____ COLORS _____ */
 :root {
+  /* _____ COLORS _____ */
   --color-white: #fff;
   --color-white-soft: #dfdfdf;
   --color-blue: #092c6c;
+  --color-blue-soft: #2b5fc1;
   --color-main-color: #ecf0f5;
   --color-card: #e7f1ff;
   --color-dark-blue: #061630;
   --color-grey: #7b7e86;
   --color-black: #000;
-}
+
+  /* _____ COLORS SWIPER _____ */
+  
+  --pagination-color: #ffffff80; 
+
+
 
   /* _____ FONT WEIGHT _____ */
-  :root {
-    --font-weight-s: 400;
-    --font-weight-m: 500;
-    --font-weight-l: 600;
-    --font-weight-xl: 700;
-  }
+  --font-weight-s: 400;
+  --font-weight-m: 500;
+  --font-weight-l: 600;
+  --font-weight-xl: 700;
 
-@media (max-width: 768px) {
   /* _____ FONT SIZE _____ */
-  :root {
-    --font-size-xs: 8px;
-    --font-size-s: 10px;
-    --font-size-m: 12px;
-    --font-size-l: 14px;
-    --font-size-xl: 16px;
-  }
+  --font-size-xs: 8px;
+  --font-size-s: 10px;
+  --font-size-m: 12px;
+  --font-size-l: 14px;
+  --font-size-xl: 16px;
 
-  :root {
-    /* _____ PADDING _____ */
-    --padding-main: 20px;
-    --padding-main-top: 20px; 
-    --padding-list: 6px 8px;
-    --padding-input: 12px 14px;
-    --padding-button: 6px 8px;
-    --padding-button-xl: 8px 10px; /**/
+  /* _____ PADDING _____ */
+  --padding-main: 20px;
+  --padding-main-top: 20px;
+  --padding-list: 6px 8px;
+  --padding-input: 12px 14px;
+  --padding-button: 6px 8px;
+  --padding-button-xl: 8px 10px; /**/
 
-    --padding-xs: 8px;
-  }
+  --padding-xs: 8px;
+  --padding-s: 10px;
+  --padding-m: 12px;
 
   /* _____ GAP _____ */
-  :root {
-    --gap-section: 32px;
+  --gap-section: 32px;
 
-    --gap-xs: 4px;
-    --gap-s: 6px;
-    --gap-m: 8px;
-    --gap-l: 12px;
-    --gap-xl: 14px;
-  }
+  --gap-xs: 4px;
+  --gap-s: 6px;
+  --gap-m: 8px;
+  --gap-l: 12px;
+  --gap-xl: 14px;
 
   /* _____ BORDER RADIUS _____ */
-  :root {
-    --border-radius-xs: 4px;
-    --border-radius-s: 6px;
-    --border-radius-m: 8px;
-  }
+  --border-radius-xs: 4px;
+  --border-radius-s: 6px;
+  --border-radius-m: 8px;
+  --border-radius-l: 10px;
 
   /* _____ WIDTH _____ */
-  :root {
-    --width-flag: 14px;
-    --width-logo: 140px;
-  }
+  --width-flag: 14px;
+  --width-logo: 140px;
 
+  --pagination-size: 8px; 
+  --pagination-active-size: 10px;
+}
+
+@media (max-width: 768px) {
   html {
     scrollbar-width: thin;
     scrollbar-color: var(--color-blue) var(--color-blue);
   }
-  
 
   .header .auth {
     display: none;
@@ -121,9 +121,138 @@ body {
   }
 
   .header {
-    padding:var(--padding-main) var(--padding-main-top) ;
-  
-    }
+    padding: var(--padding-main) var(--padding-main-top);
+  }
+}
+@media (min-width: 769px) {
+  :root {
+    /* _____ FONT SIZE _____ */
+    --font-size-xs: 10px; /**/
+    --font-size-s: 12px; /**/
+    --font-size-m: 14px; /**/
+    --font-size-l: 16px; /**/
+    --font-size-xl: 18px; /**/
+
+    /* _____ PADDING _____ */
+    --padding-main: 24px; /**/
+    --padding-main-top: 20px; /**/
+    --padding-list: 10px 16px;
+    --padding-input: 14px 16px; /**/
+    --padding-button: 8px 10px; /**/
+    --padding-button-xl: 10px 12px; /**/
+
+    --padding-xs: 10px; /**/
+    --padding-s: 12px; /**/
+    --padding-m: 14px;/**/
+
+    /* _____ GAP _____ */
+    --gap-section: 40px;
+
+    --gap-xs: 6px; /**/
+    --gap-s: 8px; /**/
+    --gap-m: 10px; /**/
+    --gap-l: 14px; /**/
+    --gap-xl: 16px; /**/
+
+    /* _____ BORDER RADIUS _____ */
+    --border-radius-xs: 4px;
+    --border-radius-s: 6px;
+    --border-radius-m: 8px;
+    --border-radius-l: 10px;
+
+    /* _____ WIDTH _____ */
+    --width-flag: 20px; /**/
+    --width-logo: 220px; /**/
+
+    --pagination-size: 10px; 
+    --pagination-active-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    /* _____ FONT SIZE _____ */
+    --font-size-xs: 12px; /**/
+    --font-size-s: 14px; /**/
+    --font-size-m: 16px; /**/
+    --font-size-l: 18px; /**/
+    --font-size-xl: 20px; /**/
+
+    /* _____ PADDING _____ */
+    --padding-main: 46px; /**/
+    --padding-main-top: 24px; /**/
+    --padding-list: 24px; /**/
+    --padding-input: 14px 16px;
+    --padding-button: 8px 10px;
+    --padding-button-xl: 10px 12px;
+
+    --padding-xs: 12px; /**/
+    --padding-s: 14px;/**/
+    --padding-m: 16px;/**/
+
+    /* _____ GAP _____ */
+    --gap-section: 80px; /**/
+
+    --gap-xs: 8px; /**/
+    --gap-s: 10px; /**/
+    --gap-m: 12px; /**/
+    --gap-l: 16px; /**/
+    --gap-xl: 18px; /**/
+
+    /* _____ BORDER RADIUS _____ */
+    --border-radius-xs: 6px; /**/
+    --border-radius-s: 8px; /**/
+    --border-radius-m: 10px; /**/
+    --border-radius-l: 12px; /**/
+    /* _____ WIDTH _____ */
+    --width-flag: 22px;
+    --width-logo: 220px;
+
+    --pagination-size: 12px; 
+    --pagination-active-size: 14px;
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    /* _____ FONT SIZE _____ */
+    --font-size-xs: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
+    --font-size-xl: 20px;
+
+    /* _____ PADDING _____ */
+    --padding-main: 60px; /**/
+    --padding-main-top: 24px;
+    --padding-list: 24px;
+    --padding-input: 14px 16px;
+    --padding-button: 10px 12px;
+    --padding-button-xl: 12px 14px;
+
+    --padding-xs: 14px; /**/
+    --padding-s: 16px;/**/
+    --padding-m: 18px;/**/
+
+    /* _____ GAP _____ */
+    --gap-section: 100px; /**/
+
+    --gap-xs: 10px; /**/
+    --gap-s: 12px; /**/
+    --gap-m: 14px; /**/
+    --gap-l: 18px; /**/
+    --gap-xl: 20px; /**/
+
+    /* _____ BORDER RADIUS _____ */
+    --border-radius-xs: 8px; /**/
+    --border-radius-s: 10px; /**/
+    --border-radius-m: 12px; /**/
+    --border-radius-l: 14px; /**/
+    /* _____ WIDTH _____ */
+    --width-flag: 22px;
+    --width-logo: 240px;
+
+    --pagination-size: 14px; 
+    --pagination-active-size: 16px;
+  }
 }
 
 /*

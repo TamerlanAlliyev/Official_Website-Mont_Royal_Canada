@@ -2,13 +2,12 @@
 // Initialize Swiper
 
 var swiper = new Swiper(".mySwiper", {
-  // spaceBetween: 5,
   loop: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
-  speed: 600,
+  autoplay: {
+    delay: 10000,
+    disableOnInteraction: false,
+  },
+  speed: 1200,
   parallax: true,
   hashNavigation: {
     watchState: true,
