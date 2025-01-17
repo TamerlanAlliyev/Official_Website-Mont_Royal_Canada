@@ -52,10 +52,11 @@
     padding: var(--padding-list);
     background: var(--color-white);
     border-radius: var(--border-radius-s);
+    font-size: var(--font-size-s);
     list-style: none;
     display: none;
     flex-direction: column;
-    gap: var(--gap-l);
+    gap: var(--gap-m);
     top: 100%;
     width: max-content;
     max-height: max-content;
@@ -83,11 +84,11 @@
 
   .sub-list a:hover {
     color: var(--color-black);
-    padding-left: 20px;
+    padding-left: var(--padding-l);
   }
 
   .sub-list a:hover::before {
-    width: 15px;
+    width: var(--padding-xs);
   }
 
   .menu-list-li:hover .sub-list {

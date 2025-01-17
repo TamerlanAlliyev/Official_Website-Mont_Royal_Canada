@@ -1,5 +1,11 @@
 @import url(../layout/mobile.css);
 
+/*
+========================================
+         SLİDER  -  START
+========================================
+*/
+
 .main-slider .swiper {
   width: 100%;
   min-height: 78vh;
@@ -101,4 +107,16 @@
   font-size: var(--font-size-m);
   color: var(--color-white);
   text-decoration: none;
+  transition: all 0.3s ease !important;
+}
+
+
+.main-slider .swiper .swiper-slide .subtitle:hover{
+  background: var(--color-white) ;
+  color: var(--color-blue-soft);
+}
+
+.main-slider .swiper .swiper-slide .subtitle:active{
+  background: var(--color-blue-soft) ;
+  color: var(--color-white);
 }
