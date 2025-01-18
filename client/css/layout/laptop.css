@@ -94,4 +94,38 @@
   .menu-list-li:hover .sub-list {
     display: flex;
   }
+
+
+
+  /*
+========================================
+         SECTION: WELCOME  -  START
+========================================
+*/
+.welcome .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr ; 
+}
+
+.con-row {
+  display: flex;
+  align-items: stretch; 
+}
+
+.con-row:nth-child(1) {
+  order: 2;
+  grid-column: 2 / 1;
+  grid-row: 1 ;
+}
+
+.con-row:nth-child(2) {
+  order: 1; 
+  grid-column: 2 / 2; 
+}
+
+.con-row:nth-child(3) {
+  order: 3; 
+  grid-column: 2 / 2;
+}
 }

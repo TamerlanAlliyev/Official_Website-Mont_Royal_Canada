@@ -34,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: var(--gap-section);
   min-height: 100vh;
   height: 100%;
 }
@@ -51,6 +52,9 @@ body {
   --color-black: #000;
   --color-footer: #8a99b4;
 
+  /* --color-blue-linear: #0F46AB 0%, #01A9F2 100%; */
+  --color-blue-linear: #092c6c 0%, #2b5fc1 100%;
+
   /* _____ COLORS SWIPER _____ */
 
   --pagination-color: #ffffff80;
@@ -67,6 +71,9 @@ body {
   --font-size-m: 12px;
   --font-size-l: 14px;
   --font-size-xl: 16px;
+
+  --font-size-header: 24px;
+  --font-size-subheader: 16px;
 
   /* _____ PADDING _____ */
   --padding-main: 20px;
@@ -128,6 +135,9 @@ body {
   .header {
     padding: var(--padding-main) var(--padding-main-top);
   }
+  .footer-main .navbar {
+    min-width: 28%;
+  }
 }
 @media (min-width: 769px) {
   :root {
@@ -137,6 +147,9 @@ body {
     --font-size-m: 14px; /**/
     --font-size-l: 16px; /**/
     --font-size-xl: 18px; /**/
+
+    --font-size-header: 28px; /**/
+    --font-size-subheader: 18px; /**/
 
     /* _____ PADDING _____ */
     --padding-main: 24px; /**/
@@ -173,15 +186,22 @@ body {
     --pagination-size: 10px;
     --pagination-active-size: 12px;
   }
+
+  .footer-main .navbar {
+    min-width: 20%;
+  }
 }
 @media (min-width: 1024px) {
   :root {
     /* _____ FONT SIZE _____ */
-    --font-size-xs: 12px; /**/
-    --font-size-s: 14px; /**/
-    --font-size-m: 16px; /**/
-    --font-size-l: 18px; /**/
-    --font-size-xl: 20px; /**/
+    --font-size-xs: 10px; 
+    --font-size-s: 12px; 
+    --font-size-m: 14px; 
+    --font-size-l: 16px; 
+    --font-size-xl: 18px; 
+
+    --font-size-header: 28px; 
+    --font-size-subheader: 18px; 
 
     /* _____ PADDING _____ */
     --padding-main: 46px; /**/
@@ -218,6 +238,10 @@ body {
     --pagination-size: 12px;
     --pagination-active-size: 14px;
   }
+  .footer-main .navbar {
+    min-width: 15%;
+  }
+  
 }
 @media (min-width: 1280px) {
   :root {
@@ -227,6 +251,9 @@ body {
     --font-size-m: 16px;
     --font-size-l: 18px;
     --font-size-xl: 20px;
+
+    --font-size-header: 32px; /**/
+    --font-size-subheader: 20px; /**/
 
     /* _____ PADDING _____ */
     --padding-main: 60px; /**/
@@ -262,6 +289,10 @@ body {
     --pagination-size: 14px;
     --pagination-active-size: 16px;
   }
+  .footer-main .navbar {
+    min-width: 14%;
+  }
+  
 }
 
 /*
@@ -703,7 +734,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  gap: var(--padding-main);
+  gap: var(--padding-main) !important;
 }
 
 .footer-main .navbar {
@@ -712,6 +743,7 @@ footer {
   gap: var(--gap-xl);
   font-size: var(--font-size-s);
 }
+
 
 .footer-main .navbar .con-list {
   list-style: none;
@@ -875,3 +907,86 @@ display: flex;
 .footer-development a:hover {
   color: var(--color-white);
 }
+
+
+
+/*
+========================================
+         SECTION: TITLE  -  START
+========================================
+*/
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-m);
+}
+
+.section-header .title {
+  color: var(--color-dark-blue);
+  text-transform: capitalize;
+  font-size: var(--font-size-header);
+  font-weight: var(--font-weight-xl);
+  text-align: center;
+}
+
+.section-header .sub-title {
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-l);
+  font-size: var(--font-size-subheader);
+  text-align: center;
+  background: linear-gradient(90deg, var(--color-blue-linear));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+========================================
+         SECTION: TITLE  -  END
+========================================
+*/
+
+/*
+========================================
+         SECTION: BUTTONS  -  START
+========================================
+*/
+
+/* ----- MEDIUM BUTON _ START ----- */
+.btn-medium a {
+  width: max-content;
+  display: flex;
+  padding: var(--padding-button);
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-l);
+  border-radius: var(--border-radius-s);
+  background: var(--color-blue-soft);
+  font-size: var(--font-size-m);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s ease !important;
+}
+
+.btn-medium a:hover {
+  background: var(--color-white);
+  color: var(--color-blue-soft);
+  font-weight: 600;
+}
+
+.btn-medium a:active {
+  background: var(--color-blue-soft);
+  color: var(--color-white);
+}
+/* ----- MEDIUM BUTON _ END ----- */
+
+
+/*
+========================================
+         SECTION: BUTTONS  -  END
+========================================
+*/

@@ -34,7 +34,7 @@
 
 .main-slider .swiper .swiper-button-next,
 .main-slider .swiper .swiper-button-prev {
-  display: none ;
+  display: none;
   padding-left: var(--padding-main) !important;
   padding-right: var(--padding-main) !important;
 }
@@ -53,23 +53,23 @@
 }
 
 .main-slider .swiper .swiper-pagination {
-  bottom: 5%; 
+  bottom: 5%;
 }
 
 .main-slider .swiper .swiper-pagination-bullet {
-  width: var(--pagination-size); 
+  width: var(--pagination-size);
   height: var(--pagination-size);
-  background-color: var(--pagination-color); 
+  background-color: var(--pagination-color);
   transition: background-color 0.3s ease;
 }
 
 .main-slider .swiper .swiper-pagination-bullet-active {
-  background-color: var(--color-white); 
+  background-color: var(--color-white);
 }
 
 .main-slider .swiper .swiper-pagination-bullet:hover {
-  background-color: var(--color-white); 
-  transform: 1.2; 
+  background-color: var(--color-white);
+  transform: 1.2;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -95,28 +95,52 @@
   text-align: start;
 }
 
-.main-slider .swiper .swiper-slide .subtitle {
-  max-width: max-content;
+
+
+/*
+========================================
+         SLİDER  -  END
+========================================
+*/
+
+/*
+========================================
+         SECTION: WELCOME  -  START
+========================================
+*/
+.welcome {
+  padding-left: var(--padding-main);
+  padding-right: var(--padding-main);
+}
+
+.con-row:nth-child(1) {
+  background: #8d8787;
+}
+
+.con-row:nth-child(3) {
+  background: #8aa58a;
+}
+
+.welcome .container {
+  display: grid;
+  gap: 20px;
+}
+.con-row:nth-child(1) {
+  order: 2;
+}
+
+.con-row:nth-child(2) {
+  order: 1;
+}
+
+.con-row:nth-child(3) {
+  order: 3;
+}
+
+
+.con-row:nth-child(3) {
   display: flex;
-  padding: var(--padding-button);
-  justify-content: center;
-  align-items: center;
-  gap: var( --gap-l);
-  border-radius: var(--border-radius-s);
-  background: var(--color-blue-soft);
-  font-size: var(--font-size-m);
-  color: var(--color-white);
-  text-decoration: none;
-  transition: all 0.3s ease !important;
-}
-
-
-.main-slider .swiper .swiper-slide .subtitle:hover{
-  background: var(--color-white) ;
-  color: var(--color-blue-soft);
-}
-
-.main-slider .swiper .swiper-slide .subtitle:active{
-  background: var(--color-blue-soft) ;
-  color: var(--color-white);
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
 }
