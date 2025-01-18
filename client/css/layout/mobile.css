@@ -41,20 +41,20 @@ body {
 
 :root {
   /* _____ COLORS _____ */
-  --color-white: #fff;
-  --color-white-soft: #dfdfdf;
+  --color-black: #000;
+  --color-dark-blue: #061630;
   --color-blue: #092c6c;
   --color-blue-soft: #2b5fc1;
-  --color-main-color: #ecf0f5;
-  --color-card: #e7f1ff;
-  --color-dark-blue: #061630;
-  --color-grey: #7b7e86;
-  --color-black: #000;
+  --color-sky-blue: #01A9F2;
+  --color-grey: #7b7e86 ;
   --color-footer: #8a99b4;
+  --color-card: #e7f1ff;
+  --color-main-color: #ecf0f5;
+  --color-white-soft: #dfdfdf;
+  --color-white: #fff;
 
-  /* --color-blue-linear: #0F46AB 0%, #01A9F2 100%; */
   --color-blue-linear: #092c6c 0%, #2b5fc1 100%;
-
+  --color-blue-linear-column: #2B5FC1 0%, #01A9F2 50%, #2B5FC1 100%;
   /* _____ COLORS SWIPER _____ */
 
   --pagination-color: #ffffff80;
@@ -90,6 +90,7 @@ body {
 
   /* _____ GAP _____ */
   --gap-section: 32px;
+  --gap-main: 20px;
 
   --gap-xs: 4px;
   --gap-s: 6px;
@@ -166,6 +167,7 @@ body {
 
     /* _____ GAP _____ */
     --gap-section: 40px;
+    --gap-main: 30px; /**/
 
     --gap-xs: 6px; /**/
     --gap-s: 8px; /**/
@@ -219,6 +221,8 @@ body {
 
     /* _____ GAP _____ */
     --gap-section: 80px; /**/
+  --gap-main: 40px; /**/
+
 
     --gap-xs: 8px; /**/
     --gap-s: 10px; /**/
@@ -270,6 +274,8 @@ body {
 
     /* _____ GAP _____ */
     --gap-section: 100px; /**/
+  --gap-main: 50px; /**/
+
 
     --gap-xs: 10px; /**/
     --gap-s: 12px; /**/
@@ -938,7 +944,7 @@ display: flex;
   font-weight: var(--font-weight-l);
   font-size: var(--font-size-subheader);
   text-align: center;
-  background: linear-gradient(90deg, var(--color-blue-linear));
+  background: linear-gradient(90deg, var(--color-blue-linear-column));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -973,15 +979,11 @@ display: flex;
 }
 
 .btn-medium a:hover {
-  background: var(--color-white);
-  color: var(--color-blue-soft);
-  font-weight: 600;
-}
-
-.btn-medium a:active {
-  background: var(--color-blue-soft);
+  background: var(--color-blue);
   color: var(--color-white);
 }
+
+
 /* ----- MEDIUM BUTON _ END ----- */
 
 
