@@ -109,10 +109,16 @@
 
 .welcome {
   padding: 0 var(--padding-main);
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .welcome .container {
   display: grid;
+  width: 100%;
+  max-width: 1920px;
   gap: var(--gap-main);
 }
 
@@ -167,7 +173,6 @@
 
 /* _____ WELCOME: IMAGES _____ */
 
-
 .welcome .container .images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -183,7 +188,7 @@
 
 .welcome .container .images .grid-image {
   display: grid;
-  grid-template-rows: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
   gap: var(--gap-xl);
 }
 
@@ -194,9 +199,129 @@
   border-radius: var(--border-radius-l);
 }
 
-
 /*
 ========================================
          SECTION: WELCOME  -  END
+========================================
+*/
+
+/*
+========================================
+         SECTION: SERVICE  -  START
+========================================
+*/
+
+.section-services {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-main);
+}
+
+.section-services .services {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services .swiper .swiper-pagination-bullet {
+  width: var(--pagination-size);
+  height: var(--pagination-size);
+  background-color: var(--color-blue);
+  transition: background-color 0.3s ease;
+}
+
+.services .swiper .swiper-pagination-bullet-active {
+  background-color: var(--color-blue);
+}
+
+.services .swiper .swiper-pagination-bullet:hover {
+  background-color: var(--color-blue);
+  transform: 1.2;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* .services .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.services .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.services .swiper {
+  width: 100%;
+}
+
+.services .swiper .swiper-wrapper{
+  height: 500px;
+}
+
+.services .swiper .swiper-wrapper .swiper-slide {
+  font-size: 18px;
+  background: #9c7373;
+}
+
+
+.services .swiper .swiper-pagination {
+}
+
+.services .swiper .swiper-pagination-bullet {
+  width: var(--pagination-size);
+  height: var(--pagination-size);
+  background-color: var(--color-blue);
+  transition: background-color 0.3s ease;
+}
+
+.services .swiper .swiper-pagination-bullet-active {
+  background-color: var(--color-blue);
+}
+
+.services .swiper .swiper-pagination-bullet:hover {
+  background-color: var(--color-blue);
+  transform: 1.2;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+} */
+
+/*
+========================================
+         SECTION: SERVICE  -  END
 ========================================
 */

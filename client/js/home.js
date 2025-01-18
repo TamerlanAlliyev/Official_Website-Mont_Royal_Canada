@@ -1,7 +1,7 @@
 
 // Initialize Swiper
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".main-slider .mySwiper", {
   loop: true,
   autoplay: {
     delay: 10000,
@@ -21,3 +21,58 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+
+
+
+var swiper = new Swiper(".services .mySwiper", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 10,
+  // autoplay: {
+  //   delay: 7000,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+ 
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      grid: {
+        rows: 1,
+        fill: "row",
+      }
+    },
+    "@0.75": {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+        fill: "row",
+      }
+    },
+    "@1.00": {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      grid: {
+        rows: 2,
+        fill: "row",
+      }
+    },
+    "@1.50": {
+      slidesPerView: 4,
+      spaceBetween: 50,
+      grid: {
+        rows: 2,
+        fill: "row",
+      }
+    },
+  },
+});
+
