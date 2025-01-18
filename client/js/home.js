@@ -28,9 +28,6 @@ var swiper = new Swiper(".main-slider .mySwiper", {
 
 
 var swiper = new Swiper(".services .mySwiper", {
-  slidesPerView: 1,
-  loop: true,
-  spaceBetween: 10,
   // autoplay: {
   //   delay: 7000,
   //   disableOnInteraction: false,
@@ -42,10 +39,10 @@ var swiper = new Swiper(".services .mySwiper", {
  
   breakpoints: {
     "@0.00": {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
       grid: {
-        rows: 1,
+        rows: 2,
         fill: "row",
       }
     },
