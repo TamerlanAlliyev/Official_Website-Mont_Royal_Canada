@@ -39,6 +39,31 @@ body {
   height: 100%;
 }
 
+.card .info h5{
+  font-size: var(  --font-size-card-title);
+  color: var(--color-black);
+}
+
+.card .info p{
+  font-size: var(  --font-size-card-description);
+  color: var(--color-grey);
+}
+
+.section{
+  padding: 0 var(--padding-main);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.section .container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1920px;
+  gap: var(--gap-main)
+}
+
 :root {
   /* _____ COLORS _____ */
   --color-black: #000;
@@ -75,6 +100,10 @@ body {
   --font-size-header: 24px;
   --font-size-subheader: 16px;
 
+  --font-size-card-title: 20px;
+  --font-size-card-description: 14px;
+
+
   /* _____ PADDING _____ */
   --padding-main: 20px;
   --padding-main-top: 20px;
@@ -83,7 +112,7 @@ body {
   --padding-button-small: 6px 8px;
   --padding-button-medium: 10px 14px;
   --padding-button-large: 14px 20px;/**/
-  /* --padding-card:32px 20px; */
+  --padding-card:32px 20px;
 
 
 
@@ -95,6 +124,7 @@ body {
   /* _____ GAP _____ */
   --gap-section: 32px;
   --gap-main: 20px;
+  --gap-card-main: 20px;
 
   --gap-xs: 4px;
   --gap-s: 6px;
@@ -158,6 +188,9 @@ body {
     --font-size-header: 28px; /**/
     --font-size-subheader: 18px; /**/
 
+    --font-size-card-title: 20px;
+    --font-size-card-description: 14px;
+
     /* _____ PADDING _____ */
     --padding-main: 24px; /**/
     --padding-main-top: 20px; /**/
@@ -166,6 +199,8 @@ body {
     --padding-button-small: 10px 12px; /**/
     --padding-button-medium: 12px 16px; /**/
     --padding-button-large: 16px 22px; /**/
+  --padding-card:34px 22px;
+
 
     --padding-xs: 10px; /**/
     --padding-s: 12px; /**/
@@ -175,6 +210,8 @@ body {
     /* _____ GAP _____ */
     --gap-section: 40px;
     --gap-main: 30px; /**/
+  --gap-card-main: 24px; /**/
+
 
     --gap-xs: 6px; /**/
     --gap-s: 8px; /**/
@@ -212,6 +249,9 @@ body {
     --font-size-header: 28px;
     --font-size-subheader: 18px;
 
+    --font-size-card-title: 22px;
+    --font-size-card-description: 16px;
+
     /* _____ PADDING _____ */
     --padding-main: 46px; /**/
     --padding-main-top: 24px; /**/
@@ -220,6 +260,8 @@ body {
     --padding-button-small: 12px 14px;
     --padding-button-medium: 12px 16px;
     --padding-button-large: 16px 22px;
+  --padding-card:36px 24px;
+
 
     --padding-xs: 12px; /**/
     --padding-s: 14px; /**/
@@ -229,6 +271,8 @@ body {
     /* _____ GAP _____ */
     --gap-section: 80px; /**/
     --gap-main: 40px; /**/
+  --gap-card-main: 28px;
+
 
     --gap-xs: 8px; /**/
     --gap-s: 10px; /**/
@@ -264,6 +308,9 @@ body {
     --font-size-header: 32px; /**/
     --font-size-subheader: 20px; /**/
 
+    --font-size-card-title: 24px;
+    --font-size-card-description: 18px;
+
     /* _____ PADDING _____ */
     --padding-main: 60px; /**/
     --padding-main-top: 24px;
@@ -272,6 +319,8 @@ body {
     --padding-button-small: 12px 14px;
     --padding-button-medium: 12px 16px;
     --padding-button-large: 16px 22px;
+  --padding-card:38px 28px;
+
 
     --padding-xs: 14px; /**/
     --padding-s: 16px; /**/
@@ -281,6 +330,8 @@ body {
     /* _____ GAP _____ */
     --gap-section: 100px; /**/
     --gap-main: 50px; /**/
+  --gap-card-main: 30px; /**/
+
 
     --gap-xs: 10px; /**/
     --gap-s: 12px; /**/
@@ -935,6 +986,31 @@ footer {
          SECTION: BUTTONS  -  START
 ========================================
 */
+
+/* ----- MEDIUM BUTON _ START ----- */
+
+.btn-small a {
+  width: max-content;
+  display: flex;
+  padding: var(--padding-button-small);
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-s);
+  border-radius: var(--border-radius-xs);
+  background: var(--color-blue-soft);
+  font-size: var(--font-size-s);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s ease !important;
+}
+
+.btn-small a:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+/* ----- MEDIUM BUTON _ END ----- */
+
 
 /* ----- MEDIUM BUTON _ START ----- */
 .btn-medium a {

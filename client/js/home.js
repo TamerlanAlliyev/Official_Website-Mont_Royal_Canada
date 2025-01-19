@@ -28,12 +28,10 @@ var swiper = new Swiper(".main-slider .mySwiper", {
 
 
 var swiper = new Swiper(".services .mySwiper", {
-  // autoplay: {
-  //   delay: 7000,
-  //   disableOnInteraction: false,
-  // },
+
   pagination: {
     el: ".swiper-pagination",
+      // type: 'bullets',
     clickable: true,
   },
  
