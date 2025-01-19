@@ -217,11 +217,18 @@
 }
 
 * .section-services ::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
-.section-services .container .swiper-horizontal > .section-services .container .swiper-pagination-bullets,
-.section-services .container .swiper-pagination-bullets.swiper-pagination-horizontal,
+.section-services
+  .container
+  .swiper-horizontal
+  > .section-services
+  .container
+  .swiper-pagination-bullets,
+.section-services
+  .container
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
 .section-services .container .swiper-pagination-custom,
 .section-services .container .swiper-pagination-fraction {
   bottom: 0 !important;
@@ -257,7 +264,6 @@
   height: 100%;
   min-height: 100%;
 }
-
 
 .section-services .swiper-slide {
   font-size: 18px;
@@ -339,8 +345,8 @@
 }
 
 .section-services .swiper-slide.card .icon img {
-  width: 80px;/**/
-  height: 80px;/**/
+  width: 80px; /**/
+  height: 80px; /**/
 }
 
 .section-services .swiper-slide.card .btn-small.learn {
@@ -369,3 +375,4 @@
          SECTION: SERVICE  -  END
 ========================================
 */
+
