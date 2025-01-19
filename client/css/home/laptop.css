@@ -11,7 +11,12 @@
     max-width: 38%;
     width: max-content;
   }
-
+  
+  /*
+  ========================================
+       SECTION: SERVICE  -  START
+  ========================================
+  */
 
 .section-services .container .swiper-horizontal > .section-services .container .swiper-pagination-bullets,
 .section-services .container .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -26,5 +31,32 @@
   width: 90px;/**/
   height: 90px;/**/
 }
-  
+  /*
+========================================
+         SECTION: SERVICE  -  END
+========================================
+*/
+
+
+/*
+========================================
+         SECTION: BLOGS  -  START
+========================================
+*/
+.section-blogs .container .swiper-horizontal > .section-blogs .container .swiper-pagination-bullets,
+.section-blogs .container .swiper-pagination-bullets.swiper-pagination-horizontal,
+.section-blogs .container .swiper-pagination-custom,
+.section-blogs .container .swiper-pagination-fraction {
+  height: 80px; /**/
+}
+.section-blogs .swiper-slide.card {
+  min-height: 530px; /**/
+}
+
+/*
+========================================
+         SECTION: BLOGS  -  END
+========================================
+*/
+
 }

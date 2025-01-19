@@ -4,18 +4,68 @@
     width: max-content;
   }
 
+  /*
+========================================
+         SECTION: SERVICE  -  START
+========================================
+*/
 
-  .section-services .container .swiper-horizontal > .section-services .container .swiper-pagination-bullets,
-.section-services .container .swiper-pagination-bullets.swiper-pagination-horizontal,
-.section-services .container .swiper-pagination-custom,
-.section-services .container .swiper-pagination-fraction {
-  height: 70px; /**/
+  .section-services
+    .container
+    .swiper-horizontal
+    > .section-services
+    .container
+    .swiper-pagination-bullets,
+  .section-services
+    .container
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .section-services .container .swiper-pagination-custom,
+  .section-services .container .swiper-pagination-fraction {
+    height: 70px; /**/
+  }
+  .section-services .swiper-slide.card {
+    min-height: 364px; /**/
+  }
+  .section-services .swiper-slide.card .icon img {
+    width: 80px; /**/
+    height: 80px; /**/
+  }
+
+  /*
+========================================
+         SECTION: SERVICE  -  END
+========================================
+*/
+
+
+
+/*
+========================================
+         SECTION: BLOGS  -  START
+========================================
+*/
+.section-blogs
+.container
+.swiper-horizontal
+> .section-blogs
+.container
+.swiper-pagination-bullets,
+.section-blogs
+.container
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.section-blogs .container .swiper-pagination-custom,
+.section-blogs .container .swiper-pagination-fraction {
+height: 70px; /**/
 }
-.section-services .swiper-slide.card {
-  min-height: 364px; /**/
+.section-blogs .swiper-slide.card {
+min-height: 464px; /**/
 }
-.section-services .swiper-slide.card .icon img {
-  width: 80px;/**/
-  height: 80px;/**/
-}
+
+
+/*
+========================================
+         SECTION: BLOGS  -  END
+========================================
+*/
+
 }
