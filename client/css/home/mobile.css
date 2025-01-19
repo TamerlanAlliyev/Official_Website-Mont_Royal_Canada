@@ -194,11 +194,17 @@
 ========================================
 */
 
-.swiper {
+/*
+========================================
+         SECTION: SERVICE  -  START
+========================================
+*/
+
+/* ----- PAGINATION ----- */
+.section-services .container .swiper {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  overflow-x: visible !important;
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -210,35 +216,32 @@
   gap: 0 !important;
 }
 
-.swiper::-webkit-scrollbar {
-  display: none; /* WebKit tarayıcıları (Chrome, Edge, Safari) için */
+* .section-services ::-webkit-scrollbar {
+  display: none; 
 }
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
+
+.section-services .container .swiper-horizontal > .section-services .container .swiper-pagination-bullets,
+.section-services .container .swiper-pagination-bullets.swiper-pagination-horizontal,
+.section-services .container .swiper-pagination-custom,
+.section-services .container .swiper-pagination-fraction {
   bottom: 0 !important;
   top: var(--swiper-pagination-top, auto);
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 50px; /**/
   position: static;
   display: flex;
   align-items: end;
   justify-content: center;
 }
-.swiper-pagination {
+.section-services .container .swiper-pagination {
   position: relative;
   text-align: center;
   transition: 1.3s opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
 }
-/*
-========================================
-         SECTION: SERVICE  -  START
-========================================
-*/
+/* ----- PAGINATION ----- */
 
 .section-services .container .services {
   width: 100%;
@@ -255,9 +258,6 @@
   min-height: 100%;
 }
 
-.section-services .swiper .swiper-wrapper{
-/* display: flex; */
-}
 
 .section-services .swiper-slide {
   font-size: 18px;
@@ -298,13 +298,13 @@
   background: var(--color-white);
   border-radius: var(--border-radius-l);
   height: 100%;
-  min-height: 480px;
+  min-height: 338px; /**/
   transition: all 0.3s ease;
 }
 
 .section-services .swiper-slide.card:hover {
   border-bottom: 8px solid var(--color-blue-soft);
-  box-shadow: 0px 9px 36.9px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 3.9px 0px rgba(0, 0, 0, 0.25);
 }
 
 .section-services .swiper-slide.card .details {
@@ -339,8 +339,8 @@
 }
 
 .section-services .swiper-slide.card .icon img {
-  width: 120px;
-  height: 120px;
+  width: 80px;/**/
+  height: 80px;/**/
 }
 
 .section-services .swiper-slide.card .btn-small.learn {
@@ -369,56 +369,3 @@
          SECTION: SERVICE  -  END
 ========================================
 */
-
-/* .services .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.services .swiper-slide {
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.services .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.services .swiper {
-  width: 100%;
-}
-
-.services .swiper .swiper-wrapper{
-  height: 500px;
-}
-
-.services .swiper .swiper-wrapper .swiper-slide {
-  font-size: 18px;
-  background: #9c7373;
-}
-
-
-.services .swiper .swiper-pagination {
-}
-
-.services .swiper .swiper-pagination-bullet {
-  width: var(--pagination-size);
-  height: var(--pagination-size);
-  background-color: var(--color-blue);
-  transition: background-color 0.3s ease;
-}
-
-.services .swiper .swiper-pagination-bullet-active {
-  background-color: var(--color-blue);
-}
-
-.services .swiper .swiper-pagination-bullet:hover {
-  background-color: var(--color-blue);
-  transform: 1.2;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-} */
