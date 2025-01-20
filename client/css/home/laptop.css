@@ -53,9 +53,35 @@
   min-height: 530px; /**/
 }
 
+
 /*
 ========================================
          SECTION: BLOGS  -  END
+========================================
+*/
+
+
+/*
+========================================
+         SECTION: PARTNERS  -  START
+========================================
+*/
+
+.partners .container .partner-list {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.partners .container .partner-list li:nth-child(n - 13) {
+  display: flex ;
+}
+
+.partners .container .partner-list li:nth-child(n + 13) {
+  display: none;
+}
+
+/*
+========================================
+         SECTION: PARTNERS  -  END
 ========================================
 */
 

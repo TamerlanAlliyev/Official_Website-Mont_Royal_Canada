@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1440px;
   gap: var(--gap-main)
 }
 
@@ -177,7 +177,7 @@ body {
     padding: var(--padding-main) var(--padding-main-top);
   }
   .footer-main .navbar {
-    min-width: 28%;
+    min-width: 35%;
   }
 
 }
@@ -244,7 +244,7 @@ body {
   }
 
   .footer-main .navbar {
-    min-width: 20%;
+    min-width: 22%;
   }
 }
 @media (min-width: 1024px) {
@@ -306,7 +306,7 @@ body {
     --pagination-active-size: 14px;
   }
   .footer-main .navbar {
-    min-width: 15%;
+    min-width: 18%;
   }
 }
 @media (min-width: 1280px) {
@@ -368,7 +368,7 @@ body {
     --pagination-active-size: 16px;
   }
   .footer-main .navbar {
-    min-width: 14%;
+    min-width: 17%;
   }
 }
 

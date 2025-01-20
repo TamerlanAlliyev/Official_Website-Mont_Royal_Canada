@@ -68,4 +68,27 @@ min-height: 464px; /**/
 ========================================
 */
 
+/*
+========================================
+         SECTION: PARTNERS  -  START
+========================================
+*/
+
+.partners .container .partner-list {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.partners .container .partner-list li:nth-child(n - 10) {
+  display: flex ;
+}
+
+.partners .container .partner-list li:nth-child(n + 10) {
+  display: none;
+}
+
+/*
+========================================
+         SECTION: PARTNERS  -  END
+========================================
+*/
 }

@@ -50,5 +50,27 @@
 ========================================
 */
 
-    
+    /*
+========================================
+         SECTION: PARTNERS  -  START
+========================================
+*/
+
+.partners .container .partner-list {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.partners .container .partner-list li:nth-child(n - 16) {
+  display: flex ;
+}
+
+.partners .container .partner-list li:nth-child(n + 16) {
+  display: none;
+}
+
+/*
+========================================
+         SECTION: PARTNERS  -  END
+========================================
+*/
 }

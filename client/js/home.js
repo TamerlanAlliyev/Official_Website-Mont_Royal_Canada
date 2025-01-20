@@ -1,4 +1,3 @@
-
 // Initialize Swiper
 
 var swiper = new Swiper(".main-slider .mySwiper", {
@@ -22,19 +21,14 @@ var swiper = new Swiper(".main-slider .mySwiper", {
   },
 });
 
-
-
-
-
 // ---------- SERVICE ---------- //
 var swiper = new Swiper(".services .mySwiper", {
-
   pagination: {
     el: ".swiper-pagination",
-      // type: 'bullets',
+    // type: 'bullets',
     clickable: true,
   },
- 
+
   // breakpoints: {
   //   "@0.00": {
   //     slidesPerView: 1,
@@ -82,81 +76,73 @@ var swiper = new Swiper(".services .mySwiper", {
       slidesPerView: 1,
       spaceBetween: 18,
       grid: {
-        rows: 2, 
-        fill: 'row', 
+        rows: 2,
+        fill: "row",
       },
     },
     480: {
       slidesPerView: 2,
       spaceBetween: 18,
       grid: {
-        rows: 2, 
-        fill: 'row', 
+        rows: 2,
+        fill: "row",
       },
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 24,
       grid: {
-        rows: 2, 
-        fill: 'row', 
+        rows: 2,
+        fill: "row",
       },
     },
     1024: {
       slidesPerView: 3,
       spaceBetween: 32,
       grid: {
-        rows: 2, 
-        fill: 'row', 
+        rows: 2,
+        fill: "row",
       },
     },
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40,
       grid: {
-        rows: 2, 
-        fill: 'row', 
+        rows: 2,
+        fill: "row",
       },
     },
-  }
+  },
 });
-
-
-
 
 // ---------- BLOGS ---------- //
 var swiper = new Swiper(".blogs .mySwiper", {
-
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
- 
+
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 18,
-  
     },
     480: {
       slidesPerView: 2,
       spaceBetween: 18,
-  
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 24,
-  
     },
     1024: {
       slidesPerView: 3,
       spaceBetween: 32,
-  
     },
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40,
-  
     },
-  }
+  },
 });
+
