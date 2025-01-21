@@ -1,59 +1,84 @@
 @media (min-width: 769px) {
-
-/*
+  /*
 ========================================
          SECTION: BLOGS  -  START
 ========================================
 */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row: auto;
-  gap: var(--gap-main);
-  row-gap: var(--gap-xl);
-}
-
-.item:nth-child(n + 2) {
-  padding: var(--padding-card);
-}
-
-.item:nth-child(1) {
-  order: 3;
-}
-.item:nth-child(2) {
-  order: 1;
-}
-.item:nth-child(3) {
-  order: 2;
-}
-.item:nth-child(4) {
-  order: 4;
-}
-.item:nth-child(5) {
-  order: 5;
-}
-
-
-
-/* ==================== CONTAINER BLOGS - START ==================== */
-
-
-.section-blogs-filters .grid-container .item.blogs {
-  grid-template-columns: repeat(2, 1fr);
-}
-.section-blogs-filters .grid-container .item.blogs .card:nth-child(n + 4) {
-display: flex;
-}
-.section-blogs-filters .grid-container .item.blogs .card:nth-child(n + 5) {
-  display: none;
+  .grid-container {
+    grid-template-columns: 3fr 1.2fr;
+    gap: 24px;
   }
 
+  .item:nth-child(1) {
+    grid-column: 1 / 2;
+    order: 1;
+    grid-row: 1 / span 5;
+  }
 
-/* ==================== CONTAINER BLOGS - END ==================== */
+  .item:nth-child(2) {
+    order: 2;
+  }
 
+  .item:nth-child(3) {
+    order: 3;
+  }
 
+  .item:nth-child(4) {
+    order: 4;
+  }
 
-/*
+  .item:nth-child(5) {
+    order: 5;
+  }
+
+ 
+  
+
+  .section-blogs-filters .grid-container .search .search-result li a {
+    width: 100%;
+    height: 100%;
+    color: var(--color-blue);
+    text-decoration: none;
+    font-size: var(--font-size-s);
+    display: inline-block;
+    max-width: 20ch; /**/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: var(--padding-xs);
+  }
+
+  .latest-posts .posts li a .details h5 {
+    font-size: var(--font-size-m);
+    max-width: 16ch; /**/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--color-black);
+  
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+  }
+  
+  
+
+  /* ==================== CONTAINER BLOGS - START ==================== */
+
+  .section-blogs-filters .grid-container .item.blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-blogs-filters .grid-container .item.blogs .card:nth-child(n + 4) {
+    display: flex;
+  }
+  .section-blogs-filters .grid-container .item.blogs .card:nth-child(n + 5) {
+    display: none;
+  }
+
+  /* ==================== CONTAINER BLOGS - END ==================== */
+
+  /*
 ========================================
          SECTION: BLOGS  -  END
 ========================================
