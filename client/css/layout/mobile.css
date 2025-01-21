@@ -38,30 +38,71 @@ body {
   min-height: 100vh;
   height: 100%;
 }
+/* LOADING*/
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-main-color);
+  z-index: 9999;
+  gap: var(--gap-m);
+}
 
-.card .info h5{
-  font-size: var(  --font-size-card-title);
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top: 6px solid var(--color-blue-soft);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* LOADING*/
+
+
+.card .info h5 {
+  font-size: var(--font-size-xl);
   color: var(--color-black);
 }
 
-.card .info p{
-  font-size: var(  --font-size-card-description);
+.card .info p {
+  font-size: var(--font-size-m);
   color: var(--color-grey);
 }
 
-.section{
+.section {
   padding: 0 var(--padding-main);
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.section .container{
+.section .container {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  gap: var(--gap-main)
+  gap: var(--gap-main);
 }
 
 :root {
@@ -71,12 +112,13 @@ body {
   --color-blue: #092c6c;
   --color-blue-transparent: #092c6ca1;
   --color-blue-soft: #2b5fc1;
+  --color-blue-soft-a: #092c6cbd;
   --color-sky-blue: #01a9f2;
   --color-grey: #7b7e86;
   --color-footer: #8a99b4;
-  --color-card: #e7f1ff;
+  --color-card: #6ca6fd34;
   --color-main-color: #ecf0f5;
-  --color-white-soft: #dfdfdf;
+  --color-white-soft: #ecececc9;
   --color-white: #fff;
 
   --color-blue-linear: #092c6c 0%, #2b5fc1 100%;
@@ -104,7 +146,6 @@ body {
   --font-size-card-title: 20px;
   --font-size-card-description: 14px;
 
-
   /* _____ PADDING _____ */
   --padding-main: 20px;
   --padding-main-top: 20px;
@@ -113,13 +154,11 @@ body {
 
   --padding-button-small: 6px 8px;
   --padding-button-medium: 10px 14px;
-  --padding-button-large: 14px 20px;/**/
+  --padding-button-large: 14px 20px; /**/
   --padding-button-big: 18px 26px;
 
-
-  --padding-card:32px 20px;
-
-
+  --padding-card: 32px 20px;
+  --padding-date: 4px 6px;
 
   --padding-xs: 8px;
   --padding-s: 10px;
@@ -179,10 +218,8 @@ body {
   .footer-main .navbar {
     min-width: 35%;
   }
-
 }
 @media (min-width: 769px) {
-
   :root {
     /* _____ FONT SIZE _____ */
     --font-size-xs: 10px; /**/
@@ -207,7 +244,8 @@ body {
     --padding-button-large: 16px 22px; /**/
     --padding-button-big: 20px 28px;
 
-  --padding-card:34px 22px;
+    --padding-card: 34px 22px;
+    --padding-date: 4px 6px;
 
 
     --padding-xs: 10px; /**/
@@ -218,8 +256,7 @@ body {
     /* _____ GAP _____ */
     --gap-section: 40px;
     --gap-main: 30px; /**/
-  --gap-card-main: 24px; /**/
-
+    --gap-card-main: 24px; /**/
 
     --gap-xs: 6px; /**/
     --gap-s: 8px; /**/
@@ -232,8 +269,7 @@ body {
     --border-radius-s: 6px;
     --border-radius-m: 8px;
     --border-radius-l: 10px;
-  --border-radius-xl: 12px;
-
+    --border-radius-xl: 12px;
 
     /* _____ WIDTH _____ */
     --width-flag: 20px; /**/
@@ -271,8 +307,10 @@ body {
     --padding-button-medium: 12px 16px;
     --padding-button-large: 16px 22px;
     --padding-button-big: 20px 28px;
-    
-  --padding-card:36px 24px;
+
+    --padding-card: 36px 24px;
+    --padding-date: 6px 8px;
+
 
 
     --padding-xs: 12px; /**/
@@ -283,8 +321,7 @@ body {
     /* _____ GAP _____ */
     --gap-section: 80px; /**/
     --gap-main: 40px; /**/
-  --gap-card-main: 28px;
-
+    --gap-card-main: 28px;
 
     --gap-xs: 8px; /**/
     --gap-s: 10px; /**/
@@ -334,8 +371,8 @@ body {
     --padding-button-large: 16px 22px;
     --padding-button-big: 20px 28px;
 
-  --padding-card:38px 28px;
-
+    --padding-card: 38px 28px;
+    --padding-date: 8px 12px;
 
     --padding-xs: 14px; /**/
     --padding-s: 16px; /**/
@@ -345,8 +382,7 @@ body {
     /* _____ GAP _____ */
     --gap-section: 100px; /**/
     --gap-main: 50px; /**/
-  --gap-card-main: 30px; /**/
-
+    --gap-card-main: 30px; /**/
 
     --gap-xs: 10px; /**/
     --gap-s: 12px; /**/
@@ -355,7 +391,7 @@ body {
     --gap-xl: 20px; /**/
 
     /* _____ BORDER RADIUS _____ */
-    --border-radius-xs: 8px; /**/
+    --border-radius-xs: 6px; 
     --border-radius-s: 10px; /**/
     --border-radius-m: 12px; /**/
     --border-radius-l: 14px;
@@ -368,7 +404,8 @@ body {
     --pagination-active-size: 16px;
   }
   .footer-main .navbar {
-    min-width: 17%;
+    gap: var(--gap-s);
+    min-width: 16%;
   }
 }
 
@@ -442,7 +479,7 @@ body {
   padding: var(--padding-input);
   border-radius: var(--border-radius-s);
   font-size: var(--font-size-m);
-  background: var(--color-white-soft);
+  background: var(--color-main-color);
 }
 
 .subheader .search-language .search .search-box .search-input:focus {
@@ -463,7 +500,6 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--color-white);
-  padding: var(--padding-s);
   border-radius: 0 0 var(--border-radius-s) var(--border-radius-s);
   transition: all 0.5s ease;
 }
@@ -609,8 +645,8 @@ body {
   width: 100%;
   transition: all 0.5s ease;
 }
-.header .auth{
-  padding: var(--padding-button-small) ;
+.header .auth {
+  padding: var(--padding-button-small);
 }
 .header .burger i {
   font-size: var(--font-size-l);
@@ -969,6 +1005,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: var(--gap-m);
+  text-decoration: none;
 }
 
 .section-header .title {
@@ -1027,7 +1064,6 @@ footer {
 
 /* ----- SMALL BUTTON _ END ----- */
 
-
 /* ----- MEDIUM BUTTON _ START ----- */
 .btn-medium a {
   width: max-content;
@@ -1050,7 +1086,6 @@ footer {
 }
 
 /* ----- MEDIUM BUTTON _ END ----- */
-
 
 /* ----- LARGE BUTTON _ START ----- */
 .btn-large a {
@@ -1075,7 +1110,6 @@ footer {
 
 /* ----- LARGE BUTTON _ END ----- */
 
-
 /* ----- BIG BUTTON _ START ----- */
 .btn-big a {
   width: max-content;
@@ -1098,7 +1132,6 @@ footer {
 }
 /* ----- BIG BUTTON _ END ----- */
 
-
 /*
 ========================================
          SECTION: BUTTONS  -  END
@@ -1114,7 +1147,7 @@ footer {
 .challenge.section .container {
   justify-content: center;
   align-items: center;
-  padding: var(  --gap-section);
+  padding: var(--gap-section);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1124,5 +1157,72 @@ footer {
 /*
 ========================================
          SECTION: CHALLENG  -  END
+========================================
+*/
+
+/*
+========================================
+         MAIN-SECTION -  START
+========================================
+*/
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--padding-main);
+  height: 50vh;
+  color: var(--color-white);
+  background-image: linear-gradient(
+      rgba(9, 44, 108, 0.8),
+      rgba(9, 44, 108, 0.8)
+    ),
+    url("/client/images/settings/business-concept-glass-world-laptop.jpg"); /* Doğru bir URL belirtildi */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  width: 50%;
+}
+
+.main-section .title {
+  font-size: var(--font-size-header);
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+
+.main-section .description {
+  font-size: var(--font-size-xl);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+.navigator-list {
+  display: flex;
+  gap: var(--gap-xs);
+  list-style: none;
+  align-items: center;
+  color: var(--color-grey);
+}
+
+.navigator-list .parent a {
+  text-decoration: none;
+  font-size: var(--font-size-m);
+  color: var(--color-grey);
+}
+.navigator-list .target a {
+  text-decoration: none;
+  font-size: var(--font-size-m);
+  color: var(--color-black);
+  font-weight: var(--font-weight-m);
+}
+/*
+========================================
+         MAIN-SECTION -  END
 ========================================
 */

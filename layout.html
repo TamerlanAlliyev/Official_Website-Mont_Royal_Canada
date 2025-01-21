@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./client/css/layout/mobile.css" />
-    <link rel="stylesheet" href="./client/css/layout/tablet.css" />
+    <!-- CSS  LAYOUT-->
+    <link rel="stylesheet" href="./client/css/layout/desktop.css" />
     <link rel="stylesheet" href="./client/css/layout/laptop.css" />
+    <link rel="stylesheet" href="./client/css/layout/tablet.css" />
+    <link rel="stylesheet" href="./client/css/layout/mobile.css" />
+
+    <!-- CSS  HOME-->
+    <link rel="stylesheet" href="./client/css/blog/mobile.css" />
+    <link rel="stylesheet" href="./client/css/blog/tablet.css" />
+    <link rel="stylesheet" href="./client/css/blog/laptop.css" />
+    <link rel="stylesheet" href="./client/css/blog/desktop.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
 
     <!-- Google - Outfit Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,71 +45,409 @@
     <title>Mont-Royal Canada</title>
   </head>
   <body>
-    <section class="subheader">
-      <div class="contact-us">
-        <a href="#"> Contact us</a>
-      </div>
 
-      <div class="search-language">
-        <div class="search">
-          <div class="search-box">
-            <input placeholder="Search..." class="search-input" type="text" />
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+    
+    <header>
+      <aside class="subheader">
+        <div class="contact-us">
+          <a href="#"> Contact us</a>
+        </div>
 
-            <ul class="search-result">
+        <div class="search-language">
+          <div class="search">
+            <div class="search-box">
+              <input placeholder="Search..." class="search-input" type="text" />
+
+              <ul class="search-result">
+                <li>
+                  <a href="#">
+                    <span class="title">Service Consalting</span>
+                    <span class="map">Service</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">a</span>
+                    <span class="map">b</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="search-btn">
+              <p>Search</p>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-times"></i>
+            </div>
+          </div>
+
+          <p>|</p>
+
+          <div class="language-picker">
+            <div class="selected-language" onclick="toggleDropdown()">
+              <div class="lang">
+                <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
+                <span>EN</span>
+              </div>
+              <i class="fa-solid fa-caret-down arrow"></i>
+            </div>
+            <div class="dropdown">
+              <div class="option" onclick="selectLanguage('EN')">
+                <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
+                <span>EN</span>
+              </div>
+              <div class="option" onclick="selectLanguage('AZ')">
+                <img src="https://flagcdn.com/az.svg" alt="AZ" class="flag" />
+                <span>AZ</span>
+              </div>
+              <div class="option" onclick="selectLanguage('RU')">
+                <img src="https://flagcdn.com/ru.svg" alt="RU" class="flag" />
+                <span>RU</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="header">
+        <div class="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="logo">
+          <a href="./home.html">
+            <img src="./client/images/settings/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li class="menu-list-li">
+            <a href="#" class="parent-row" href="#">Home</a>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">About Us</a>
+            <ul class="sub-list">
+              <li><a href="#">Our Mission & Key Policy</a></li>
+              <li><a href="#">Association</a></li>
+              <li><a href="#">Contact Us</a></li>
               <li>
-                <a href="#">
-                  <span class="title">Service Consalting</span>
-                  <span class="map">Service</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="title">a</span>
-                  <span class="map">b</span>
-                </a>
+                <a href="#"
+                  >Privacy Policy <i class="fa-solid fa-file-pdf"></i
+                ></a>
               </li>
             </ul>
-          </div>
+          </li>
 
-          <div class="search-btn">
-            <p>Search</p>
-            <i class="fa-solid fa-magnifying-glass"></i>
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Services</a>
+            <ul class="sub-list">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Market Entry Assistance</a></li>
+              <li><a href="#">Import of Country Products</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Doing Business</a>
+            <ul class="sub-list">
+              <li><a href="#">Business in Canada</a></li>
+              <li><a href="#">Business in Azerbaijan</a></li>
+              <li><a href="#">Sector of Activity</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Partnerships</a>
+            <ul class="sub-list">
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">How to Become a Partner</a></li>
+              <li><a href="#">Benefits of Partnership</a></li>
+              <li><a href="#">Supplier Partnerships</a></li>
+              <li><a href="#">Distribution Partnerships</a></li>
+              <li><a href="#">Strategic Alliances</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="./blog.html" class="parent-row" href="#">Business News</a>
+          </li>
+        </ul>
+
+        <div class="auth">
+          <div class="auth-user">
+            <a href="">Log in</a>
+            <p>|</p>
+            <a href="">Sign up</a>
+          </div>
+        </div>
+
+        <div class="empty"></div>
+      </div>
+
+      <div class="burger-menu">
+        <div class="menu-header">
+          <div class="close">
             <i class="fa-solid fa-times"></i>
           </div>
+
+          <div class="logo">
+            <a href="">
+              <img src="./client/images/settings/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="empty"></div>
         </div>
 
-        <p>|</p>
+        <div class="menu-list">
+          <ul class="pages">
+            <li class="menu-list-li">
+              <a href="#">Home</a>
+            </li>
 
-        <div class="language-picker">
-          <div class="selected-language" onclick="toggleDropdown()">
-            <div class="lang">
-              <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
-              <span>EN</span>
-            </div>
-            <i class="fa-solid fa-caret-down arrow"></i>
-          </div>
-          <div class="dropdown">
-            <div class="option" onclick="selectLanguage('EN')">
-              <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
-              <span>EN</span>
-            </div>
-            <div class="option" onclick="selectLanguage('AZ')">
-              <img src="https://flagcdn.com/az.svg" alt="AZ" class="flag" />
-              <span>AZ</span>
-            </div>
-            <div class="option" onclick="selectLanguage('RU')">
-              <img src="https://flagcdn.com/ru.svg" alt="RU" class="flag" />
-              <span>RU</span>
+            <li class="menu-list-li">
+              <a href="#">About Us</a>
+
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Our Mission & Key Policy</a>
+                </li>
+                <li>
+                  <a href="#">Association</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Services</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Market Entry Assistance</a>
+                </li>
+                <li>
+                  <a href="#">Import of Country Products</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Doing Business</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Business in Canada</a>
+                </li>
+                <li>
+                  <a href="#">Business in Azerbaijan</a>
+                </li>
+                <li>
+                  <a href="#">Sector of Activity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Partnerships</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Partners</a>
+                </li>
+                <li>
+                  <a href="#">How to Become a Partner</a>
+                </li>
+                <li>
+                  <a href="#">Benefits of Partnership</a>
+                </li>
+                <li>
+                  <a href="#">Supplier Partnerships</a>
+                </li>
+                <li>
+                  <a href="#">Distribution Partnerships</a>
+                </li>
+                <li>
+                  <a href="#">Strategic Alliances</a>
+                </li>
+                <li>
+                  <a href="#">FAQs</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Partnerships</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Events</a>
+                </li>
+                <li>
+                  <a href="#">Networking Opportunities</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="./blog.html">Business News</a>
+            </li>
+          </ul>
+
+          <div class="auth">
+            <i class="fa-solid fa-user"></i>
+            <div class="auth-user">
+              <a href="">Log in</a>
+              <p>|</p>
+              <a href="">Sign up</a>
             </div>
           </div>
         </div>
+      </div>
 
+  
 
+      <section class="main-section">
+        <div class="container">
+          <h1 class="title">Business News</h1>
+          <p class="description">
+            The latest news and insights on global business opportunities,
+            collaboration between Canada and Azerbaijan, international trade,
+            and innovations.
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <section class="section navigator">
+      <div class="container">
+        <ul class="navigator-list">
+          <li class="parent">
+            <a href="./home.html">Home</a>
+          </li>
+          <p>/</p>
+          <li class="target">
+            <a href="#">Page</a>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <script></script>
 
+
+    <footer>
+      <div
+        class="footer-main"
+        style="background-image: url(./client/images/settings/footer-bg.png)"
+      >
+        <div class="navbar contact">
+          <div class="logo">
+            <a href="">
+              <img src="./client/images/settings/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <ul class="con-list">
+            <li>
+              <a href="mailto:info@montroyalcanada.com"
+                >info@montroyalcanada.com</a
+              >
+            </li>
+            <li><a href="tel:Tel:+1505005050">+1505005050</a></li>
+            <li><a href="googlemap">Laval, QC H7N 0E4, Canada</a></li>
+          </ul>
+
+          <ul class="social-platforms">
+            <li>
+              <a href="#">
+                <p><i class="fab fa-facebook"></i></p
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-instagram"></i></p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-x-twitter"></i></p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-linkedin"></i></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar">
+          <span> About us </span>
+          <ul class="menu">
+            <li><a href="#">Our Mission & Key Policy</a></li>
+            <li><a href="#">Association</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="navbar">
+          <span> Services </span>
+          <ul class="menu">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Market Entry Assistance</a></li>
+            <li><a href="#">Import of Country Products</a></li>
+          </ul>
+        </div>
+        <div class="navbar">
+          <span> Doing Business </span>
+          <ul class="menu">
+            <li><a href="#">Business in Canada</a></li>
+            <li><a href="#">Business in Azerbaijan</a></li>
+            <li><a href="#">Sector of Activity</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar">
+          <a href="#" class="country">
+            <img src="https://flagcdn.com/ca.svg" alt="" />
+            <p>Business in Canada</p>
+          </a>
+          <a href="#" class="country">
+            <img src="https://flagcdn.com/az.svg" alt="" />
+            <p>Business in Azerbaijan</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-development">
+        <p>&copy; 2025 Mont-Royal Canada MMC. All Rights Reserved.</p>
+        <p>
+          Developed by:
+          <a
+            href="https://www.linkedin.com/in/tamerlan-alliyev"
+            target="_blank"
+            title="Tamerlan Aliyev"
+            >Tamerlan Aliyev</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./client/js/home.js"></script>
     <script src="./client/js/layout.js"></script>
   </body>
 </html>

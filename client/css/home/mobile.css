@@ -76,9 +76,9 @@
 .main-slider .swiper .swiper-slide .box {
   position: absolute;
   left: 5%;
-  bottom: 15%;
+  bottom: 12%;
   padding: var(--padding-m);
-  max-width: 52%;
+  max-width: 90%;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -304,13 +304,13 @@
   background: var(--color-white);
   border-radius: var(--border-radius-l);
   height: 100%;
-  min-height: 338px; /**/
+
   transition: all 0.3s ease;
 }
 
 .section-services .swiper-slide.card:hover {
-  border-bottom: 8px solid var(--color-blue-soft);
-  box-shadow: 0px 5px 3.9px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 0px 0px var(--color-blue-soft), 0px 4px 30px 0px rgba(6, 22, 48, 0.40);
+
 }
 
 .section-services .swiper-slide.card .details {
@@ -335,7 +335,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   line-height: 1.5;
 }
 .section-services .swiper-slide.card .icon {
@@ -485,15 +485,13 @@
   border-radius: var(--border-radius-l);
   width: 100%; /**/
   height: 100%;
-  min-height: 410px; /**/
   transition: all 0.3s ease;
   overflow: hidden;
   position: relative;
 }
 
 .section-blogs .swiper-slide.card:hover {
-  border-bottom: 8px solid var(--color-blue-soft);
-  box-shadow: 0px 5px 3.9px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 0px 0px var(--color-blue-soft);
 }
 
 .section-blogs .swiper-slide.card .date {
@@ -506,7 +504,8 @@
   top: 3%;
   left: 3%;
   border-radius: var(--border-radius-xs);
-  padding: var(--padding-xs);
+  padding: var(--padding-date);
+
   font-size: var(--font-size-s);
   gap: var(--gap-s);
 }
@@ -534,7 +533,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   line-height: 1.5;
 }
 .section-blogs .swiper-slide.card .image {

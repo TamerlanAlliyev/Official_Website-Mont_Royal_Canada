@@ -1,0 +1,49 @@
+@media (min-width: 1280px) {
+
+    /*
+========================================
+         SECTION: BLOGS  -  START
+========================================
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-row: auto;
+  gap: var(--gap-main);
+  row-gap: var(--gap-xl);
+}
+
+
+
+.item:nth-child(n + 2) {
+  padding: var(--padding-card);
+  max-height: max-content;
+
+}
+
+.item:nth-child(1) {
+  grid-row: 1 / 5;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* ==================== CONTAINER BLOGS - START ==================== */
+
+
+.section-blogs-filters .grid-container .item.blogs {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ==================== CONTAINER BLOGS - END ==================== */
+
+
+
+/*
+========================================
+         SECTION: BLOGS  -  END
+========================================
+*/
+}

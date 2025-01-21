@@ -46,33 +46,37 @@ function toggleDropdown() {
 
 
 
-  const searchBox = document.querySelector(".search");
-  const searchBtn = document.querySelector(".search-btn");
-  const searchInput = document.querySelector(".search-input");
-  const searchResult = document.querySelector(".search-result");
-  const searchInputBox = document.querySelector(".search-box");
-
-  searchBtn.addEventListener("click", () => {
-    searchBox.classList.toggle("active");
-    searchInputBox.classList.remove("active");
-    searchInput.value = "";
+  const searchBoxLanguage = document.querySelector(".search-language .search");
+  const searchBtnLanguage = document.querySelector(".search-language .search-btn");
+  const searchInputLanguage = document.querySelector(".search-language .search-input");
+  const searchResultLanguage = document.querySelector(".search-language .search-result");
+  const searchInputBoxLanguage = document.querySelector(".search-language .search-box");
+  
+  searchBtnLanguage.addEventListener("click", () => {
+    searchBoxLanguage.classList.toggle("active");
+    searchInputBoxLanguage.classList.remove("active");
+    searchInputLanguage.value = "";
+ 
   });
-
-  searchInput.addEventListener("input", (event) => {
-    event.stopPropagation();
-    searchInputBox.classList.add("active");
+  
+  searchInputLanguage.addEventListener("input", () => {
+    searchInputBoxLanguage.classList.add("active");
+    if(searchInputLanguage.value==""){
+      searchInputBoxLanguage.classList.remove("active");
+      }
   });
-
+  
   document.addEventListener("click", (event) => {
     if (
-      !searchInputBox.contains(event.target) &&
-      !searchBtn.contains(event.target)
+      !searchInputBoxLanguage.contains(event.target) &&
+      !searchBtnLanguage.contains(event.target)
     ) {
-      searchBox.classList.remove("active");
-      searchInputBox.classList.remove("active");
-      searchInput.value = "";
+      searchBoxLanguage.classList.remove("active");
+      searchInputBoxLanguage.classList.remove("active");
+      searchInputLanguage.value = "";
     }
   });
+  
 
 
 
@@ -196,3 +200,18 @@ menuItems.forEach((menuItem) => {
     });
   }
 });
+
+
+
+
+
+
+
+// LOADING
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  }, 1000);
+});
+

@@ -24,9 +24,7 @@
 .section-services .container .swiper-pagination-fraction {
   height: 80px; /**/
 }
-.section-services .swiper-slide.card {
-  min-height: 410px; /**/
-}
+
 .section-services .swiper-slide.card .icon img {
   width: 90px;/**/
   height: 90px;/**/
@@ -48,9 +46,6 @@
 .section-blogs .container .swiper-pagination-custom,
 .section-blogs .container .swiper-pagination-fraction {
   height: 80px; /**/
-}
-.section-blogs .swiper-slide.card {
-  min-height: 530px; /**/
 }
 
 

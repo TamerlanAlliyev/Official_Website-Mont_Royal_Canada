@@ -1,0 +1,61 @@
+@media (min-width: 769px) {
+
+/*
+========================================
+         SECTION: BLOGS  -  START
+========================================
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: auto;
+  gap: var(--gap-main);
+  row-gap: var(--gap-xl);
+}
+
+.item:nth-child(n + 2) {
+  padding: var(--padding-card);
+}
+
+.item:nth-child(1) {
+  order: 3;
+}
+.item:nth-child(2) {
+  order: 1;
+}
+.item:nth-child(3) {
+  order: 2;
+}
+.item:nth-child(4) {
+  order: 4;
+}
+.item:nth-child(5) {
+  order: 5;
+}
+
+
+
+/* ==================== CONTAINER BLOGS - START ==================== */
+
+
+.section-blogs-filters .grid-container .item.blogs {
+  grid-template-columns: repeat(2, 1fr);
+}
+.section-blogs-filters .grid-container .item.blogs .card:nth-child(n + 4) {
+display: flex;
+}
+.section-blogs-filters .grid-container .item.blogs .card:nth-child(n + 5) {
+  display: none;
+  }
+
+
+/* ==================== CONTAINER BLOGS - END ==================== */
+
+
+
+/*
+========================================
+         SECTION: BLOGS  -  END
+========================================
+*/
+}
