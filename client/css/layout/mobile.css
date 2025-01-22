@@ -159,6 +159,7 @@ body {
 
   --padding-card: 32px 20px;
   --padding-date: 4px 6px;
+  --padding-acordion: 20px;
 
   --padding-xs: 8px;
   --padding-s: 10px;
@@ -189,6 +190,7 @@ body {
 
   --pagination-size: 8px;
   --pagination-active-size: 10px;
+  --pagination-button-size: 30px;
 }
 
 @media (max-width: 768px) {
@@ -246,7 +248,7 @@ body {
 
     --padding-card: 34px 22px;
     --padding-date: 4px 6px;
-
+    --padding-acordion: 22px;
 
     --padding-xs: 10px; /**/
     --padding-s: 12px; /**/
@@ -277,6 +279,8 @@ body {
 
     --pagination-size: 10px;
     --pagination-active-size: 12px;
+  --pagination-button-size: 34px;
+
   }
 
   .footer-main .navbar {
@@ -310,7 +314,7 @@ body {
 
     --padding-card: 36px 24px;
     --padding-date: 6px 8px;
-
+    --padding-acordion: 24px;
 
 
     --padding-xs: 12px; /**/
@@ -341,6 +345,8 @@ body {
 
     --pagination-size: 12px;
     --pagination-active-size: 14px;
+  --pagination-button-size: 38px;
+
   }
   .footer-main .navbar {
     min-width: 18%;
@@ -373,6 +379,8 @@ body {
 
     --padding-card: 38px 28px;
     --padding-date: 8px 12px;
+    --padding-acordion: 28px;
+
 
     --padding-xs: 14px; /**/
     --padding-s: 16px; /**/
@@ -402,6 +410,8 @@ body {
 
     --pagination-size: 14px;
     --pagination-active-size: 16px;
+  --pagination-button-size: 42px;
+
   }
   .footer-main .navbar {
     gap: var(--gap-s);
