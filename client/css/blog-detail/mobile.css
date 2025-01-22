@@ -453,49 +453,8 @@
   object-fit: cover;
 }
 
-/* CK EDITOR --- POSTS */
 
-.post h1 {
-  font-size: 2em;
-  color: #2c3e50;
-  /* margin-bottom: 20px; */
-}
 
-.post h2 {
-  font-size: 2em;
-  color: #34495e;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.post p {
-  font-size: 1em;
-  margin-bottom: 15px;
-}
-
-.post ul {
-  margin: 15px 0;
-  padding-left: 20px;
-}
-
-.post ul li {
-  margin-bottom: 10px;
-  font-size: 1em;
-}
-
-.post strong {
-  color: #2980b9;
-}
-
-/* CK EDITOR --- POSTS */
-/* .galery {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-around;
-  height: 100%;
-  width: 100%;
-  max-width: 1090px; 
-} */
 
 .section-blogs-filters .blogs-container .galery {
   display: flex;

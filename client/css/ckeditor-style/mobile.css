@@ -1,0 +1,36 @@
+/* CK EDITOR --- POSTS */
+
+.ck-post h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .ck-post h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .ck-post p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .ck-post ul {
+    margin: 15px 0;
+    padding-left: 20px;
+list-style: none;
+}
+  
+  .ck-post ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  .ck-post strong {
+    color: #2980b9;
+  }
+  
+  /* CK EDITOR --- POSTS */
