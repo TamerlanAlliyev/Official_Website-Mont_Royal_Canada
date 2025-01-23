@@ -1,7 +1,7 @@
 .faq-list {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-main);
+  gap: var(--gap-card-main);
   width: 100%;
 }
 

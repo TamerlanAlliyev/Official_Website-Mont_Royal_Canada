@@ -1,0 +1,235 @@
+@import url(../layout/mobile.css);
+
+/*
+========================================
+         SECTION: PARTNERS  -  START
+========================================
+*/
+
+.partners .container .btn-medium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.partners .container .partner-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  row-gap: var(--gap-l);
+  column-gap: var(--gap-l);
+}
+
+.partners .container .partner-list li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners .container .partner-list li:nth-child(n + 7) {
+  display: none;
+}
+
+.partners .container .partner-list li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1.5 / 1;
+  border: 1px solid var(--color-footer);
+
+  border-radius: var(--border-radius-xl);
+  transition: all 0.8s ease;
+}
+
+.partners .container .partner-list li a:hover {
+  background: var(--color-white);
+  border: none;
+  box-shadow: 1px 1px 25px 10px rgba(9, 44, 108, 0.2);
+  transform: scale(1.05);
+}
+
+.partners .container .partner-list li a img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*
+========================================
+         SECTION: PARTNERS  -  END
+========================================
+*/
+
+/*
+========================================
+    SECTION: PARTNER-DETAIL  -  START
+========================================
+*/
+
+.partner {
+  display: flex;
+  flex-direction: column; /**/
+  gap: var(--gap-main);
+  justify-content: space-between;
+}
+/* ----------- image ----------- */
+
+.partner .partner-image {
+  display: flex;
+  width: 100%; /**/
+  height: max-content;
+  padding: var(--padding-acordion);
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
+  border: 1px solid var(--color-footer);
+  aspect-ratio: 1/1;
+}
+
+.partner .partner-image img {
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+/* ----------- image ----------- */
+
+/* ----------- info-name ----------- */
+.partner .info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+.partner .info .info-head {
+  display: flex;
+  flex-direction: column; /**/
+  justify-content: space-between;
+  gap: var(--gap-xl);/**/
+}
+
+.partner .info .info-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--gap-l);
+  width: 100%;
+}
+
+.partner .info .info-name h4 {
+  font-size: var(--font-size-header);
+  color: var(--color-dark-blue);
+}
+
+.partner .info .info-name .category {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+  width: 100%;
+}
+
+.partner .info .info-name .category div {
+  display: flex;
+  gap: var(--gap-xl);
+  width: 100%;
+}
+
+.partner .info .info-name .category div p {
+  /* width: 16%; */ /**/
+  color: var(--color-grey);
+  min-width: max-content; /**/
+}
+
+.partner .info .info-name .category div span {
+  /* width: 70%; */ /**/
+  color: var(--color-blue);
+}
+/* ----------- info-name ----------- */
+
+/* ----------- info-social ----------- */
+
+.partner .info .info-social {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: var(--gap-s);
+  width: max-content;
+  background: var(--color-blue-soft);
+  padding: var(--padding-card);
+  border-radius: var(--border-radius-s);
+  width: 100%;/**/
+}
+
+.partner .info .info-social a {
+  display: flex;
+  width: max-content;
+  gap: var(--gap-s);
+  align-items: center;
+  color: var(--color-white-soft);
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.partner .info .info-social a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-white);
+  transition: width 0.3s ease;
+}
+
+.partner .info .info-social a:hover::after {
+  width: 100%;
+}
+.partner .info .info-social a:hover {
+  color: var(--color-white);
+}
+
+/* ----------- info-social ----------- */
+.partner .info .descripton {
+  font-size: var(--font-size-l);
+  color: var(--color-grey);
+  line-height: 1.5;
+}
+
+.companionship {
+  font-size: var(--font-size-l);
+  line-height: 1.5;
+}
+
+.successes-box {
+  display: flex;
+  gap: var(--gap-m);
+  flex-direction: column;
+  align-items: baseline;
+  font-size: var(--font-size-l);
+}
+
+.success {
+  display: flex;
+  gap: var(--gap-s);
+  align-items: baseline;
+  font-style: italic;
+}
+
+.success i {
+  color: var(--color-sky-blue);
+}
+
+.section-header.part {
+  align-items: start;
+}
+/*
+========================================
+    SECTION: PARTNER-DETAIL  -  END
+========================================
+*/

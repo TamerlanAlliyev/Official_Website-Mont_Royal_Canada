@@ -37,7 +37,7 @@
 .section-blogs-filters .grid-container .blogs {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: var(--gap-xl);
+  gap: var(--gap-card-main);
 }
 
 .section-blogs-filters .grid-container .blogs .card:nth-child(n + 5) {

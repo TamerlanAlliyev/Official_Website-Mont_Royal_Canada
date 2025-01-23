@@ -1,0 +1,21 @@
+@media (min-width: 1024px) {
+
+
+    /*
+    ========================================
+             SECTION: PARTNERS  -  START
+    ========================================
+    */
+    
+    .partners .container .partner-list {
+      grid-template-columns: repeat(4, 1fr) ;
+    }
+    
+    /*
+    ========================================
+             SECTION: PARTNERS  -  END
+    ========================================
+    */
+    
+    }
+    

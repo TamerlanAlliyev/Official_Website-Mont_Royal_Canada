@@ -1,0 +1,68 @@
+@media (min-width: 1024px) {
+
+/*
+========================================
+         SECTION: PARTNERS  -  START
+========================================
+*/
+
+.partners .container .partner-list {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.partners .container .partner-list li:nth-child(n - 13) {
+  display: flex ;
+}
+
+.partners .container .partner-list li:nth-child(n + 13) {
+  display: none;
+}
+
+/*
+========================================
+         SECTION: PARTNERS  -  END
+========================================
+*/
+
+
+
+
+
+  /*
+========================================
+    SECTION: PARTNER-DETAIL  -  START
+========================================
+*/
+
+
+/* ----------- image ----------- */
+
+.partner .partner-image {
+  width: 50%; /**/
+}
+
+
+.partner .info .info-head {
+  flex-direction: row; /**/ /**/
+}
+
+.partner .info .info-name {
+  justify-content: start;
+}
+
+/* ----------- info-name ----------- */
+
+/* ----------- info-social ----------- */
+
+.partner .info .info-social {
+  width: max-content;
+}
+/*
+========================================
+  SECTION: PARTNER-DETAIL  -  END
+========================================
+*/
+
+    
+    }
+    
