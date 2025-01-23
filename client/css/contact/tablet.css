@@ -1,0 +1,23 @@
+@media (min-width: 769px) {
+  /*
+========================================
+         SECTION: CONTACT  -  START
+========================================
+*/
+.contact-form {
+  flex-direction: row; /**/
+}
+
+.contact-form .message-form form {
+  min-width: 450px; /**/
+}
+.contact-form .message-form form .column .col {
+  flex-direction: column; /**/
+}
+
+  /*
+========================================
+         SECTION: CONTACT  -  END
+========================================
+*/
+}

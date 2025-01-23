@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="./client/css/layout/tablet.css" />
     <link rel="stylesheet" href="./client/css/layout/mobile.css" />
 
-    <!-- CSS  PARTNER -->
-    <link rel="stylesheet" href="./client/css/partner/mobile.css" />
-    <link rel="stylesheet" href="./client/css/partner/tablet.css" />
-    <link rel="stylesheet" href="./client/css/partner/laptop.css" />
-    <link rel="stylesheet" href="./client/css/partner/desktop.css" />
+    <!-- CSS  CONTACT -->
+    <link rel="stylesheet" href="./client/css/contact/mobile.css" />
+    <link rel="stylesheet" href="./client/css/contact/tablet.css" />
+    <link rel="stylesheet" href="./client/css/contact/laptop.css" />
+    <link rel="stylesheet" href="./client/css/contact/desktop.css" />
 
     <meta
       name="viewport"
@@ -340,12 +340,112 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section contacts">
       <div class="container">
-
-        <div class="section-header one">
+        <div class="head">
+          <div class="section-header one">
             <h3 class="title">Need our help? Contact us!</h3>
           </div>
+          <p>
+            Have a question? Need help? You can find membership information,
+            events, news, pictures, M2M discounts on our website. If you can't
+            find what you are looking for, we'd be happy to point you in the
+            right direction. Please feel free to drop us an email or even give
+            us a call at +1 50 500 50 50
+          </p>
+        </div>
+
+        <div class="contact-form">
+          <div class="contact-message">
+            <div class="contact">
+              <div class="section-header one">
+                <h3 class="title">Contact</h3>
+              </div>
+
+              <ul class="contact-list">
+                <li>
+                  <a href="mailto:info@montroyalcanada.com"
+                    >info@montroyalcanada.com</a
+                  >
+                </li>
+                <li><a href="tel:Tel:+1505005050">+1505005050</a></li>
+                <li><a href="googlemap">Laval, QC H7N 0E4, Canada</a></li>
+              </ul>
+            </div>
+
+            <div class="social">
+              <div class="section-header one">
+                <h3 class="title">Follow Us</h3>
+              </div>
+
+              <ul class="social-platforms">
+                <li>
+                  <a href="#">
+                    <p><i class="fab fa-facebook"></i></p
+                  ></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p><i class="fab fa-instagram"></i></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p><i class="fab fa-x-twitter"></i></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p><i class="fab fa-linkedin"></i></p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="message-form">
+            <div class="section-header one">
+              <h3 class="title">Message</h3>
+            </div>
+
+            <form action="">
+                <div class="column">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="example@email.com" required />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="company">Company Name</label>
+                      <input type="text" id="company" name="company" placeholder="Your Company Name" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="position">Position</label>
+                      <input type="text" id="position" name="position" placeholder="Your Position" required />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn-large" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+              
+          </div>
+        </div>
       </div>
     </section>
 
@@ -365,7 +465,6 @@
         </div>
       </div>
     </section>
-
 
     <footer>
       <div
@@ -466,23 +565,6 @@
       </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-      let selection = document.querySelector(".selection");
-      let selectionBtn = document.querySelector(".selection-selected");
-
-      selectionBtn.addEventListener("click", () => {
-        selection.classList.toggle("active");
-      });
-
-      window.addEventListener("click", (e) => {
-        if (!selection.contains(e.target)) {
-          selection.classList.remove("active");
-        }
-      });
-    </script>
     <script src="./client/js/layout.js"></script>
   </body>
 </html>

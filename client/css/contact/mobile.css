@@ -1,0 +1,228 @@
+@import url(../layout/mobile.css);
+
+/*
+========================================
+         SECTION: CONTACT  -  START
+========================================
+*/
+/* ---------- CONTACT ---------- */
+
+.contacts .container {
+  display: flex;
+}
+
+.contacts .container .head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+.contacts .container .head p {
+  font-size: var(--font-size-m);
+  color: var(--color-grey);
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /**/
+  gap: var(--gap-main);
+}
+
+.contact-form .contact-message {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-main);
+}
+
+.contact-form .contact-message .contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+.contact-form .contact-message .contact .contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+  list-style: none;
+}
+
+.contact-form .contact-message .contact li a {
+  font-size: var(--font-size-m);
+  color: var(--color-grey);
+  text-decoration: none;
+  display: flex;
+  width: max-content;
+  gap: var(--gap-s);
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.contact-form .contact-message .contact li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-black);
+  transition: all 0.3s ease;
+}
+
+.contact-form .contact-message .contact li a:hover::after {
+  width: 100%;
+}
+.contact-form .contact-message .contact li a:hover {
+  color: var(--color-black);
+}
+/* ---------- CONTACT ---------- */
+
+/* ---------- SOCIAL ---------- */
+
+.contact-form .contact-message .social {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  list-style: none;
+}
+
+.social-platforms {
+  list-style: none;
+  display: flex;
+  gap: var(--gap-xl);
+  align-items: center;
+}
+
+.social-platforms li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.social-platforms a {
+  color: var(--color-white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-blue);
+  padding: var(--padding-xs);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.social-platforms a:hover {
+  background: var(--color-blue-soft);
+}
+
+.social-platforms p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------- SOCIAL ---------- */
+
+/* ---------- MESSAGE ---------- */
+
+.contact-form .message-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  list-style: none;
+}
+
+.contact-form .message-form form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  background: var(--color-white);
+  padding: var(--padding-card);
+  /* min-width: 500px; */ /**/
+  width: 100%;
+  border-radius: var(--border-radius-l);
+}
+
+.contact-form .message-form form .column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+.contact-form .message-form form .column .col {
+  display: flex;
+  flex-direction: column; /**/
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.contact-form .message-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+  width: 100%;
+}
+
+.contact-form .message-form form .form-group label {
+  color: var(--color-blue);
+  font-size: var(--font-size-m);
+}
+
+.contact-form .message-form form input,
+.contact-form .message-form form textarea {
+  padding: var(--padding-input);
+  border-radius: var(--border-radius-s);
+  border: 1px solid var(--color-grey);
+  outline: none;
+  font-size: var(--font-size-m);
+}
+
+.contact-form .message-form form input::placeholder,
+.contact-form .message-form form textarea::placeholder {
+  color: var(--color-grey);
+  font-size: var(--font-size-s);
+}
+
+.contact-form .message-form form textarea {
+  min-width: max-content;
+  height: 150px;
+  min-height: max-content;
+  resize: vertical;
+}
+
+.contact-form .message-form form button {
+  width: 1005;
+  display: flex;
+  padding: var(--padding-button-medium);
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-l);
+  border-radius: var(--border-radius-s);
+  background: var(--color-blue-soft);
+  font-size: var(--font-size-m);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s ease !important;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form .message-form form button:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+/* ---------- MESSAGE ---------- */
+
+/*
+========================================
+         SECTION: CONTACT  -  END
+========================================
+*/
