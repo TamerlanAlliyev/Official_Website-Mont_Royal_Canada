@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS  LAYOUT-->
+    <link rel="stylesheet" href="./client/css/layout/desktop.css" />
+    <link rel="stylesheet" href="./client/css/layout/laptop.css" />
+    <link rel="stylesheet" href="./client/css/layout/tablet.css" />
+    <link rel="stylesheet" href="./client/css/layout/mobile.css" />
+
+    <!-- CSS  HOME-->
+    <link rel="stylesheet" href="./client/css/event/mobile.css" />
+    <link rel="stylesheet" href="./client/css/event/tablet.css" />
+    <link rel="stylesheet" href="./client/css/event/laptop.css" />
+    <link rel="stylesheet" href="./client/css/event/desktop.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+
+    <!-- Google - Outfit Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CDN JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <title>Mont-Royal Canada</title>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+
+    <header>
+      <aside class="subheader">
+        <div class="contact-us">
+          <a href="#"> Contact us</a>
+        </div>
+
+        <div class="search-language">
+          <div class="search">
+            <div class="search-box">
+              <input placeholder="Search..." class="search-input" type="text" />
+
+              <ul class="search-result">
+                <li>
+                  <a href="#">
+                    <span class="title">Service Consalting</span>
+                    <span class="map">Service</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">a</span>
+                    <span class="map">b</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="search-btn">
+              <p>Search</p>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-times"></i>
+            </div>
+          </div>
+
+          <p>|</p>
+
+          <div class="language-picker">
+            <div class="selected-language" onclick="toggleDropdown()">
+              <div class="lang">
+                <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
+                <span>EN</span>
+              </div>
+              <i class="fa-solid fa-caret-down arrow"></i>
+            </div>
+            <div class="dropdown">
+              <div class="option" onclick="selectLanguage('EN')">
+                <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
+                <span>EN</span>
+              </div>
+              <div class="option" onclick="selectLanguage('AZ')">
+                <img src="https://flagcdn.com/az.svg" alt="AZ" class="flag" />
+                <span>AZ</span>
+              </div>
+              <div class="option" onclick="selectLanguage('RU')">
+                <img src="https://flagcdn.com/ru.svg" alt="RU" class="flag" />
+                <span>RU</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="header">
+        <div class="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="logo">
+          <a href="">
+            <img src="./client/images/settings/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li class="menu-list-li">
+            <a href="./home.html" class="parent-row" href="#">Home</a>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">About Us</a>
+            <ul class="sub-list">
+              <li><a href="./our-mission.html">Our Mission & Key Policy</a></li>
+              <li><a href="./association.html">Association</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li>
+                <a href="./privacy-policy.html"
+                  >Privacy Policy <i class="fa-solid fa-file-pdf"></i
+                ></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Services</a>
+            <ul class="sub-list">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Market Entry Assistance</a></li>
+              <li><a href="#">Import of Country Products</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Doing Business</a>
+            <ul class="sub-list">
+              <li><a href="#">Business in Canada</a></li>
+              <li><a href="#">Business in Azerbaijan</a></li>
+              <li><a href="#">Sector of Activity</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Partnerships</a>
+            <ul class="sub-list">
+              <li><a href="./partner.html">Partners</a></li>
+              <li>
+                <a href="./partner-become.html">How to Become a Partner</a>
+              </li>
+              <li>
+                <a href="./partner-benefits.html">Benefits of Partnership</a>
+              </li>
+              <li>
+                <a href="./partner-supplier.html">Supplier Partnerships</a>
+              </li>
+              <li>
+                <a href="./partner-distribution.html"
+                  >Distribution Partnerships</a
+                >
+              </li>
+              <li>
+                <a href="./partner-strategic.html">Strategic Alliances</a>
+              </li>
+              <li><a href="./Faq.html">FAQs</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="./blog.html" class="parent-row">Business News</a>
+          </li>
+        </ul>
+
+        <div class="auth">
+          <div class="auth-user">
+            <a href="">Log in</a>
+            <p>|</p>
+            <a href="">Sign up</a>
+          </div>
+        </div>
+
+        <div class="empty"></div>
+      </div>
+
+      <div class="burger-menu">
+        <div class="menu-header">
+          <div class="close">
+            <i class="fa-solid fa-times"></i>
+          </div>
+
+          <div class="logo">
+            <a href="">
+              <img src="./client/images/settings/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="empty"></div>
+        </div>
+
+        <div class="menu-list">
+          <ul class="pages">
+            <li class="menu-list-li">
+              <a href="./home.html">Home</a>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">About Us</a>
+
+              <ul class="sub-list">
+                <li>
+                  <a href="./our-mission.html">Our Mission & Key Policy</a>
+                </li>
+                <li>
+                  <a href="./association.html">Association</a>
+                </li>
+                <li>
+                  <a href="./contact.html">Contact us</a>
+                </li>
+                <li>
+                  <a href="./privacy-policy.html">Privacy policy</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Services</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Market Entry Assistance</a>
+                </li>
+                <li>
+                  <a href="#">Import of Country Products</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Doing Business</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Business in Canada</a>
+                </li>
+                <li>
+                  <a href="#">Business in Azerbaijan</a>
+                </li>
+                <li>
+                  <a href="#">Sector of Activity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Partnerships</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="./partner.html">Partners</a>
+                </li>
+                <li>
+                  <a href="./partner-become.html">How to Become a Partner</a>
+                </li>
+                <li>
+                  <a href="./partner-benefits.html">Benefits of Partnership</a>
+                </li>
+                <li>
+                  <a href="./partner-supplier.html">Supplier Partnerships</a>
+                </li>
+                <li>
+                  <a href="./partner-distribution.html"
+                    >Distribution Partnerships</a
+                  >
+                </li>
+                <li>
+                  <a href="./partner-strategic.html">Strategic Alliances</a>
+                </li>
+                <li>
+                  <a href="./Faq.html">FAQs</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Events</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Events</a>
+                </li>
+                <li>
+                  <a href="#">Networking Opportunities</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="./blog.html">Business News</a>
+            </li>
+          </ul>
+
+          <div class="auth">
+            <i class="fa-solid fa-user"></i>
+            <div class="auth-user">
+              <a href="">Log in</a>
+              <p>|</p>
+              <a href="">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="main-section">
+        <div class="container">
+          <h1 class="title">Business News</h1>
+          <p class="description">
+            The latest news and insights on global business opportunities,
+            collaboration between Canada and Azerbaijan, international trade,
+            and innovations.
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <section class="section navigator">
+      <div class="container">
+        <ul class="navigator-list">
+          <li class="parent">
+            <a href="./home.html">Home</a>
+          </li>
+          <p>/</p>
+          <li class="parent">
+            <a href="./home.html">Partnerships</a>
+          </li>
+          <p>/</p>
+          <li class="target">
+            <a href="./blog.html">Blue Skincare</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <a href="#" class="con-row section-header">
+          <h3 class="title">Upcoming trade events</h3>
+          <h4 class="sub-title">Upcoming trade events!</h4>
+        </a>
+
+        <div class="card">
+          <div class="event-head">
+            <div class="card-image">
+              <img
+                src="./client/images/content/welcome/c1a706b6fa8c0504949280ce496d11af.jpg"
+                alt="event"
+              />
+            </div>
+
+            <div class="card-content">
+              <h4 class="card-title">
+                The Mont-Royal Canadian Business Showcase
+              </h4>
+
+              <p class="card-description">
+                The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada. The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada.The Mont-Royal Canadian
+                Business Showcase will be held in Toronto, Canada. Toronto,
+                Canada.The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada. Toronto, Canada.The Mont-Royal Canadian
+                Business Showcase will be held in Toronto, Canada. The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada.The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada. The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada.The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada. Toronto, Canada.The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada. Toronto, Canada.The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada. The Mont-Royal
+                Canadian Business Showcase will be held in Toronto, Canada.The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada. The Mont-Royal Canadian Business Showcase will be held
+                in Toronto, Canada.The Mont-Royal Canadian Business Showcase
+                will be held in Toronto, Canada. Toronto, Canada.The Mont-Royal
+                Canadian Business Showcase will be held in Toronto, Canada.
+                Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada.
+              </p>
+
+              <div class="event-date">
+                <a class="date"
+                  ><i class="fa-solid fa-calendar-days"></i> Mart 10, 2025
+                </a>
+                <a class="clock"
+                  ><i class="fa-regular fa-clock"></i> 10:00 AM</a
+                >
+                <a href="#" class="location"
+                  ><i class="fa-solid fa-location-dot"></i> The Four Seasons
+                  Hotel, Toronto, Canada</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="countdown-join">
+            <div data-date="2025-03-10T00:00:00" class="countdown-container">
+              <div class="countdown-item">
+                <span id="days" class="countdown-value">00</span>
+                <span class="countdown-label">DAY</span>
+              </div>
+              <div class="countdown-item">
+                <span id="hours" class="countdown-value">00</span>
+                <span class="countdown-label">HOURS</span>
+              </div>
+              <div class="countdown-item">
+                <span id="minutes" class="countdown-value">00</span>
+                <span class="countdown-label">MINS</span>
+              </div>
+              <div class="countdown-item">
+                <span id="seconds" class="countdown-value">00</span>
+                <span class="countdown-label">SEC</span>
+              </div>
+            </div>
+
+            <div class="btn-small blue">
+              <a href="#">Join event</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="event-head">
+            <div class="card-image">
+              <img
+                src="./client/images/content/welcome/c1a706b6fa8c0504949280ce496d11af.jpg"
+                alt="event"
+              />
+            </div>
+
+            <div class="card-content">
+              <h4 class="card-title">
+                The Mont-Royal Canadian Business Showcase
+              </h4>
+
+              <p class="card-description">
+                The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada. The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada.The Mont-Royal Canadian
+                Business Showcase will be held in Toronto, Canada. Toronto,
+                Canada.The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada. Toronto, Canada.The Mont-Royal Canadian
+                Business Showcase will be held in Toronto, Canada. The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada.The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada. The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada.The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada. Toronto, Canada.The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada. Toronto, Canada.The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada. The Mont-Royal
+                Canadian Business Showcase will be held in Toronto, Canada.The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada. The Mont-Royal Canadian Business Showcase will be held
+                in Toronto, Canada.The Mont-Royal Canadian Business Showcase
+                will be held in Toronto, Canada. Toronto, Canada.The Mont-Royal
+                Canadian Business Showcase will be held in Toronto, Canada.
+                Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada.
+              </p>
+
+              <div class="event-date">
+                <a class="date"
+                  ><i class="fa-solid fa-calendar-days"></i> January 10, 2025
+                </a>
+                <a class="clock"
+                  ><i class="fa-regular fa-clock"></i> 10:00 AM</a
+                >
+                <a href="#" class="location"
+                  ><i class="fa-solid fa-location-dot"></i> The Four Seasons
+                  Hotel, Toronto, Canada</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="countdown-join">
+            <div data-date="2025-01-01T00:00:00" class="countdown-container">
+              <div class="countdown-item">
+                <span id="days" class="countdown-value">00</span>
+                <span class="countdown-label">DAY</span>
+              </div>
+              <div class="countdown-item">
+                <span id="hours" class="countdown-value">00</span>
+                <span class="countdown-label">HOURS</span>
+              </div>
+              <div class="countdown-item">
+                <span id="minutes" class="countdown-value">00</span>
+                <span class="countdown-label">MINS</span>
+              </div>
+              <div class="countdown-item">
+                <span id="seconds" class="countdown-value">00</span>
+                <span class="countdown-label">SEC</span>
+              </div>
+            </div>
+
+            <div class="btn-small blue">
+              <a href="#">Join event</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section past-events">
+      <div class="container">
+        <a href="#" class="con-row section-header">
+          <h3 class="title">Past Events</h3>
+          <h4 class="sub-title">Past Events!</h4>
+        </a>
+
+       
+        <div class="card">
+          <div class="event-head">
+            <div class="card-image">
+              <img
+                src="./client/images/content/welcome/c1a706b6fa8c0504949280ce496d11af.jpg"
+                alt="event"
+              />
+            </div>
+
+            <div class="card-content">
+              <h4 class="card-title">
+                The Mont-Royal Canadian Business Showcase
+              </h4>
+
+              <p class="card-description">
+                The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada. The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada.The Mont-Royal Canadian
+                Business Showcase will be held in Toronto, Canada. Toronto,
+                Canada.The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada. Toronto, Canada.The Mont-Royal Canadian
+                Business Showcase will be held in Toronto, Canada. The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada.The Mont-Royal Canadian Business Showcase will be held in
+                Toronto, Canada. The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada.The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada. Toronto, Canada.The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada. Toronto, Canada.The Mont-Royal Canadian Business
+                Showcase will be held in Toronto, Canada. The Mont-Royal
+                Canadian Business Showcase will be held in Toronto, Canada.The
+                Mont-Royal Canadian Business Showcase will be held in Toronto,
+                Canada. The Mont-Royal Canadian Business Showcase will be held
+                in Toronto, Canada.The Mont-Royal Canadian Business Showcase
+                will be held in Toronto, Canada. Toronto, Canada.The Mont-Royal
+                Canadian Business Showcase will be held in Toronto, Canada.
+                Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                be held in Toronto, Canada.
+              </p>
+
+              <div class="event-date">
+                <div class="info">
+                  <a class="date"
+                    ><i class="fa-solid fa-calendar-days"></i> January 10, 2025
+                  </a>
+                  <a class="clock"
+                    ><i class="fa-regular fa-clock"></i> 10:00 AM</a
+                  >
+                  <a href="#" class="location"
+                    ><i class="fa-solid fa-location-dot"></i> The Four Seasons
+                    Hotel, Toronto, Canada</a
+                  >
+                </div>
+                <div class="btn-small">
+                    <a href="#">View Details</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+            <div class="event-head">
+              <div class="card-image">
+                <img
+                  src="./client/images/content/welcome/c1a706b6fa8c0504949280ce496d11af.jpg"
+                  alt="event"
+                />
+              </div>
+  
+              <div class="card-content">
+                <h4 class="card-title">
+                  The Mont-Royal Canadian Business Showcase
+                </h4>
+  
+                <p class="card-description">
+                  The Mont-Royal Canadian Business Showcase will be held in
+                  Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                  be held in Toronto, Canada. The Mont-Royal Canadian Business
+                  Showcase will be held in Toronto, Canada.The Mont-Royal Canadian
+                  Business Showcase will be held in Toronto, Canada. Toronto,
+                  Canada.The Mont-Royal Canadian Business Showcase will be held in
+                  Toronto, Canada. Toronto, Canada.The Mont-Royal Canadian
+                  Business Showcase will be held in Toronto, Canada. The
+                  Mont-Royal Canadian Business Showcase will be held in Toronto,
+                  Canada.The Mont-Royal Canadian Business Showcase will be held in
+                  Toronto, Canada. The Mont-Royal Canadian Business Showcase will
+                  be held in Toronto, Canada.The Mont-Royal Canadian Business
+                  Showcase will be held in Toronto, Canada. Toronto, Canada.The
+                  Mont-Royal Canadian Business Showcase will be held in Toronto,
+                  Canada. Toronto, Canada.The Mont-Royal Canadian Business
+                  Showcase will be held in Toronto, Canada. The Mont-Royal
+                  Canadian Business Showcase will be held in Toronto, Canada.The
+                  Mont-Royal Canadian Business Showcase will be held in Toronto,
+                  Canada. The Mont-Royal Canadian Business Showcase will be held
+                  in Toronto, Canada.The Mont-Royal Canadian Business Showcase
+                  will be held in Toronto, Canada. Toronto, Canada.The Mont-Royal
+                  Canadian Business Showcase will be held in Toronto, Canada.
+                  Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                  be held in Toronto, Canada.
+                </p>
+  
+                <div class="event-date">
+                  <div class="info">
+                    <a class="date"
+                      ><i class="fa-solid fa-calendar-days"></i> January 10, 2025
+                    </a>
+                    <a class="clock"
+                      ><i class="fa-regular fa-clock"></i> 10:00 AM</a
+                    >
+                    <a href="#" class="location"
+                      ><i class="fa-solid fa-location-dot"></i> The Four Seasons
+                      Hotel, Toronto, Canada</a
+                    >
+                  </div>
+                  <div class="btn-small">
+                      <a href="#">View Details</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="card">
+            <div class="event-head">
+              <div class="card-image">
+                <img
+                  src="./client/images/content/welcome/c1a706b6fa8c0504949280ce496d11af.jpg"
+                  alt="event"
+                />
+              </div>
+  
+              <div class="card-content">
+                <h4 class="card-title">
+                  The Mont-Royal Canadian Business Showcase
+                </h4>
+  
+                <p class="card-description">
+                  The Mont-Royal Canadian Business Showcase will be held in
+                  Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                  be held in Toronto, Canada. The Mont-Royal Canadian Business
+                  Showcase will be held in Toronto, Canada.The Mont-Royal Canadian
+                  Business Showcase will be held in Toronto, Canada. Toronto,
+                  Canada.The Mont-Royal Canadian Business Showcase will be held in
+                  Toronto, Canada. Toronto, Canada.The Mont-Royal Canadian
+                  Business Showcase will be held in Toronto, Canada. The
+                  Mont-Royal Canadian Business Showcase will be held in Toronto,
+                  Canada.The Mont-Royal Canadian Business Showcase will be held in
+                  Toronto, Canada. The Mont-Royal Canadian Business Showcase will
+                  be held in Toronto, Canada.The Mont-Royal Canadian Business
+                  Showcase will be held in Toronto, Canada. Toronto, Canada.The
+                  Mont-Royal Canadian Business Showcase will be held in Toronto,
+                  Canada. Toronto, Canada.The Mont-Royal Canadian Business
+                  Showcase will be held in Toronto, Canada. The Mont-Royal
+                  Canadian Business Showcase will be held in Toronto, Canada.The
+                  Mont-Royal Canadian Business Showcase will be held in Toronto,
+                  Canada. The Mont-Royal Canadian Business Showcase will be held
+                  in Toronto, Canada.The Mont-Royal Canadian Business Showcase
+                  will be held in Toronto, Canada. Toronto, Canada.The Mont-Royal
+                  Canadian Business Showcase will be held in Toronto, Canada.
+                  Toronto, Canada.The Mont-Royal Canadian Business Showcase will
+                  be held in Toronto, Canada.
+                </p>
+  
+                <div class="event-date">
+                  <div class="info">
+                    <a class="date"
+                      ><i class="fa-solid fa-calendar-days"></i> January 10, 2025
+                    </a>
+                    <a class="clock"
+                      ><i class="fa-regular fa-clock"></i> 10:00 AM</a
+                    >
+                    <a href="#" class="location"
+                      ><i class="fa-solid fa-location-dot"></i> The Four Seasons
+                      Hotel, Toronto, Canada</a
+                    >
+                  </div>
+                  <div class="btn-small">
+                      <a href="#">View Details</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="challenge section">
+      <div
+        class="container"
+        style="background-image: url(./client/images/settings/challeng.png)"
+      >
+        <a href="#" class="section-header">
+          <h3 class="title">Grow Your Business Beyond Borders</h3>
+          <h4 class="sub-title">
+            Partner with Mont-Royal Canada to unlock global opportunities.
+          </h4>
+        </a>
+        <div class="btn-large">
+          <a href="#">Join us</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="footer-main"
+        style="background-image: url(./client/images/settings/footer-bg.png)"
+      >
+        <div class="navbar contact">
+          <div class="logo">
+            <a href="">
+              <img src="./client/images/settings/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <ul class="con-list">
+            <li>
+              <a href="mailto:info@montroyalcanada.com"
+                >info@montroyalcanada.com</a
+              >
+            </li>
+            <li><a href="tel:Tel:+1505005050">+1505005050</a></li>
+            <li><a href="googlemap">Laval, QC H7N 0E4, Canada</a></li>
+          </ul>
+
+          <ul class="social-platforms">
+            <li>
+              <a href="#">
+                <p><i class="fab fa-facebook"></i></p
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-instagram"></i></p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-x-twitter"></i></p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-linkedin"></i></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar">
+          <span> About us </span>
+          <ul class="menu">
+            <li><a href="#">Our Mission & Key Policy</a></li>
+            <li><a href="#">Association</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="navbar">
+          <span> Services </span>
+          <ul class="menu">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Market Entry Assistance</a></li>
+            <li><a href="#">Import of Country Products</a></li>
+          </ul>
+        </div>
+        <div class="navbar">
+          <span> Doing Business </span>
+          <ul class="menu">
+            <li><a href="#">Business in Canada</a></li>
+            <li><a href="#">Business in Azerbaijan</a></li>
+            <li><a href="#">Sector of Activity</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar">
+          <a href="#" class="country">
+            <img src="https://flagcdn.com/ca.svg" alt="" />
+            <p>Business in Canada</p>
+          </a>
+          <a href="#" class="country">
+            <img src="https://flagcdn.com/az.svg" alt="" />
+            <p>Business in Azerbaijan</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-development">
+        <p>&copy; 2025 Mont-Royal Canada MMC. All Rights Reserved.</p>
+
+        <a
+          href="https://www.linkedin.com/in/tamerlan-alliyev"
+          target="_blank"
+          title="Tamerlan Aliyev"
+        >
+          Developed by:
+          <h3 data-developed="Tamerlan Aliyev" da>Tamerlan Aliyev</h3>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const countdownElements = document.querySelectorAll(
+        ".countdown-container"
+      );
+      countdownElements.forEach((countdownElement) => {
+        const targetDateString = countdownElement.getAttribute("data-date");
+        const targetDate = new Date(targetDateString);
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const timeLeft = targetDate.getTime() - now;
+
+          if (timeLeft > 0) {
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(
+              (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            const minutes = Math.floor(
+              (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            countdownElement.querySelector("#days").textContent = days;
+            countdownElement.querySelector("#hours").textContent = hours;
+            countdownElement.querySelector("#minutes").textContent = minutes;
+            countdownElement.querySelector("#seconds").textContent = seconds;
+          } else {
+            countdownElement.innerHTML = "<h2>Time's Up!</h2>";
+          }
+        }
+        setInterval(updateCountdown, 1000);
+      });
+    </script>
+    <script src="./client/js/home.js"></script>
+    <script src="./client/js/layout.js"></script>
+  </body>
+</html>

@@ -188,6 +188,8 @@ body {
   /* _____ WIDTH _____ */
   --width-flag: 14px;
   --width-logo: 140px;
+  --width-box: 50px;
+
 
   --pagination-size: 8px;
   --pagination-active-size: 10px;
@@ -278,6 +280,8 @@ body {
     /* _____ WIDTH _____ */
     --width-flag: 20px; /**/
     --width-logo: 220px; /**/
+    --width-box: 55px;
+
 
     --pagination-size: 10px;
     --pagination-active-size: 12px;
@@ -344,6 +348,8 @@ body {
     /* _____ WIDTH _____ */
     --width-flag: 22px;
     --width-logo: 220px;
+    --width-box: 60px;
+
 
     --pagination-size: 12px;
     --pagination-active-size: 14px;
@@ -409,6 +415,7 @@ body {
     /* _____ WIDTH _____ */
     --width-flag: 24px;
     --width-logo: 240px;
+    --width-box: 70px;
 
     --pagination-size: 14px;
     --pagination-active-size: 16px;
@@ -1069,7 +1076,7 @@ footer {
 
 /* ----- SMALL BUTTON _ START ----- */
 
-.btn-small a {
+.btn-small a{
   width: max-content;
   display: flex;
   padding: var(--padding-button-small);
@@ -1088,6 +1095,8 @@ footer {
   background: var(--color-blue);
   color: var(--color-white);
 }
+
+
 
 /* ----- SMALL BUTTON _ END ----- */
 

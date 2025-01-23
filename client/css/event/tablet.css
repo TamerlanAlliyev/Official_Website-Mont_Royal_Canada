@@ -1,0 +1,28 @@
+@media (min-width: 769px) {
+
+/*
+========================================
+         SECTION: EVENT  -  START
+========================================
+*/
+.card .event-head {
+  flex-direction: row;/**/
+}
+ .card .event-head .card-image {
+  min-width: 30%;/**/
+  width: 30%;/**/
+}
+.countdown-join {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+========================================
+         SECTION: EVENT  -  END
+========================================
+*/
+    
+    }
+    

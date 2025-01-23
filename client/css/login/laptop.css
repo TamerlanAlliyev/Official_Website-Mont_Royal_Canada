@@ -1,0 +1,35 @@
+@media (min-width: 1024px) {
+  /*
+========================================
+         SECTION: EVENT  -  START
+========================================
+*/
+.event-head .card-image {
+    min-width: 25%;
+    width: 25%;
+  }
+
+
+
+
+  
+ form {
+  min-width: 550px; 
+}
+
+form {
+  width: 40%; /**/
+}
+.form-wrapper {
+  flex-direction: row;/**/
+}
+.bacground-image {
+  width: 60%; /**/
+}
+
+  /*
+========================================
+         SECTION: EVENT  -  END
+========================================
+*/
+}

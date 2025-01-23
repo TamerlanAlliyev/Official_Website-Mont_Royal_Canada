@@ -1,0 +1,28 @@
+@media (min-width: 1024px) {
+  /*
+========================================
+         SECTION: LOGIN  -  START
+========================================
+*/
+
+  
+ form {
+  min-width: 550px; 
+}
+
+form {
+  width: 50%; 
+}
+.form-wrapper {
+  flex-direction: row;
+}
+.bacground-image {
+  width: 50%; 
+}
+
+  /*
+========================================
+         SECTION: LOGIN  -  END
+========================================
+*/
+}

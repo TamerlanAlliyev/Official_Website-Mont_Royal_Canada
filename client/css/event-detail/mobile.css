@@ -1,0 +1,119 @@
+/*
+========================================
+         SECTION: LOGIN  -  START
+========================================
+*/
+
+/* ---------- MESSAGE ---------- */
+
+.contact-form .message-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  list-style: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  background: var(--color-white);
+  padding: var(--padding-card);
+  width: 100%; /**/
+  border-radius: var(--border-radius-l);
+}
+
+form .column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+  width: 100%;
+}
+
+form .form-group label {
+  color: var(--color-blue);
+  font-size: var(--font-size-m);
+}
+
+form input,
+form textarea {
+  padding: var(--padding-input);
+  border-radius: var(--border-radius-s);
+  border: none;
+  background-color: var(--color-main-color);
+
+  outline: none;
+  font-size: var(--font-size-m);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--color-grey);
+  font-size: var(--font-size-s);
+}
+
+
+
+form button {
+  width: 1005;
+  display: flex;
+  padding: var(--padding-button-medium);
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-l);
+  border-radius: var(--border-radius-s);
+  background: var(--color-blue-soft);
+  font-size: var(--font-size-m);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s ease !important;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+/* ---------- MESSAGE ---------- */
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;/**/
+  width: 100%;
+}
+.bacground-image {
+  display: flex;
+  width: 100%; /**/
+}
+
+.bacground-image img {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  background: linear-gradient(
+    0deg,
+    rgba(9, 44, 108, 0.35) 0%,
+    rgba(9, 44, 108, 0.35) 100%
+  );
+}
+
+.form-container {
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+}
+/*
+========================================
+         SECTION: LOGIN  -  END
+========================================
+*/
