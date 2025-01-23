@@ -126,4 +126,8 @@
     grid-column: 2;
   }
 
+  .selection {
+    width: 25% !important;
+  }
+
 }

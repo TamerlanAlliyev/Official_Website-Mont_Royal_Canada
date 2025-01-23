@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./client/css/layout/mobile.css" />
 
     <!-- CSS  HOME-->
-    <link rel="stylesheet" href="./client/css/blog/mobile.css" />
-    <link rel="stylesheet" href="./client/css/blog/tablet.css" />
-    <link rel="stylesheet" href="./client/css/blog/laptop.css" />
-    <link rel="stylesheet" href="./client/css/blog/desktop.css" />
+    <link rel="stylesheet" href="./client/css/home/mobile.css" />
+    <link rel="stylesheet" href="./client/css/home/tablet.css" />
+    <link rel="stylesheet" href="./client/css/home/laptop.css" />
+    <link rel="stylesheet" href="./client/css/home/desktop.css" />
 
     <meta
       name="viewport"
@@ -45,12 +45,11 @@
     <title>Mont-Royal Canada</title>
   </head>
   <body>
-
     <div id="loading">
       <div class="spinner"></div>
       <p>Loading...</p>
     </div>
-    
+
     <header>
       <aside class="subheader">
         <div class="contact-us">
@@ -119,24 +118,24 @@
         </div>
 
         <div class="logo">
-          <a href="./home.html">
+          <a href="">
             <img src="./client/images/settings/logo.svg" alt="logo" />
           </a>
         </div>
 
         <ul class="menu">
           <li class="menu-list-li">
-            <a href="#" class="parent-row" href="#">Home</a>
+            <a href="./home.html" class="parent-row" href="#">Home</a>
           </li>
 
           <li class="menu-list-li">
             <a href="#" class="parent-row">About Us</a>
             <ul class="sub-list">
-              <li><a href="#">Our Mission & Key Policy</a></li>
-              <li><a href="#">Association</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="./our-mission.html">Our Mission & Key Policy</a></li>
+              <li><a href="./association.html">Association</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
               <li>
-                <a href="#"
+                <a href="./privacy-policy.html"
                   >Privacy Policy <i class="fa-solid fa-file-pdf"></i
                 ></a>
               </li>
@@ -164,18 +163,30 @@
           <li class="menu-list-li">
             <a href="#" class="parent-row">Partnerships</a>
             <ul class="sub-list">
-              <li><a href="#">Partners</a></li>
-              <li><a href="#">How to Become a Partner</a></li>
-              <li><a href="#">Benefits of Partnership</a></li>
-              <li><a href="#">Supplier Partnerships</a></li>
-              <li><a href="#">Distribution Partnerships</a></li>
-              <li><a href="#">Strategic Alliances</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="./partner.html">Partners</a></li>
+              <li>
+                <a href="./partner-become.html">How to Become a Partner</a>
+              </li>
+              <li>
+                <a href="./partner-benefits.html">Benefits of Partnership</a>
+              </li>
+              <li>
+                <a href="./partner-supplier.html">Supplier Partnerships</a>
+              </li>
+              <li>
+                <a href="./partner-distribution.html"
+                  >Distribution Partnerships</a
+                >
+              </li>
+              <li>
+                <a href="./partner-strategic.html">Strategic Alliances</a>
+              </li>
+              <li><a href="./Faq.html">FAQs</a></li>
             </ul>
           </li>
 
           <li class="menu-list-li">
-            <a href="./blog.html" class="parent-row" href="#">Business News</a>
+            <a href="./blog.html" class="parent-row">Business News</a>
           </li>
         </ul>
 
@@ -208,7 +219,7 @@
         <div class="menu-list">
           <ul class="pages">
             <li class="menu-list-li">
-              <a href="#">Home</a>
+              <a href="./home.html">Home</a>
             </li>
 
             <li class="menu-list-li">
@@ -216,16 +227,16 @@
 
               <ul class="sub-list">
                 <li>
-                  <a href="#">Our Mission & Key Policy</a>
+                  <a href="./our-mission.html">Our Mission & Key Policy</a>
                 </li>
                 <li>
-                  <a href="#">Association</a>
+                  <a href="./association.html">Association</a>
                 </li>
                 <li>
-                  <a href="#">Contact us</a>
+                  <a href="./contact.html">Contact us</a>
                 </li>
                 <li>
-                  <a href="#">Privacy policy</a>
+                  <a href="./privacy-policy.html">Privacy policy</a>
                 </li>
               </ul>
             </li>
@@ -264,31 +275,33 @@
               <a href="#">Partnerships</a>
               <ul class="sub-list">
                 <li>
-                  <a href="#">Partners</a>
+                  <a href="./partner.html">Partners</a>
                 </li>
                 <li>
-                  <a href="#">How to Become a Partner</a>
+                  <a href="./partner-become.html">How to Become a Partner</a>
                 </li>
                 <li>
-                  <a href="#">Benefits of Partnership</a>
+                  <a href="./partner-benefits.html">Benefits of Partnership</a>
                 </li>
                 <li>
-                  <a href="#">Supplier Partnerships</a>
+                  <a href="./partner-supplier.html">Supplier Partnerships</a>
                 </li>
                 <li>
-                  <a href="#">Distribution Partnerships</a>
+                  <a href="./partner-distribution.html"
+                    >Distribution Partnerships</a
+                  >
                 </li>
                 <li>
-                  <a href="#">Strategic Alliances</a>
+                  <a href="./partner-strategic.html">Strategic Alliances</a>
                 </li>
                 <li>
-                  <a href="#">FAQs</a>
+                  <a href="./Faq.html">FAQs</a>
                 </li>
               </ul>
             </li>
 
             <li class="menu-list-li">
-              <a href="#">Partnerships</a>
+              <a href="#">Events</a>
               <ul class="sub-list">
                 <li>
                   <a href="#">Events</a>
@@ -315,16 +328,71 @@
         </div>
       </div>
 
-  
+      <section class="main-slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./client/images/content/slider/image 12 (1).png"
+                alt="Connecting Azerbaijan and Canada for Global Success"
+              />
+              <div class="box">
+                <div class="title" data-swiper-parallax="-300">
+                  Connecting Azerbaijan and Canada for Global Success
+                </div>
+                <div
+                  href="#"
+                  class="subtitle btn-medium"
+                  data-swiper-parallax="-200"
+                >
+                  <a class="join-btn" href="#">Join us</a>
+                </div>
+              </div>
+            </div>
 
-      <section class="main-section">
-        <div class="container">
-          <h1 class="title">Business News</h1>
-          <p class="description">
-            The latest news and insights on global business opportunities,
-            collaboration between Canada and Azerbaijan, international trade,
-            and innovations.
-          </p>
+            <div class="swiper-slide">
+              <img
+                src="./client/images/content/slider/image 12 (1).png"
+                alt="Connecting Azerbaijan and Canada for Global Success"
+              />
+              <div class="box">
+                <div class="title" data-swiper-parallax="-300">
+                  Connecting Azerbaijan and Canada for Global Success
+                </div>
+                <div
+                  href="#"
+                  class="subtitle btn-medium"
+                  data-swiper-parallax="-200"
+                >
+                  <a class="join-btn" href="#">Join us</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="./client/images/content/slider/image 12 (1).png"
+                alt="Connecting Azerbaijan and Canada for Global Success"
+              />
+              <div class="box">
+                <div class="title" data-swiper-parallax="-300">
+                  Connecting Azerbaijan and Canada for Global Success
+                </div>
+                <div
+                  href="#"
+                  class="subtitle btn-medium"
+                  data-swiper-parallax="-200"
+                >
+                  <a class="join-btn" href="#">Join us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     </header>
@@ -336,14 +404,33 @@
             <a href="./home.html">Home</a>
           </li>
           <p>/</p>
+          <li class="parent">
+            <a href="./home.html">Partnerships</a>
+          </li>
+          <p>/</p>
           <li class="target">
-            <a href="#">Page</a>
+            <a href="./blog.html">Blue Skincare</a>
           </li>
         </ul>
       </div>
     </section>
 
-
+    <section class="challenge section">
+      <div
+        class="container"
+        style="background-image: url(./client/images/settings/challeng.png)"
+      >
+        <a href="#" class="section-header">
+          <h3 class="title">Grow Your Business Beyond Borders</h3>
+          <h4 class="sub-title">
+            Partner with Mont-Royal Canada to unlock global opportunities.
+          </h4>
+        </a>
+        <div class="btn-large">
+          <a href="#">Join us</a>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div
@@ -432,21 +519,22 @@
 
       <div class="footer-development">
         <p>&copy; 2025 Mont-Royal Canada MMC. All Rights Reserved.</p>
-        <p>
+
+        <a
+          href="https://www.linkedin.com/in/tamerlan-alliyev"
+          target="_blank"
+          title="Tamerlan Aliyev"
+        >
           Developed by:
-          <a
-            href="https://www.linkedin.com/in/tamerlan-alliyev"
-            target="_blank"
-            title="Tamerlan Aliyev"
-            >Tamerlan Aliyev</a
-          >
-        </p>
+           <h3 data-developed="Tamerlan Aliyev" da>Tamerlan Aliyev</h3>
+        </a>
       </div>
     </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script></script>
     <script src="./client/js/home.js"></script>
     <script src="./client/js/layout.js"></script>
   </body>

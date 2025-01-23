@@ -36,7 +36,7 @@ h4{
   color: var(--color-black);
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-m);
-  width: 85%;
+  width: 100%;
 }
 
 .next-steps{

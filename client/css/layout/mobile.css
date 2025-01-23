@@ -1000,6 +1000,15 @@ footer {
 .footer-development a {
   color: var(--color-white-soft);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-s);
+  transition: all 0.3s ease;
+}
+.footer-development a h3{
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-l);
 }
 .footer-development a:hover {
   color: var(--color-white);
@@ -1252,7 +1261,7 @@ footer {
 */
 .selection {
   display: flex;
-  width: 20%;
+  width: 100%;
   background: var(--color-blue-soft);
   border-radius: var(--border-radius-s);
   position: relative;
@@ -1267,6 +1276,7 @@ footer {
   width: 100%;
   padding: var(--padding-m);
   cursor: pointer;
+  font-size: var(--font-size-l);
 }
 
 .selection .selection-selected .selection-title {
