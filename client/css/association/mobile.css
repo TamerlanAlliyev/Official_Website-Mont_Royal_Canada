@@ -1,12 +1,12 @@
-.association .card {
+.section .card {
   display: flex;
   background: var(--color-white);
   padding: var(--padding-card);
   transition: all 0.3s ease;
-  gap: var(--gap-xl);
+  gap: var(--gap-main);
   justify-content: space-between;
   transition: all 0.3s ease;
-
+  flex-direction: column;/**/
 }
 
 .show-btn {
@@ -16,23 +16,29 @@
 
 .card-header {
   display: flex;
-  width: 10%;
-  aspect-ratio: 1/1;
+  width: 100%;/*14*/
+  max-height: 250px; /*100%*/
+  aspect-ratio: 1.5/1;
+  height: 100%;
 }
 
 .card-header img {
   display: flex;
   aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: top left;
   border-radius: var(--border-radius-s);
+
 }
 
 .card-body {
+  width: 100%; /*86%*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
-  width: 80%;
+  gap: var(--gap-m);
 }
 
 .web-site {
@@ -48,42 +54,52 @@
 .card-title {
   display: flex;
   font-size: var(--font-size-xl);
+  color: var(--color-dark-blue);
+}
+
+
+
+.small-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  overflow: hidden;
 }
 
 .card-body .info {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-
-.card-description{
-  padding:0 var(--padding-acordion);
+.card-description {
+  padding: 0 var(--padding-acordion);
   height: 0;
   overflow: hidden;
   background: var(--color-blue);
   color: var(--color-white);
   transition: all 0.3s ease;
+  line-height: 1.6;
+  word-spacing: 2px;
+  font-size: var(--font-size-m);
 }
-.card-box{
+.card-box {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius:var(--border-radius-m);
-overflow: hidden;
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
 }
 
-
-.card-box .show-btn i{
+.card-box .show-btn i {
   transition: all 0.3s ease;
-
 }
 
-.card-box.active  .show-btn i{
+.card-box.active .show-btn i {
   transform: rotate(180deg);
 }
 
-
-.card-box.active .card-description{
+.card-box.active .card-description {
   padding: var(--padding-acordion);
-  height: max-content ;
+  height: max-content;
 }

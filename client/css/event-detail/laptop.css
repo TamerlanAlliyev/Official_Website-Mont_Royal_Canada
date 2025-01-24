@@ -1,28 +1,29 @@
 @media (min-width: 1024px) {
   /*
 ========================================
-         SECTION: LOGIN  -  START
+         SECTION: EVENT  -  START
 ========================================
 */
-
+.event-head .card-image {
+    min-width: 25%;
+    width: 25%;
+  }
   
  form {
   min-width: 550px; 
 }
-
 form {
-  width: 50%; 
+  width: 40%; /**/
 }
 .form-wrapper {
-  flex-direction: row;
+  flex-direction: row;/**/
 }
 .bacground-image {
-  width: 50%; 
+  width: 60%; /**/
 }
-
   /*
 ========================================
-         SECTION: LOGIN  -  END
+         SECTION: EVENT  -  END
 ========================================
 */
 }

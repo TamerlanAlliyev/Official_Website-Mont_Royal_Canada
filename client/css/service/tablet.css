@@ -1,0 +1,28 @@
+@media (min-width: 769px) {
+    /*
+    ========================================
+             SECTION: SERVICE  -  START
+    ========================================
+    */
+    .section.export .country {
+      flex-direction: column; /**/
+    }
+    .section.export .country:first-child {/**/
+      flex-direction: column-reverse
+    }
+    .section.export .country .country-body {
+      width: 100%;/*60*/
+    }
+    .section.export .images {
+      width: 100%;/*30*/
+      min-height: 450px;/*250*/
+    }
+    
+    /*
+    ========================================
+             SECTION: SERVICE  -  END
+    ========================================
+    */
+        
+        }
+        

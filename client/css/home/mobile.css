@@ -349,26 +349,6 @@
   height: 80px; /**/
 }
 
-.section-services .swiper-slide.card .btn-small.learn {
-  display: flex;
-  justify-content: start;
-  flex: start;
-}
-
-.section-services .swiper-slide.card .btn-small.learn a {
-  background: transparent;
-  color: var(--color-blue-soft);
-  border: 1px solid var(--color-blue-soft);
-}
-.section-services .swiper-slide.card .btn-small.learn a:hover {
-  background: var(--color-blue-soft);
-  color: var(--color-white);
-  gap: var(--gap-xl);
-}
-.section-services .swiper-slide.card .btn-small.learn a:active {
-  background: var(--color-blue);
-  color: var(--color-white);
-}
 
 /*
 ========================================

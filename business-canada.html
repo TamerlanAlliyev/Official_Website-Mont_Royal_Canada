@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS  LAYOUT-->
+    <link rel="stylesheet" href="./client/css/layout/desktop.css" />
+    <link rel="stylesheet" href="./client/css/layout/laptop.css" />
+    <link rel="stylesheet" href="./client/css/layout/tablet.css" />
+    <link rel="stylesheet" href="./client/css/layout/mobile.css" />
+
+    <!-- CSS  association -->
+    <link rel="stylesheet" href="./client/css/association/mobile.css" />
+    <link rel="stylesheet" href="./client/css/association/tablet.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+
+    <!-- Google - Outfit Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CDN JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <title>Mont-Royal Canada</title>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+
+    <header>
+      <aside class="subheader">
+        <div class="contact-us">
+          <a href="#"> Contact us</a>
+        </div>
+
+        <div class="search-language">
+          <div class="search">
+            <div class="search-box">
+              <input placeholder="Search..." class="search-input" type="text" />
+
+              <ul class="search-result">
+                <li>
+                  <a href="#">
+                    <span class="title">Service Consalting</span>
+                    <span class="map">Service</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">a</span>
+                    <span class="map">b</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="search-btn">
+              <p>Search</p>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-times"></i>
+            </div>
+          </div>
+
+          <p>|</p>
+
+          <div class="language-picker">
+            <div class="selected-language" onclick="toggleDropdown()">
+              <div class="lang">
+                <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
+                <span>EN</span>
+              </div>
+              <i class="fa-solid fa-caret-down arrow"></i>
+            </div>
+            <div class="dropdown">
+              <div class="option" onclick="selectLanguage('EN')">
+                <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
+                <span>EN</span>
+              </div>
+              <div class="option" onclick="selectLanguage('AZ')">
+                <img src="https://flagcdn.com/az.svg" alt="AZ" class="flag" />
+                <span>AZ</span>
+              </div>
+              <div class="option" onclick="selectLanguage('RU')">
+                <img src="https://flagcdn.com/ru.svg" alt="RU" class="flag" />
+                <span>RU</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="header">
+        <div class="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="logo">
+          <a href="">
+            <img src="./client/images/settings/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li class="menu-list-li">
+            <a href="./home.html" class="parent-row" href="#">Home</a>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">About Us</a>
+            <ul class="sub-list">
+              <li><a href="./our-mission.html">Our Mission & Key Policy</a></li>
+              <li><a href="./association.html">Association</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li>
+                <a href="./privacy-policy.html"
+                  >Privacy Policy <i class="fa-solid fa-file-pdf"></i
+                ></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Services</a>
+            <ul class="sub-list">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Market Entry Assistance</a></li>
+              <li><a href="#">Import of Country Products</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Doing Business</a>
+            <ul class="sub-list">
+              <li><a href="#">Business in Canada</a></li>
+              <li><a href="#">Business in Azerbaijan</a></li>
+              <li><a href="#">Sector of Activity</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="#" class="parent-row">Partnerships</a>
+            <ul class="sub-list">
+              <li><a href="./partner.html">Partners</a></li>
+              <li>
+                <a href="./partner-become.html">How to Become a Partner</a>
+              </li>
+              <li>
+                <a href="./partner-benefits.html">Benefits of Partnership</a>
+              </li>
+              <li>
+                <a href="./partner-supplier.html">Supplier Partnerships</a>
+              </li>
+              <li>
+                <a href="./partner-distribution.html"
+                  >Distribution Partnerships</a
+                >
+              </li>
+              <li>
+                <a href="./partner-strategic.html">Strategic Alliances</a>
+              </li>
+              <li><a href="./Faq.html">FAQs</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-list-li">
+            <a href="./blog.html" class="parent-row">Business News</a>
+          </li>
+        </ul>
+
+        <div class="auth">
+          <div class="auth-user">
+            <a href="">Log in</a>
+            <p>|</p>
+            <a href="">Sign up</a>
+          </div>
+        </div>
+
+        <div class="empty"></div>
+      </div>
+
+      <div class="burger-menu">
+        <div class="menu-header">
+          <div class="close">
+            <i class="fa-solid fa-times"></i>
+          </div>
+
+          <div class="logo">
+            <a href="">
+              <img src="./client/images/settings/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="empty"></div>
+        </div>
+
+        <div class="menu-list">
+          <ul class="pages">
+            <li class="menu-list-li">
+              <a href="./home.html">Home</a>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">About Us</a>
+
+              <ul class="sub-list">
+                <li>
+                  <a href="./our-mission.html">Our Mission & Key Policy</a>
+                </li>
+                <li>
+                  <a href="./association.html">Association</a>
+                </li>
+                <li>
+                  <a href="./contact.html">Contact us</a>
+                </li>
+                <li>
+                  <a href="./privacy-policy.html">Privacy policy</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Services</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Market Entry Assistance</a>
+                </li>
+                <li>
+                  <a href="#">Import of Country Products</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Doing Business</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Business in Canada</a>
+                </li>
+                <li>
+                  <a href="#">Business in Azerbaijan</a>
+                </li>
+                <li>
+                  <a href="#">Sector of Activity</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Partnerships</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="./partner.html">Partners</a>
+                </li>
+                <li>
+                  <a href="./partner-become.html">How to Become a Partner</a>
+                </li>
+                <li>
+                  <a href="./partner-benefits.html">Benefits of Partnership</a>
+                </li>
+                <li>
+                  <a href="./partner-supplier.html">Supplier Partnerships</a>
+                </li>
+                <li>
+                  <a href="./partner-distribution.html"
+                    >Distribution Partnerships</a
+                  >
+                </li>
+                <li>
+                  <a href="./partner-strategic.html">Strategic Alliances</a>
+                </li>
+                <li>
+                  <a href="./Faq.html">FAQs</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="#">Events</a>
+              <ul class="sub-list">
+                <li>
+                  <a href="#">Events</a>
+                </li>
+                <li>
+                  <a href="#">Networking Opportunities</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list-li">
+              <a href="./blog.html">Business News</a>
+            </li>
+          </ul>
+
+          <div class="auth">
+            <i class="fa-solid fa-user"></i>
+            <div class="auth-user">
+              <a href="">Log in</a>
+              <p>|</p>
+              <a href="">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section
+        class="main-section"
+        style="
+          background-image: linear-gradient(
+              rgba(9, 44, 108, 0.8),
+              rgba(9, 44, 108, 0.8)
+            ),
+            url('/client/images/content/business-canada/wp13440761-canada-flag-4k-wallpapers\ \(1\)\ 1.png');
+        "
+      >
+        <div class="container">
+          <h1 class="title">Business in Canada</h1>
+          <p class="description"></p>
+        </div>
+      </section>
+    </header>
+
+    <section class="section navigator">
+      <div class="container">
+        <ul class="navigator-list">
+          <li class="parent">
+            <a href="./home.html">Home</a>
+          </li>
+          <p>/</p>
+          <li class="parent">
+            <a href="./home.html">Doing Business</a>
+          </li>
+          <p>/</p>
+          <li class="target">
+            <a href="./blog.html">Business in Canada</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header one">
+          <h3 class="title">
+            Business Opportunities in Canada: Investment Incentives, Sectors,
+            and Regulatory Environment
+          </h3>
+        </div>
+
+        <p class="description-p">
+          The "Business in Canada" page offers a comprehensive guide for
+          entrepreneurs, investors, and business professionals looking to
+          explore opportunities in one of the world’s most stable and diverse
+          economies. Canada, known for its welcoming business environment,
+          presents numerous investment opportunities in key industries such as
+          technology, agriculture, and healthcare. This page provides an
+          in-depth analysis of these sectors, discussing their growth potential,
+          market demands, and emerging trends. In the technology sector, Canada
+          is a global leader in software development, artificial intelligence,
+          and tech innovation, with an ever-expanding startup ecosystem. The
+          agricultural sector, with its strong focus on sustainable farming and
+          export-driven growth, offers opportunities in grain production,
+          livestock, and organic farming. Canada’s healthcare industry,
+          characterized by advanced medical infrastructure and cutting-edge
+          pharmaceutical research, provides significant investment potential,
+          particularly in health tech and biotech. The page also explains the
+          legal and regulatory frameworks that govern business operations in
+          Canada, detailing the processes for business registration, licensing,
+          and intellectual property protection. Understanding Canada’s tax
+          system is crucial for investors, and this section covers corporate tax
+          rates, tax incentives, and the benefits of Canada’s tax treaties with
+          other nations. Furthermore, the cultural norms and business etiquette
+          section provides valuable insights into the multicultural Canadian
+          business landscape, helping entrepreneurs navigate professional
+          interactions successfully. With a focus on sustainable growth,
+          government investment incentives, and a stable economic environment,
+          Canada stands as an ideal destination for those seeking long-term
+          business success. Whether you’re interested in establishing a tech
+          startup, expanding agricultural operations, or investing in the
+          growing healthcare sector, the "Business in Canada" page offers
+          essential information to guide your decisions. This resource serves as
+          a vital tool for understanding the opportunities and regulations that
+          shape Canada’s vibrant business environment, making it an ideal
+          location for both new ventures and expanding international businesses.
+          The page also explains the legal and regulatory frameworks that govern
+          business operations in Canada, detailing the processes for business
+          registration, licensing, and intellectual property protection.
+          Understanding Canada’s tax system is crucial for investors, and this
+          section covers corporate tax rates, tax incentives, and the benefits
+          of Canada’s tax treaties with other nations. Furthermore, the cultural
+          norms and business etiquette section provides valuable insights into
+          the multicultural Canadian business landscape, helping entrepreneurs
+          navigate professional interactions successfully. With a focus on
+          sustainable growth, government investment incentives, and a stable
+          economic environment, Canada stands as an ideal destination for those
+          seeking long-term business success. Whether you’re interested in
+          establishing a tech startup, expanding agricultural operations, or
+          investing in the growing healthcare sector, the "Business in Canada"
+          page offers essential information to guide your decisions. This
+          resource serves as a vital tool for understanding the opportunities
+          and regulations that shape Canada’s vibrant business environment,
+          making it an ideal location for both new ventures and expanding
+          international businesses.
+        </p>
+      </div>
+    </section>
+
+    <section class="section association">
+      <div class="container">
+        <div class="card-box">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./client/images/content/business-canada/image.png"
+                alt="logo"
+              />
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">
+                Transportation and Logistics in Canada - A Strategic Hub for
+                Global Trade
+              </h3>
+              <p class="small-description description-p">
+                Canada’s manufacturing sector plays a critical role in its
+                economy, contributing significantly to both GDP and employment.
+                As one of the most diversified and innovative sectors in the
+                country, manufacturing spans several key industries, including
+                automotive, aerospace, food processing, technology, and natural
+                resources. This diversity provides ample opportunities for
+                investors and businesses looking to expand or enter the Canadian
+                market. The automotive industry is one of the most established
+                and important manufacturing sectors in Canada, with major plants
+                located in Ontario. Canada is home to significant production and
+                assembly operations for global automotive giants such as Ford,
+                General Motors, and Toyota. The sector also produces parts and
+                components for the global supply chain, positioning Canada as a
+                key player in North American and global automotive trade. In
+                addition to automotive, the aerospace sector is another critical
+                component of Canada's manufacturing landscape. Canada is known
+                for its advanced aerospace technologies, including aircraft
+                production, parts manufacturing, and maintenance services.
+                Leading companies such as Bombardier and Pratt & Whitney Canada
+                have established a strong presence in the country, making Canada
+                one of the leading countries in aerospace engineering and
+                innovation. This sector benefits from cutting-edge technologies,
+                highly skilled labor, and extensive research and development.
+                Canada’s food processing industry is also a vital part of its
+                manufacturing sector, with the country being a major exporter of
+                agricultural products. The processing of meat, dairy, and grain
+                products is not only a significant contributor to the national
+                economy but also a source of high-quality products for
+                international markets. Canada’s commitment to food safety,
+                environmental sustainability, and ethical practices ensures that
+                Canadian food products meet the highest standards and are highly
+                sought after globally. Technological innovation within the
+                manufacturing sector is also on the rise in Canada, with a
+                strong focus on automation, robotics, and smart manufacturing.
+                The integration of Industry 4.0 technologies has allowed
+                Canadian manufacturers to improve efficiency, reduce costs, and
+                produce higher-quality products. Smart factories, where machines
+                and systems communicate and adapt in real-time, are becoming
+                increasingly common in Canada, particularly in the automotive
+                and aerospace industries.
+              </p>
+
+              <div class="info">
+                <a class="web-site" href="#"> </a>
+
+                <div class="btn-small show-btn">
+                  <a>Show More <i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-description description-p">
+            Canada’s manufacturing sector plays a critical role in its economy,
+            contributing significantly to both GDP and employment. As one of the
+            most diversified and innovative sectors in the country,
+            manufacturing spans several key industries, including automotive,
+            aerospace, food processing, technology, and natural resources. This
+            diversity provides ample opportunities for investors and businesses
+            looking to expand or enter the Canadian market. The automotive
+            industry is one of the most established and important manufacturing
+            sectors in Canada, with major plants located in Ontario. Canada is
+            home to significant production and assembly operations for global
+            automotive giants such as Ford, General Motors, and Toyota. The
+            sector also produces parts and components for the global supply
+            chain, positioning Canada as a key player in North American and
+            global automotive trade. In addition to automotive, the aerospace
+            sector is another critical component of Canada's manufacturing
+            landscape. Canada is known for its advanced aerospace technologies,
+            including aircraft production, parts manufacturing, and maintenance
+            services. Leading companies such as Bombardier and Pratt & Whitney
+            Canada have established a strong presence in the country, making
+            Canada one of the leading countries in aerospace engineering and
+            innovation. This sector benefits from cutting-edge technologies,
+            highly skilled labor, and extensive research and development.
+            Canada’s food processing industry is also a vital part of its
+            manufacturing sector, with the country being a major exporter of
+            agricultural products. The processing of meat, dairy, and grain
+            products is not only a significant contributor to the national
+            economy but also a source of high-quality products for international
+            markets. Canada’s commitment to food safety, environmental
+            sustainability, and ethical practices ensures that Canadian food
+            products meet the highest standards and are highly sought after
+            globally. Technological innovation within the manufacturing sector
+            is also on the rise in Canada, with a strong focus on automation,
+            robotics, and smart manufacturing. The integration of Industry 4.0
+            technologies has allowed Canadian manufacturers to improve
+            efficiency, reduce costs, and produce higher-quality products. Smart
+            factories, where machines and systems communicate and adapt in
+            real-time, are becoming increasingly common in Canada, particularly
+            in the automotive and aerospace industries.
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./client/images/content/business-canada/image-1.png"
+                alt="logo"
+              />
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">
+                Manufacturing in Canada - A Core Sector for Economic Growth and
+                Technological Innovation
+              </h3>
+              <p class="small-description description-p">
+                Canada’s manufacturing sector plays a critical role in its
+                economy, contributing significantly to both GDP and employment.
+                As one of the most diversified and innovative sectors in the
+                country, manufacturing spans several key industries, including
+                automotive, aerospace, food processing, technology, and natural
+                resources. This diversity provides ample opportunities for
+                investors and businesses looking to expand or enter the Canadian
+                market. The automotive industry is one of the most established
+                and important manufacturing sectors in Canada, with major plants
+                located in Ontario. Canada is home to significant production and
+                assembly operations for global automotive giants such as Ford,
+                General Motors, and Toyota. The sector also produces parts and
+                components for the global supply chain, positioning Canada as a
+                key player in North American and global automotive trade. In
+                addition to automotive, the aerospace sector is another critical
+                component of Canada's manufacturing landscape. Canada is known
+                for its advanced aerospace technologies, including aircraft
+                production, parts manufacturing, and maintenance services.
+                Leading companies such as Bombardier and Pratt & Whitney Canada
+                have established a strong presence in the country, making Canada
+                one of the leading countries in aerospace engineering and
+                innovation. This sector benefits from cutting-edge technologies,
+                highly skilled labor, and extensive research and development.
+                Canada’s food processing industry is also a vital part of its
+                manufacturing sector, with the country being a major exporter of
+                agricultural products. The processing of meat, dairy, and grain
+                products is not only a significant contributor to the national
+                economy but also a source of high-quality products for
+                international markets. Canada’s commitment to food safety,
+                environmental sustainability, and ethical practices ensures that
+                Canadian food products meet the highest standards and are highly
+                sought after globally. Technological innovation within the
+                manufacturing sector is also on the rise in Canada, with a
+                strong focus on automation, robotics, and smart manufacturing.
+                The integration of Industry 4.0 technologies has allowed
+                Canadian manufacturers to improve efficiency, reduce costs, and
+                produce higher-quality products. Smart factories, where machines
+                and systems communicate and adapt in real-time, are becoming
+                increasingly common in Canada, particularly in the automotive
+                and aerospace industries.
+              </p>
+
+              <div class="info">
+                <a class="web-site" href="#"> </a>
+
+                <div class="btn-small show-btn">
+                  <a>Show More <i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-description description-p">
+            Canada’s manufacturing sector plays a critical role in its economy,
+            contributing significantly to both GDP and employment. As one of the
+            most diversified and innovative sectors in the country,
+            manufacturing spans several key industries, including automotive,
+            aerospace, food processing, technology, and natural resources. This
+            diversity provides ample opportunities for investors and businesses
+            looking to expand or enter the Canadian market. The automotive
+            industry is one of the most established and important manufacturing
+            sectors in Canada, with major plants located in Ontario. Canada is
+            home to significant production and assembly operations for global
+            automotive giants such as Ford, General Motors, and Toyota. The
+            sector also produces parts and components for the global supply
+            chain, positioning Canada as a key player in North American and
+            global automotive trade. In addition to automotive, the aerospace
+            sector is another critical component of Canada's manufacturing
+            landscape. Canada is known for its advanced aerospace technologies,
+            including aircraft production, parts manufacturing, and maintenance
+            services. Leading companies such as Bombardier and Pratt & Whitney
+            Canada have established a strong presence in the country, making
+            Canada one of the leading countries in aerospace engineering and
+            innovation. This sector benefits from cutting-edge technologies,
+            highly skilled labor, and extensive research and development.
+            Canada’s food processing industry is also a vital part of its
+            manufacturing sector, with the country being a major exporter of
+            agricultural products. The processing of meat, dairy, and grain
+            products is not only a significant contributor to the national
+            economy but also a source of high-quality products for international
+            markets. Canada’s commitment to food safety, environmental
+            sustainability, and ethical practices ensures that Canadian food
+            products meet the highest standards and are highly sought after
+            globally. Technological innovation within the manufacturing sector
+            is also on the rise in Canada, with a strong focus on automation,
+            robotics, and smart manufacturing. The integration of Industry 4.0
+            technologies has allowed Canadian manufacturers to improve
+            efficiency, reduce costs, and produce higher-quality products. Smart
+            factories, where machines and systems communicate and adapt in
+            real-time, are becoming increasingly common in Canada, particularly
+            in the automotive and aerospace industries.
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./client/images/content/business-canada/image-2.png"
+                alt="logo"
+              />
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">
+                Tourism in Canada - A Wealth of Investment Opportunities in
+                Natural and Cultural Attractions
+              </h3>
+              <p class="small-description description-p">
+                Canada’s manufacturing sector plays a critical role in its
+                economy, contributing significantly to both GDP and employment.
+                As one of the most diversified and innovative sectors in the
+                country, manufacturing spans several key industries, including
+                automotive, aerospace, food processing, technology, and natural
+                resources. This diversity provides ample opportunities for
+                investors and businesses looking to expand or enter the Canadian
+                market. The automotive industry is one of the most established
+                and important manufacturing sectors in Canada, with major plants
+                located in Ontario. Canada is home to significant production and
+                assembly operations for global automotive giants such as Ford,
+                General Motors, and Toyota. The sector also produces parts and
+                components for the global supply chain, positioning Canada as a
+                key player in North American and global automotive trade. In
+                addition to automotive, the aerospace sector is another critical
+                component of Canada's manufacturing landscape. Canada is known
+                for its advanced aerospace technologies, including aircraft
+                production, parts manufacturing, and maintenance services.
+                Leading companies such as Bombardier and Pratt & Whitney Canada
+                have established a strong presence in the country, making Canada
+                one of the leading countries in aerospace engineering and
+                innovation. This sector benefits from cutting-edge technologies,
+                highly skilled labor, and extensive research and development.
+                Canada’s food processing industry is also a vital part of its
+                manufacturing sector, with the country being a major exporter of
+                agricultural products. The processing of meat, dairy, and grain
+                products is not only a significant contributor to the national
+                economy but also a source of high-quality products for
+                international markets. Canada’s commitment to food safety,
+                environmental sustainability, and ethical practices ensures that
+                Canadian food products meet the highest standards and are highly
+                sought after globally. Technological innovation within the
+                manufacturing sector is also on the rise in Canada, with a
+                strong focus on automation, robotics, and smart manufacturing.
+                The integration of Industry 4.0 technologies has allowed
+                Canadian manufacturers to improve efficiency, reduce costs, and
+                produce higher-quality products. Smart factories, where machines
+                and systems communicate and adapt in real-time, are becoming
+                increasingly common in Canada, particularly in the automotive
+                and aerospace industries.
+              </p>
+
+              <div class="info">
+                <a class="web-site" href="#"> </a>
+
+                <div class="btn-small show-btn">
+                  <a>Show More <i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-description description-p">
+            Canada’s manufacturing sector plays a critical role in its economy,
+            contributing significantly to both GDP and employment. As one of the
+            most diversified and innovative sectors in the country,
+            manufacturing spans several key industries, including automotive,
+            aerospace, food processing, technology, and natural resources. This
+            diversity provides ample opportunities for investors and businesses
+            looking to expand or enter the Canadian market. The automotive
+            industry is one of the most established and important manufacturing
+            sectors in Canada, with major plants located in Ontario. Canada is
+            home to significant production and assembly operations for global
+            automotive giants such as Ford, General Motors, and Toyota. The
+            sector also produces parts and components for the global supply
+            chain, positioning Canada as a key player in North American and
+            global automotive trade. In addition to automotive, the aerospace
+            sector is another critical component of Canada's manufacturing
+            landscape. Canada is known for its advanced aerospace technologies,
+            including aircraft production, parts manufacturing, and maintenance
+            services. Leading companies such as Bombardier and Pratt & Whitney
+            Canada have established a strong presence in the country, making
+            Canada one of the leading countries in aerospace engineering and
+            innovation. This sector benefits from cutting-edge technologies,
+            highly skilled labor, and extensive research and development.
+            Canada’s food processing industry is also a vital part of its
+            manufacturing sector, with the country being a major exporter of
+            agricultural products. The processing of meat, dairy, and grain
+            products is not only a significant contributor to the national
+            economy but also a source of high-quality products for international
+            markets. Canada’s commitment to food safety, environmental
+            sustainability, and ethical practices ensures that Canadian food
+            products meet the highest standards and are highly sought after
+            globally. Technological innovation within the manufacturing sector
+            is also on the rise in Canada, with a strong focus on automation,
+            robotics, and smart manufacturing. The integration of Industry 4.0
+            technologies has allowed Canadian manufacturers to improve
+            efficiency, reduce costs, and produce higher-quality products. Smart
+            factories, where machines and systems communicate and adapt in
+            real-time, are becoming increasingly common in Canada, particularly
+            in the automotive and aerospace industries.
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./client/images/content/business-canada/image-3.png"
+                alt="logo"
+              />
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">
+                Healthcare in Canada - Advancing Medical Research and
+                Innovations in Healthtech
+              </h3>
+
+              <p class="small-description description-p">
+                Canada’s manufacturing sector plays a critical role in its
+                economy, contributing significantly to both GDP and employment.
+                As one of the most diversified and innovative sectors in the
+                country, manufacturing spans several key industries, including
+                automotive, aerospace, food processing, technology, and natural
+                resources. This diversity provides ample opportunities for
+                investors and businesses looking to expand or enter the Canadian
+                market. The automotive industry is one of the most established
+                and important manufacturing sectors in Canada, with major plants
+                located in Ontario. Canada is home to significant production and
+                assembly operations for global automotive giants such as Ford,
+                General Motors, and Toyota. The sector also produces parts and
+                components for the global supply chain, positioning Canada as a
+                key player in North American and global automotive trade. In
+                addition to automotive, the aerospace sector is another critical
+                component of Canada's manufacturing landscape. Canada is known
+                for its advanced aerospace technologies, including aircraft
+                production, parts manufacturing, and maintenance services.
+                Leading companies such as Bombardier and Pratt & Whitney Canada
+                have established a strong presence in the country, making Canada
+                one of the leading countries in aerospace engineering and
+                innovation. This sector benefits from cutting-edge technologies,
+                highly skilled labor, and extensive research and development.
+                Canada’s food processing industry is also a vital part of its
+                manufacturing sector, with the country being a major exporter of
+                agricultural products. The processing of meat, dairy, and grain
+                products is not only a significant contributor to the national
+                economy but also a source of high-quality products for
+                international markets. Canada’s commitment to food safety,
+                environmental sustainability, and ethical practices ensures that
+                Canadian food products meet the highest standards and are highly
+                sought after globally. Technological innovation within the
+                manufacturing sector is also on the rise in Canada, with a
+                strong focus on automation, robotics, and smart manufacturing.
+                The integration of Industry 4.0 technologies has allowed
+                Canadian manufacturers to improve efficiency, reduce costs, and
+                produce higher-quality products. Smart factories, where machines
+                and systems communicate and adapt in real-time, are becoming
+                increasingly common in Canada, particularly in the automotive
+                and aerospace industries.
+              </p>
+
+              <div class="info">
+                <a class="web-site" href="#"> </a>
+
+                <div class="btn-small show-btn">
+                  <a>Show More <i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-description description-p">
+            Canada’s manufacturing sector plays a critical role in its economy,
+            contributing significantly to both GDP and employment. As one of the
+            most diversified and innovative sectors in the country,
+            manufacturing spans several key industries, including automotive,
+            aerospace, food processing, technology, and natural resources. This
+            diversity provides ample opportunities for investors and businesses
+            looking to expand or enter the Canadian market. The automotive
+            industry is one of the most established and important manufacturing
+            sectors in Canada, with major plants located in Ontario. Canada is
+            home to significant production and assembly operations for global
+            automotive giants such as Ford, General Motors, and Toyota. The
+            sector also produces parts and components for the global supply
+            chain, positioning Canada as a key player in North American and
+            global automotive trade. In addition to automotive, the aerospace
+            sector is another critical component of Canada's manufacturing
+            landscape. Canada is known for its advanced aerospace technologies,
+            including aircraft production, parts manufacturing, and maintenance
+            services. Leading companies such as Bombardier and Pratt & Whitney
+            Canada have established a strong presence in the country, making
+            Canada one of the leading countries in aerospace engineering and
+            innovation. This sector benefits from cutting-edge technologies,
+            highly skilled labor, and extensive research and development.
+            Canada’s food processing industry is also a vital part of its
+            manufacturing sector, with the country being a major exporter of
+            agricultural products. The processing of meat, dairy, and grain
+            products is not only a significant contributor to the national
+            economy but also a source of high-quality products for international
+            markets. Canada’s commitment to food safety, environmental
+            sustainability, and ethical practices ensures that Canadian food
+            products meet the highest standards and are highly sought after
+            globally. Technological innovation within the manufacturing sector
+            is also on the rise in Canada, with a strong focus on automation,
+            robotics, and smart manufacturing. The integration of Industry 4.0
+            technologies has allowed Canadian manufacturers to improve
+            efficiency, reduce costs, and produce higher-quality products. Smart
+            factories, where machines and systems communicate and adapt in
+            real-time, are becoming increasingly common in Canada, particularly
+            in the automotive and aerospace industries.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge section">
+      <div
+        class="container"
+        style="background-image: url(./client/images/settings/challeng.png)"
+      >
+        <a href="#" class="section-header">
+          <h3 class="title">Grow Your Business Beyond Borders</h3>
+          <h4 class="sub-title">
+            Partner with Mont-Royal Canada to unlock global opportunities.
+          </h4>
+        </a>
+        <div class="btn-large">
+          <a href="#">Join us</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="footer-main"
+        style="background-image: url(./client/images/settings/footer-bg.png)"
+      >
+        <div class="navbar contact">
+          <div class="logo">
+            <a href="">
+              <img src="./client/images/settings/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <ul class="con-list">
+            <li>
+              <a href="mailto:info@montroyalcanada.com"
+                >info@montroyalcanada.com</a
+              >
+            </li>
+            <li><a href="tel:Tel:+1505005050">+1505005050</a></li>
+            <li><a href="googlemap">Laval, QC H7N 0E4, Canada</a></li>
+          </ul>
+
+          <ul class="social-platforms">
+            <li>
+              <a href="#">
+                <p><i class="fab fa-facebook"></i></p
+              ></a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-instagram"></i></p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-x-twitter"></i></p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p><i class="fab fa-linkedin"></i></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar">
+          <span> About us </span>
+          <ul class="menu">
+            <li><a href="#">Our Mission & Key Policy</a></li>
+            <li><a href="#">Association</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="navbar">
+          <span> Services </span>
+          <ul class="menu">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Market Entry Assistance</a></li>
+            <li><a href="#">Import of Country Products</a></li>
+          </ul>
+        </div>
+        <div class="navbar">
+          <span> Doing Business </span>
+          <ul class="menu">
+            <li><a href="#">Business in Canada</a></li>
+            <li><a href="#">Business in Azerbaijan</a></li>
+            <li><a href="#">Sector of Activity</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar">
+          <a href="#" class="country">
+            <img src="https://flagcdn.com/ca.svg" alt="" />
+            <p>Business in Canada</p>
+          </a>
+          <a href="#" class="country">
+            <img src="https://flagcdn.com/az.svg" alt="" />
+            <p>Business in Azerbaijan</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-development">
+        <p>&copy; 2025 Mont-Royal Canada MMC. All Rights Reserved.</p>
+
+        <a
+          href="https://www.linkedin.com/in/tamerlan-alliyev"
+          target="_blank"
+          title="Tamerlan Aliyev"
+        >
+          Developed by:
+          <h3 data-developed="Tamerlan Aliyev" da>Tamerlan Aliyev</h3>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./client/js/association.js"></script>
+    <script src="./client/js/layout.js"></script>
+  </body>
+</html>

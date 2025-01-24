@@ -1,0 +1,91 @@
+/*
+========================================
+         SECTION: SERVICE  -  START
+========================================
+*/
+
+.section.export {
+  background-color: var(--color-card);
+  padding:var(--padding-main);
+}
+
+.section.export .container{
+  gap: var(--gap-section);
+}
+
+.section.export .btn-small.learn a {
+  background: var(--color-blue-soft);
+  color: var(--color-white);
+}
+
+.section.export .btn-small.learn a:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.section.export .card-title {
+  font-size: var(--font-size-card-title);
+  text-decoration: none;
+  color: var(--color-dark-blue);
+}
+
+.section.export .country {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /**/
+  gap: var(--gap-main);
+}
+
+.section.export .country:first-child {/**/
+  flex-direction: column-reverse
+}
+
+
+.section.export .country .country-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  width: 100%;/*60*/
+}
+
+.section.export .images {
+  width: 100%;/*30*/
+  min-height: 250px;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.section.export .images .item-image {
+  width: 55%;
+  height: 55%;
+  position: absolute;
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
+}
+
+.section.export .images .item-image:first-child {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.section.export .images .item-image:last-child {
+  bottom: 0;
+  right: 0;
+}
+
+.section.export .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  aspect-ratio: 1.5/1;
+}
+
+
+
+/*
+========================================
+         SECTION: SERVICE  -  END
+========================================
+*/

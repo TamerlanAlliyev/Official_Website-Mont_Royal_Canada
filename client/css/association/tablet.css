@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    .association .card {
+        flex-direction: row;
+      }
+      .card-header {
+        width: 28%;
+        max-height: 100%; 
+      }
+      .card-body {
+        width: 78%; 
+      }
+      
+}

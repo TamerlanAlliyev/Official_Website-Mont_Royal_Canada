@@ -114,7 +114,7 @@ body {
   --color-blue-soft: #2b5fc1;
   --color-blue-soft-a: #092c6cbd;
   --color-sky-blue: #01a9f2;
-  --color-grey: #7b7e86;
+  --color-grey: #63666d;
   --color-footer: #8a99b4;
   --color-card: #6ca6fd34;
   --color-main-color: #ecf0f5;
@@ -1051,6 +1051,9 @@ footer {
   font-weight: var(--font-weight-xl);
   text-align: center;
 }
+.section-header.one .title {
+  text-align: start;
+}
 
 .section-header .sub-title {
   color: var(--color-black);
@@ -1170,6 +1173,32 @@ footer {
 }
 /* ----- BIG BUTTON _ END ----- */
 
+
+/* ----- LEARN BUTTON _ START ----- */
+
+.btn-small.learn {
+  display: flex;
+  justify-content: start;
+  flex: start;
+}
+
+ .btn-small.learn a {
+  background: transparent;
+  color: var(--color-blue-soft);
+  border: 1px solid var(--color-blue-soft);
+}
+ .btn-small.learn a:hover {
+  background: var(--color-blue-soft);
+  color: var(--color-white);
+  gap: var(--gap-xl);
+}
+ .btn-small.learn a:active {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+/* ----- LEARN BUTTON _ END ----- */
+
 /*
 ========================================
          SECTION: BUTTONS  -  END
@@ -1211,11 +1240,6 @@ footer {
   padding: var(--padding-main);
   height: 50vh;
   color: var(--color-white);
-  background-image: linear-gradient(
-      rgba(9, 44, 108, 0.8),
-      rgba(9, 44, 108, 0.8)
-    ),
-    url("/client/images/settings/business-concept-glass-world-laptop.jpg"); /* Doğru bir URL belirtildi */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1363,8 +1387,9 @@ footer {
 
 .description-p{
   font-size: var(--font-size-m);
-  line-height: 1.5;
   color: var(--color-grey);
+  line-height: 1.6;
+  word-spacing: 1.5px;
 }
 
 /*

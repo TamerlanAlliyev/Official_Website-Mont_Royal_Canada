@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS  LAYOUT -->
+    <!-- CSS  LAYOUT-->
     <link rel="stylesheet" href="./client/css/layout/desktop.css" />
     <link rel="stylesheet" href="./client/css/layout/laptop.css" />
     <link rel="stylesheet" href="./client/css/layout/tablet.css" />
     <link rel="stylesheet" href="./client/css/layout/mobile.css" />
 
-    <!-- CSS  CK-POST -->
-    <link rel="stylesheet" href="./client/css/ckeditor-style/mobile.css" />
+    <!-- CSS  association -->
+    <link rel="stylesheet" href="./client/css/association/mobile.css" />
+    <link rel="stylesheet" href="./client/css/association/tablet.css" />
 
     <meta
       name="viewport"
@@ -38,8 +39,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-
-    <title>Benefits of Partnership</title>
+    <style>
+      .card {
+        align-items: center;
+      }
+    
+    </style>
+    <title>Mont-Royal Canada</title>
   </head>
   <body>
     <div id="loading">
@@ -115,24 +121,24 @@
         </div>
 
         <div class="logo">
-          <a href="./home.html">
+          <a href="">
             <img src="./client/images/settings/logo.svg" alt="logo" />
           </a>
         </div>
 
         <ul class="menu">
           <li class="menu-list-li">
-            <a href="#" class="parent-row" href="#">Home</a>
+            <a href="./home.html" class="parent-row" href="#">Home</a>
           </li>
 
           <li class="menu-list-li">
             <a href="#" class="parent-row">About Us</a>
             <ul class="sub-list">
-              <li><a href="#">Our Mission & Key Policy</a></li>
-              <li><a href="#">Association</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="./our-mission.html">Our Mission & Key Policy</a></li>
+              <li><a href="./association.html">Association</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
               <li>
-                <a href="#"
+                <a href="./privacy-policy.html"
                   >Privacy Policy <i class="fa-solid fa-file-pdf"></i
                 ></a>
               </li>
@@ -160,13 +166,25 @@
           <li class="menu-list-li">
             <a href="#" class="parent-row">Partnerships</a>
             <ul class="sub-list">
-              <li><a href="#">Partners</a></li>
-              <li><a href="#">How to Become a Partner</a></li>
-              <li><a href="#">Benefits of Partnership</a></li>
-              <li><a href="#">Supplier Partnerships</a></li>
-              <li><a href="#">Distribution Partnerships</a></li>
-              <li><a href="#">Strategic Alliances</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="./partner.html">Partners</a></li>
+              <li>
+                <a href="./partner-become.html">How to Become a Partner</a>
+              </li>
+              <li>
+                <a href="./partner-benefits.html">Benefits of Partnership</a>
+              </li>
+              <li>
+                <a href="./partner-supplier.html">Supplier Partnerships</a>
+              </li>
+              <li>
+                <a href="./partner-distribution.html"
+                  >Distribution Partnerships</a
+                >
+              </li>
+              <li>
+                <a href="./partner-strategic.html">Strategic Alliances</a>
+              </li>
+              <li><a href="./Faq.html">FAQs</a></li>
             </ul>
           </li>
 
@@ -204,7 +222,7 @@
         <div class="menu-list">
           <ul class="pages">
             <li class="menu-list-li">
-              <a href="#">Home</a>
+              <a href="./home.html">Home</a>
             </li>
 
             <li class="menu-list-li">
@@ -212,16 +230,16 @@
 
               <ul class="sub-list">
                 <li>
-                  <a href="#">Our Mission & Key Policy</a>
+                  <a href="./our-mission.html">Our Mission & Key Policy</a>
                 </li>
                 <li>
-                  <a href="#">Association</a>
+                  <a href="./association.html">Association</a>
                 </li>
                 <li>
-                  <a href="#">Contact us</a>
+                  <a href="./contact.html">Contact us</a>
                 </li>
                 <li>
-                  <a href="#">Privacy policy</a>
+                  <a href="./privacy-policy.html">Privacy policy</a>
                 </li>
               </ul>
             </li>
@@ -260,31 +278,33 @@
               <a href="#">Partnerships</a>
               <ul class="sub-list">
                 <li>
-                  <a href="#">Partners</a>
+                  <a href="./partner.html">Partners</a>
                 </li>
                 <li>
-                  <a href="#">How to Become a Partner</a>
+                  <a href="./partner-become.html">How to Become a Partner</a>
                 </li>
                 <li>
-                  <a href="#">Benefits of Partnership</a>
+                  <a href="./partner-benefits.html">Benefits of Partnership</a>
                 </li>
                 <li>
-                  <a href="#">Supplier Partnerships</a>
+                  <a href="./partner-supplier.html">Supplier Partnerships</a>
                 </li>
                 <li>
-                  <a href="#">Distribution Partnerships</a>
+                  <a href="./partner-distribution.html"
+                    >Distribution Partnerships</a
+                  >
                 </li>
                 <li>
-                  <a href="#">Strategic Alliances</a>
+                  <a href="./partner-strategic.html">Strategic Alliances</a>
                 </li>
                 <li>
-                  <a href="#">FAQs</a>
+                  <a href="./Faq.html">FAQs</a>
                 </li>
               </ul>
             </li>
 
             <li class="menu-list-li">
-              <a href="#">Partnerships</a>
+              <a href="#">Events</a>
               <ul class="sub-list">
                 <li>
                   <a href="#">Events</a>
@@ -311,12 +331,19 @@
         </div>
       </div>
 
-      <section class="main-section">
+      <section
+        class="main-section"
+        style="
+          background-image: linear-gradient(
+              rgba(9, 44, 108, 0.8),
+              rgba(9, 44, 108, 0.8)
+            ),
+            url('/client/images/settings/business-concept-glass-world-laptop.jpg');
+        "
+      >
         <div class="container">
-          <h1 class="title">Benefits of Partnership</h1>
-          <p class="description">
-            Discover the key advantages of partnership, including growth opportunities, shared resources, and enhanced collaboration. Learn how partnering with us can elevate your success.
-          </p>
+          <h1 class="title">Business in Azerbaijan</h1>
+          <p class="description"></p>
         </div>
       </section>
     </header>
@@ -329,194 +356,159 @@
           </li>
           <p>/</p>
           <li class="parent">
-            <a href="./partnership.html">Partnerships</a>
-          </li>
-          <p>/</p>
-          <li class="parent">
-            <a href="./partner-become.html">How to Become a Partner</a>
+            <a href="./home.html">Doing Business</a>
           </li>
           <p>/</p>
           <li class="target">
-            <a href="./blog.html">Benefits of Partnership</a>
+            <a href="./blog.html">Business in Azerbaijan</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="section ">
-      <div class="container ">
-        <div class="ck-post">
-        <h1>Exploring Global Business Opportunities</h1>
+    <section class="section">
+      <div class="container">
+        <div class="section-header one">
+          <h3 class="title">
+            Business Opportunities in Azerbaijan: Investment Incentives,
+            Sectors, and Regulatory Environment
+          </h3>
+        </div>
 
-        <p>
-          In today’s interconnected world, businesses have unprecedented
-          opportunities to expand beyond borders and tap into global markets.
-          However, navigating the complexities of international business
-          requires strategic planning, adaptability, and a keen understanding of
-          diverse cultural, legal, and economic environments.
-        </p>
-
-        <h2>Understanding the Global Market Landscape</h2>
-        <p>
-          To succeed globally, businesses must first understand the dynamics of
-          the international market. This involves researching target markets,
-          identifying demand for products or services, and analyzing
-          competition. Tools like market research reports, trend analysis, and
-          customer feedback are invaluable in this phase.
-        </p>
-
-        <h2>Key Considerations for Global Expansion</h2>
-        <ul>
-          <li>
-            <strong>Market Research:</strong> Comprehensive research on
-            potential markets is crucial. Consider factors like market size,
-            growth potential, and local consumer preferences.
-          </li>
-          <li>
-            <strong>Regulatory Compliance:</strong> Each country has unique
-            legal requirements, from tax regulations to labor laws. Ensuring
-            compliance can mitigate risks and build trust with local
-            stakeholders.
-          </li>
-          <li>
-            <strong>Cultural Sensitivity:</strong> Understanding and respecting
-            cultural differences can enhance customer relationships and brand
-            reputation.
-          </li>
-          <li>
-            <strong>Logistics and Supply Chain:</strong> Efficient logistics and
-            a robust supply chain are essential for timely delivery and cost
-            optimization.
-          </li>
-        </ul>
-
-        <h2>Benefits of Going Global</h2>
-        <p>Expanding internationally can bring numerous benefits, including:</p>
-        <ul>
-          <li>
-            <strong>Diversified Revenue Streams:</strong> Access to multiple
-            markets reduces reliance on a single economy.
-          </li>
-          <li>
-            <strong>Increased Brand Recognition:</strong> A global presence
-            enhances your company’s credibility and visibility.
-          </li>
-          <li>
-            <strong>Innovation Opportunities:</strong> Exposure to diverse
-            markets can inspire new product ideas and business models.
-          </li>
-        </ul>
-
-        <h2>Overcoming Challenges</h2>
-        <p>
-          While the opportunities are vast, global expansion is not without
-          challenges. Businesses may face currency fluctuations, geopolitical
-          risks, and cultural misunderstandings. Building a local team,
-          leveraging technology, and partnering with reliable local businesses
-          can help overcome these obstacles.
-        </p>
-
-        <h2>Conclusion</h2>
-        <p>
-          Exploring global business opportunities is an exciting journey filled
-          with potential rewards. By conducting thorough research, planning
-          strategically, and embracing adaptability, businesses can thrive in
-          the global arena. Remember, the key to success lies in understanding
-          and respecting the unique characteristics of each market you enter.
-        </p>
-
-        <p>
-          Are you ready to take your business global? Contact our consulting
-          team today for expert guidance and support on your international
-          expansion journey.
-        </p>
-        <h1>Exploring Global Business Opportunities</h1>
-
-        <p>
-          In today’s interconnected world, businesses have unprecedented
-          opportunities to expand beyond borders and tap into global markets.
-          However, navigating the complexities of international business
-          requires strategic planning, adaptability, and a keen understanding of
-          diverse cultural, legal, and economic environments.
-        </p>
-
-        <h2>Understanding the Global Market Landscape</h2>
-        <p>
-          To succeed globally, businesses must first understand the dynamics of
-          the international market. This involves researching target markets,
-          identifying demand for products or services, and analyzing
-          competition. Tools like market research reports, trend analysis, and
-          customer feedback are invaluable in this phase.
-        </p>
-
-        <h2>Key Considerations for Global Expansion</h2>
-        <ul>
-          <li>
-            <strong>Market Research:</strong> Comprehensive research on
-            potential markets is crucial. Consider factors like market size,
-            growth potential, and local consumer preferences.
-          </li>
-          <li>
-            <strong>Regulatory Compliance:</strong> Each country has unique
-            legal requirements, from tax regulations to labor laws. Ensuring
-            compliance can mitigate risks and build trust with local
-            stakeholders.
-          </li>
-          <li>
-            <strong>Cultural Sensitivity:</strong> Understanding and respecting
-            cultural differences can enhance customer relationships and brand
-            reputation.
-          </li>
-          <li>
-            <strong>Logistics and Supply Chain:</strong> Efficient logistics and
-            a robust supply chain are essential for timely delivery and cost
-            optimization.
-          </li>
-        </ul>
-
-        <h2>Benefits of Going Global</h2>
-        <p>Expanding internationally can bring numerous benefits, including:</p>
-        <ul>
-          <li>
-            <strong>Diversified Revenue Streams:</strong> Access to multiple
-            markets reduces reliance on a single economy.
-          </li>
-          <li>
-            <strong>Increased Brand Recognition:</strong> A global presence
-            enhances your company’s credibility and visibility.
-          </li>
-          <li>
-            <strong>Innovation Opportunities:</strong> Exposure to diverse
-            markets can inspire new product ideas and business models.
-          </li>
-        </ul>
-
-        <h2>Overcoming Challenges</h2>
-        <p>
-          While the opportunities are vast, global expansion is not without
-          challenges. Businesses may face currency fluctuations, geopolitical
-          risks, and cultural misunderstandings. Building a local team,
-          leveraging technology, and partnering with reliable local businesses
-          can help overcome these obstacles.
-        </p>
-
-        <h2>Conclusion</h2>
-        <p>
-          Exploring global business opportunities is an exciting journey filled
-          with potential rewards. By conducting thorough research, planning
-          strategically, and embracing adaptability, businesses can thrive in
-          the global arena. Remember, the key to success lies in understanding
-          and respecting the unique characteristics of each market you enter.
-        </p>
-
-        <p>
-          Are you ready to take your business global? Contact our consulting
-          team today for expert guidance and support on your international
-          expansion journey.
+        <p class="description-p">
+          The "Business in Azerbaijan" page serves as a comprehensive guide for
+          entrepreneurs, investors, and business professionals looking to
+          explore opportunities in Azerbaijan. This page delves into the
+          country’s key development sectors, including energy, agriculture, and
+          tourism, each offering unique investment potential. Azerbaijan’s rich
+          natural resources, such as oil and gas, present lucrative prospects,
+          while the growing renewable energy sector offers opportunities for
+          sustainable investment. Agriculture remains a cornerstone of the
+          economy, with a focus on ecologically clean products and expanding
+          export potential, particularly in fruits, vegetables, and livestock.
+          Additionally, Azerbaijan's tourism sector, with its diverse cultural
+          heritage and historical landmarks, is an emerging hub for investment,
+          promising long-term growth and returns. The page provides a detailed
+          overview of investment incentives available for foreign investors,
+          including tax breaks, grants, and access to free trade zones, designed
+          to make business operations more attractive and profitable. It
+          highlights various government support programs that facilitate the
+          entry of international capital into the Azerbaijani market, including
+          favorable legal frameworks that ensure protection for investors. The
+          regulatory environment section outlines the legal procedures for
+          setting up a business, including company registration, licensing, and
+          industry-specific regulations that entrepreneurs must navigate to
+          operate smoothly. Furthermore, practical suggestions and step-by-step
+          guidance are provided for those interested in starting a business in
+          Azerbaijan, including insights on local partnerships, risk mitigation
+          strategies, and key market trends to watch. This page also touches on
+          the evolving legal landscape and the rights and protections afforded
+          to foreign investors under Azerbaijani law. Whether you're looking to
+          establish a new enterprise or expand existing operations, the
+          "Business in Azerbaijan" page is an invaluable resource for anyone
+          considering the country as a prime location for investment and growth.
+          The "Business in Azerbaijan" page serves as a comprehensive guide for
+          entrepreneurs, investors, and business professionals looking to
+          explore opportunities in Azerbaijan. This page delves into the
+          country’s key development sectors, including energy, agriculture, and
+          tourism, each offering unique investment potential. Azerbaijan’s rich
+          natural resources, such as oil and gas, present lucrative prospects,
+          while the growing renewable energy sector offers opportunities for
+          sustainable investment. Agriculture remains a cornerstone of the
+          economy, with a focus on ecologically clean products and expanding
+          export potential, particularly in fruits, vegetables, and livestock.
+          Additionally, Azerbaijan's tourism sector, with its diverse cultural
+          heritage and historical landmarks, is an emerging hub for investment,
+          promising long-term growth and returns. The page provides a detailed
+          overview of investment incentives available for foreign investors,
+          including tax breaks, grants, and access to free trade zones, designed
+          to make business operations more attractive and profitable. It
+          highlights various government support programs that facilitate the
+          entry of international capital into the Azerbaijani market, including
+          favorable legal frameworks that ensure protection for investors. The
+          regulatory environment section outlines the legal procedures for
+          setting up a business, including company registration, licensing, and
+          industry-specific regulations that entrepreneurs must navigate to
+          operate smoothly. Furthermore, practical suggestions and step-by-step
+          guidance are provided for those interested in starting a business in
+          Azerbaijan, including insights on local partnerships, risk mitigation
+          strategies, and key market trends to watch. This page also touches on
+          the evolving legal landscape and the rights and protections afforded
+          to foreign investors under Azerbaijani law. Whether you're looking to
+          establish a new enterprise or expand existing operations, the
+          "Business in Azerbaijan" page is an invaluable resource for anyone
+          considering the country as a prime location for investment and growth.
         </p>
       </div>
-    </div>
-   
+    </section>
+
+    <section class="section association">
+      <div class="container">
+        <div class="card-box">
+          <div class="card">
+            <h3 class="card-title">
+              Investment Opportunities in Azerbaijan's Energy Sector and
+              Renewable Energy Potential
+            </h3>
+
+            <div class="btn-small learn">
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="card">
+            <h3 class="card-title">
+              Transportation and Logistics in - A Strategic Hub for Global Trade
+            </h3>
+
+            <div class="btn-small learn">
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="card">
+            <h3 class="card-title">
+              Manufacturing in - A Core Sector for Economic Growth and
+              Technological Innovation
+            </h3>
+
+            <div class="btn-small learn">
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="card">
+            <h3 class="card-title">
+              Healthcare in - Advancing Medical Research and Innovations in
+              Healthtech
+            </h3>
+
+            <div class="btn-small learn">
+              <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge section">
+      <div
+        class="container"
+        style="background-image: url(./client/images/settings/challeng.png)"
+      >
+        <a href="#" class="section-header">
+          <h3 class="title">Grow Your Business Beyond Borders</h3>
+          <h4 class="sub-title">
+            Partner with Mont-Royal Canada to unlock global opportunities.
+          </h4>
+        </a>
+        <div class="btn-large">
+          <a href="#">Join us</a>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -606,19 +598,18 @@
 
       <div class="footer-development">
         <p>&copy; 2025 Mont-Royal Canada MMC. All Rights Reserved.</p>
-        <p>
+
+        <a
+          href="https://www.linkedin.com/in/tamerlan-alliyev"
+          target="_blank"
+          title="Tamerlan Aliyev"
+        >
           Developed by:
-          <a
-            href="https://www.linkedin.com/in/tamerlan-alliyev"
-            target="_blank"
-            title="Tamerlan Aliyev"
-            >Tamerlan Aliyev</a
-          >
-        </p>
+          <h3 data-developed="Tamerlan Aliyev" da>Tamerlan Aliyev</h3>
+        </a>
       </div>
     </footer>
 
-    <script src="./client/js/faq.js"></script>
     <script src="./client/js/layout.js"></script>
   </body>
 </html>
