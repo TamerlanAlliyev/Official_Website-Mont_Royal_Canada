@@ -1,0 +1,20 @@
+@media (min-width: 769px) {
+  /*
+========================================
+         SECTION: REGISTER  -  START
+========================================
+*/
+
+  .form-inputs-col .form-inputs-row {
+    flex-direction: row; /**/
+  }
+  .form-inputs-col .form-inputs-row .form-group {
+    width: 50%; /**/
+  }
+
+  /*
+========================================
+         SECTION: REGISTER  -  END
+========================================
+*/
+}

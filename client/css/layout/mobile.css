@@ -654,7 +654,9 @@ body {
          HEADER MENU -  START
 ========================================
 */
-
+header{
+  position: relative;
+}
 .header {
   display: flex;
   justify-content: space-between;

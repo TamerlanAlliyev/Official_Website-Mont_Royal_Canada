@@ -1,16 +1,15 @@
 @media (min-width: 1024px) {
   /*
 ========================================
-         SECTION: EVENT  -  START
+         SECTION: REGISTER  -  START
 ========================================
 */
-.events  .card .event-head .card-image {
-    min-width: 25%;
-    width: 25%;
-  }
+
+
+
   /*
 ========================================
-         SECTION: EVENT  -  END
+         SECTION: REGISTER  -  END
 ========================================
 */
 }

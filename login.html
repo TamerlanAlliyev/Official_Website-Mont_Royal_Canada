@@ -112,7 +112,7 @@
         </div>
       </aside>
 
-      <div class="header">
+      <div class="header ">
         <div class="burger">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -328,109 +328,72 @@
         </div>
       </div>
 
-      <section class="main-section">
-        <div class="container">
-          <h1 class="title">Business News</h1>
-          <p class="description">
-            The latest news and insights on global business opportunities,
-            collaboration between Canada and Azerbaijan, international trade,
-            and innovations.
-          </p>
-        </div>
-      </section>
+     
     </header>
 
-    <section class="section navigator">
-      <div class="container">
-        <ul class="navigator-list">
-          <li class="parent">
-            <a href="./home.html">Home</a>
-          </li>
-          <p>/</p>
-          <li class="parent">
-            <a href="./home.html">Partnerships</a>
-          </li>
-          <p>/</p>
-          <li class="target">
-            <a href="./blog.html">Blue Skincare</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+  
 
     <section class="section">
       <div class="container">
+        <a href="#" class="section-header">
+          <h3 class="title">Login</h3>
+        </a>
 
-        <div class="join-event">
-    
-          <div class="form-wrapper">
-            <div class="bacground-image">
-              <img src="./client/images/settings/bg-img.png" alt="" />
-            </div>
-            <form action="">
-              <div class="column">
-                <div class="form-group">
-                  <label for="name">Full Name</label>
+        <div class="form-wrapper">
+
+         
+
+          <form action="">
+            <div class="form-inputs">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <div class="form-group checkbox">
+
+                <div class="last-goup">
                   <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="John Doe"
-                    required
+                    type="checkbox"
+                    id="checkbox"
+                    name="checkbox"
+                    
                   />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="example@email.com"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="company">Company Name</label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    placeholder="Your Company Name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="position">Position</label>
-                  <input
-                    type="text"
-                    id="position"
-                    name="position"
-                    placeholder="Your Position"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone"
-                    required
-                  />
+                  <label for="checkbox">Remember my login</label>
                 </div>
 
-                <div class="form-group">
-                  <button class="btn-large" type="submit">Join Event</button>
+                <div class="forget-password">
+                  <a href="#">Forget Password</a>
                 </div>
 
               </div>
-            </form>
-           
-          </div>
 
+
+            </div>
+
+            <div class="form-group">
+              <button class="btn-large" type="submit">Join Event</button>
+            </div>
+          </form>
+
+          
         </div>
-
       </div>
     </section>
 
@@ -532,6 +495,7 @@
         </a>
       </div>
     </footer>
+
 
     <script src="./client/js/layout.js"></script>
   </body>

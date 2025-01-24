@@ -61,7 +61,7 @@ form textarea::placeholder {
 
 
 form button {
-  width: 1005;
+  width: 100%;
   display: flex;
   padding: var(--padding-button-medium);
   justify-content: center;

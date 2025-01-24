@@ -1,4 +1,3 @@
-@import url(../layout/mobile.css);
 
 /*
 ========================================
@@ -6,14 +5,14 @@
 ========================================
 */
 
- .card {
+.events .card {
   display: flex;
   flex-direction: column;
   border-radius: var(--border-radius-l) ;
 overflow: hidden;
 }
 
- .card .event-head {
+.events .card .event-head {
   display: flex;
   flex-direction: column;/**/
   gap: var(--gap-card-main);
@@ -21,7 +20,7 @@ overflow: hidden;
   background: var(--color-white);
 }
 
- .card .event-head .card-image {
+.events .card .event-head .card-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +28,7 @@ overflow: hidden;
   width: 100%;/**/
 }
 
- .card .event-head .card-image img {
+.events .card .event-head .card-image img {
   width: 100%;
   height: 100%;
   aspect-ratio: 1.5/1;
@@ -38,7 +37,7 @@ overflow: hidden;
   border-radius: var(--border-radius-s) ;
 }
 
- .card .event-head .card-content {
+.events .card .event-head .card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,11 +45,11 @@ overflow: hidden;
   gap: var(--gap-l);
 }
 
- .card .event-head .card-content .card-title {
+.events .card .event-head .card-content .card-title {
   font-size: var(--font-size-card-title);
 }
 
- .card .event-head .card-content .card-description {
+.events .card .event-head .card-content .card-description {
   font-size: var(--font-size-s);
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -60,29 +59,46 @@ overflow: hidden;
   line-height: 1.5;
 }
 
- .card .event-head .event-date {
+.events .card .event-head .event-date {
   display: flex;
   gap: var(--gap-main);
   font-size: var(--font-size-xs);
 }
 
- .card .event-head .event-date a {
+.events .card .event-head .event-date a {
   display: flex;
   align-items: center;
   gap: var(--gap-xs);
   color: var(--color-blue-soft);
   text-decoration: none;
 }
-.btn-small a{
-  color: var(--color-white) !important;
+.events .btn-small a{
+  color: var(--color-blue-soft);
+  background: var(--color-white);
 }
 
-.past-events  .card .event-head .event-date{
+.events .btn-small a:hover{
+  color:  var(--color-white);
+  background: var(--color-blue-soft);
+}
+
+.past-events.events  .btn-small a{
+  color:  var(--color-white) !important;
+  background: var(--color-blue-soft);
+}
+
+.past-events.events .btn-small a:hover{
+  background: var(--color-blue);
+}
+
+
+.events.past-events  .card .event-head .event-date{
   justify-content: space-between;
-  
+  flex-direction: column;
+  align-items: center;
 }
 
-.past-events  .card .event-head .info{
+.events.past-events  .card .event-head .info{
   display: flex;
   justify-content: space-between;
   gap: var(--gap-main);
@@ -96,13 +112,13 @@ overflow: hidden;
 ========================================
 */
 
-.countdown-container {
+.events .countdown-container {
   display: flex;
   gap: var(--gap-xl);
   align-items: center;
 }
 
-.countdown-item {
+.events .countdown-item {
   background-color: white;
   border-radius: 50%;
   width: var(--width-box);
@@ -113,18 +129,18 @@ overflow: hidden;
   align-items: center;
 }
 
-.countdown-value {
+.events .countdown-value {
   font-size: var(--font-size-l);
   font-weight: bold;
 }
 
-.countdown-label {
+.events .countdown-label {
   font-size: var(--font-size-xs);
   text-transform: uppercase;
   color: #333;
 }
 
-.countdown-join {
+.events .countdown-join {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,7 +153,7 @@ overflow: hidden;
 }
 
 
-.countdown-container h2{
+.events .countdown-container h2{
   font-size: var(--font-size-l);
   color: var(--color-white);
   font-weight: var(--font-weight-l);
