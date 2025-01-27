@@ -8,14 +8,36 @@
 
 .header {
   background: var(--color-blue);
+  position: relative;
+}
+
+.header.scroll {
+  position: fixed;
 }
 .form-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: var(--gap-main);
+  width: 100%;
+  align-items: center;
 }
 
-.section{
-  margin-top: var(--gap-section);
+.other-auth {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+  width: 100%;
+}
+
+.other-auth p {
+  color: var(--color-blue);
+  font-size: var(--font-size-m);
+}
+
+.other-auth a {
+  color: var(--color-blue-soft);
+  font-weight: var(--font-weight-l);
 }
 
 .form-wrapper form {

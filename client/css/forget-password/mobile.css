@@ -8,15 +8,38 @@
 
 .header {
   background: var(--color-blue);
+  position: relative;
+}
+
+.header.scroll{
+  position: fixed;
 }
 .form-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: var(--gap-main);
 }
 
-.section{
-  margin-top: var(--gap-section);
+.other-auth{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+  width: 100%;
 }
+
+.other-auth p {
+  color: var(--color-blue);
+  font-size: var(--font-size-m);
+}
+
+.other-auth a {
+  color: var(--color-blue-soft);
+  font-weight: var(--font-weight-l);
+}
+
+
 
 .form-wrapper form {
   display: flex;

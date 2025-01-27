@@ -21,7 +21,6 @@
 
 
 .contact-form {
-  flex-direction: row; /**/
 }
 
  form {
@@ -33,6 +32,9 @@
 }
 
 
+.other-auth{
+  width: 80%;
+}
 
 
 

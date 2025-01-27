@@ -21,7 +21,6 @@ form {
   width: 40%; /**/
 }
 .form-wrapper {
-  flex-direction: row;/**/
 }
 
 
@@ -29,6 +28,11 @@ form {
 .form-wrapper form {
   width: 60%;
 }
+
+.other-auth{
+  width: 60%;
+}
+
 
 
   /*
