@@ -1,3 +1,16 @@
+.header {
+  background: var(--color-blue);
+  position: relative;
+}
+
+.header.scroll{
+  position: fixed;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 /*
 ========================================
          SECTION: EVENT  -  START

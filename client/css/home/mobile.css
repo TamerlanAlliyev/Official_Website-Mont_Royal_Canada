@@ -304,12 +304,13 @@
   background: var(--color-white);
   border-radius: var(--border-radius-l);
   height: 100%;
+  transform: scale(0.97);
 
   transition: all 0.3s ease;
 }
 
 .section-services .swiper-slide.card:hover {
-  box-shadow: 0px 8px 0px 0px var(--color-blue-soft), 0px 4px 30px 0px rgba(6, 22, 48, 0.40);
+  box-shadow: 0px 8px 0px 0px var(--color-blue-soft), 0px 4px 8px 0px rgba(6, 22, 48, 0.40);
 
 }
 

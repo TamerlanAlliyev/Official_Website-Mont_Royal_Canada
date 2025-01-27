@@ -61,7 +61,8 @@ overflow: hidden;
 
 .events .card .event-head .event-date {
   display: flex;
-  gap: var(--gap-main);
+  flex-direction: column;/* row */
+  gap: var(--gap-xl);/* var(--gap-main) */
   font-size: var(--font-size-xs);
 }
 
@@ -100,9 +101,10 @@ overflow: hidden;
 
 .events.past-events  .card .event-head .info{
   display: flex;
-  justify-content: space-between;
-  gap: var(--gap-main);
+  flex-direction: column;/* row */
+  gap: var(--gap-xl);/* var(--gap-main) */
   font-size: var(--font-size-xs);
+  width: 100%;
 }
 
 

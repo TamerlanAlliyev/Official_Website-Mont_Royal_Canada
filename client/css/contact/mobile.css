@@ -228,3 +228,10 @@
          SECTION: CONTACT  -  END
 ========================================
 */
+
+
+.location iframe {
+  min-height: 450px;
+  height: 100%;
+  border-radius: var(--border-radius-l);
+}

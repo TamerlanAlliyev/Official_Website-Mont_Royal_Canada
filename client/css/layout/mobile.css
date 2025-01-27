@@ -79,7 +79,6 @@ body {
 
 /* LOADING*/
 
-
 .card .info h5 {
   font-size: var(--font-size-xl);
   color: var(--color-black);
@@ -105,6 +104,7 @@ body {
   gap: var(--gap-main);
 }
 
+/*RESPONSIVE MAX 768PX */
 :root {
   /* _____ COLORS _____ */
   --color-black: #000;
@@ -143,8 +143,15 @@ body {
   --font-size-header: 24px;
   --font-size-subheader: 16px;
 
+  --font-size-header-medium:18px;
+
   --font-size-card-title: 20px;
   --font-size-card-description: 14px;
+
+  --font-size-button-small: 12px;
+  --font-size-button-medium: 14px;
+  --font-size-button-medium: 16px;
+
 
   /* _____ PADDING _____ */
   --padding-main: 20px;
@@ -152,9 +159,9 @@ body {
   --padding-list: 6px 8px;
   --padding-input: 12px 14px;
 
-  --padding-button-small: 6px 8px;
-  --padding-button-medium: 10px 14px;
-  --padding-button-large: 14px 20px; /**/
+  --padding-button-small: 10px 12px;
+  --padding-button-medium: 12px 16px; 
+  --padding-button-large: 14px 20px; 
   --padding-button-big: 18px 26px;
 
   --padding-card: 24px 20px;
@@ -178,6 +185,11 @@ body {
   --gap-l: 12px;
   --gap-xl: 14px;
 
+  --gap-button-small: 10px; 
+  --gap-button-medium: 14px; 
+  --gap-button-large: 16px; 
+
+
   /* _____ BORDER RADIUS _____ */
   --border-radius-xs: 4px;
   --border-radius-s: 6px;
@@ -185,11 +197,15 @@ body {
   --border-radius-l: 10px;
   --border-radius-xl: 12px;
 
+
+  --border-radius-button-small: 4px;
+  --border-radius-button-medium: 6px;
+  --border-radius-button-large: 6px;
+
   /* _____ WIDTH _____ */
   --width-flag: 14px;
   --width-logo: 140px;
   --width-box: 50px;
-
 
   --pagination-size: 8px;
   --pagination-active-size: 10px;
@@ -227,26 +243,33 @@ body {
 @media (min-width: 769px) {
   :root {
     /* _____ FONT SIZE _____ */
-    --font-size-xs: 10px; /**/
-    --font-size-s: 12px; /**/
-    --font-size-m: 14px; /**/
-    --font-size-l: 16px; /**/
-    --font-size-xl: 18px; /**/
+    --font-size-xs: 10px; 
+    --font-size-s: 12px; 
+    --font-size-m: 14px; 
+    --font-size-l: 16px; 
+    --font-size-xl: 18px; 
 
-    --font-size-header: 28px; /**/
-    --font-size-subheader: 18px; /**/
+    --font-size-header: 28px; 
+    --font-size-subheader: 18px; 
+
+    --font-size-header-medium: 20px;
 
     --font-size-card-title: 20px;
     --font-size-card-description: 14px;
 
+    --font-size-button-small: 12px;
+    --font-size-button-medium: 14px;
+    --font-size-button-large: 16px;
+
+
     /* _____ PADDING _____ */
-    --padding-main: 24px; /**/
-    --padding-main-top: 20px; /**/
+    --padding-main: 24px; 
+    --padding-main-top: 20px; 
     --padding-list: 10px 16px;
-    --padding-input: 14px 16px; /**/
-    --padding-button-small: 10px 12px; /**/
-    --padding-button-medium: 12px 16px; /**/
-    --padding-button-large: 16px 22px; /**/
+    --padding-input: 14px 16px; 
+    --padding-button-small: 10px 12px; 
+    --padding-button-medium: 12px 16px; 
+    --padding-button-large: 16px 22px; 
     --padding-button-big: 20px 28px;
 
     --padding-card: 26px 22px;
@@ -254,21 +277,26 @@ body {
     --padding-date: 4px 6px;
     --padding-acordion: 22px;
 
-    --padding-xs: 10px; /**/
-    --padding-s: 12px; /**/
-    --padding-m: 14px; /**/
-    --padding-l: 16px; /**/
+    --padding-xs: 10px; 
+    --padding-s: 12px; 
+    --padding-m: 14px; 
+    --padding-l: 16px; 
 
     /* _____ GAP _____ */
     --gap-section: 40px;
-    --gap-main: 30px; /**/
-    --gap-card-main: 24px; /**/
+    --gap-main: 30px; 
+    --gap-card-main: 24px; 
 
-    --gap-xs: 6px; /**/
-    --gap-s: 8px; /**/
-    --gap-m: 10px; /**/
-    --gap-l: 14px; /**/
-    --gap-xl: 16px; /**/
+    --gap-xs: 6px; 
+    --gap-s: 8px; 
+    --gap-m: 10px; 
+    --gap-l: 14px; 
+    --gap-xl: 16px; 
+
+    --gap-button-small: 10px; 
+    --gap-button-medium: 14px; 
+    --gap-button-large: 14px; 
+
 
     /* _____ BORDER RADIUS _____ */
     --border-radius-xs: 4px;
@@ -277,16 +305,19 @@ body {
     --border-radius-l: 10px;
     --border-radius-xl: 12px;
 
-    /* _____ WIDTH _____ */
-    --width-flag: 20px; /**/
-    --width-logo: 220px; /**/
-    --width-box: 55px;
+    --border-radius-button-small: 4px;
+    --border-radius-button-medium: 6px;
+    --border-radius-button-large: 8px;
 
+
+    /* _____ WIDTH _____ */
+    --width-flag: 20px; 
+    --width-logo: 220px; 
+    --width-box: 55px;
 
     --pagination-size: 10px;
     --pagination-active-size: 12px;
-  --pagination-button-size: 34px;
-
+    --pagination-button-size: 34px;
   }
 
   .footer-main .navbar {
@@ -305,13 +336,20 @@ body {
     --font-size-header: 28px;
     --font-size-subheader: 18px;
 
+    --font-size-header-medium:20px;
+
     --font-size-card-title: 22px;
     --font-size-card-description: 16px;
 
+    --font-size-button-small: 14px;
+    --font-size-button-medium: 16px;
+    --font-size-button-large: 18px;
+
+
     /* _____ PADDING _____ */
-    --padding-main: 46px; /**/
-    --padding-main-top: 24px; /**/
-    --padding-list: 24px; /**/
+    --padding-main: 46px; 
+    --padding-main-top: 24px; 
+    --padding-list: 24px; 
     --padding-input: 14px 16px;
     --padding-button-small: 12px 14px;
     --padding-button-medium: 12px 16px;
@@ -322,39 +360,48 @@ body {
     --padding-date: 6px 8px;
     --padding-acordion: 24px;
 
-
-    --padding-xs: 12px; /**/
-    --padding-s: 14px; /**/
-    --padding-m: 16px; /**/
-    --padding-l: 18px; /**/
+    --padding-xs: 12px; 
+    --padding-s: 14px; 
+    --padding-m: 16px; 
+    --padding-l: 18px; 
 
     /* _____ GAP _____ */
-    --gap-section: 80px; /**/
-    --gap-main: 40px; /**/
+    --gap-section: 80px; 
+    --gap-main: 40px; 
     --gap-card-main: 28px;
 
-    --gap-xs: 8px; /**/
-    --gap-s: 10px; /**/
-    --gap-m: 12px; /**/
-    --gap-l: 16px; /**/
-    --gap-xl: 18px; /**/
+    --gap-xs: 8px; 
+    --gap-s: 10px; 
+    --gap-m: 12px; 
+    --gap-l: 16px; 
+    --gap-xl: 18px; 
+
+    --gap-button-small: 12px; 
+    --gap-button-medium: 16px; 
+    --gap-button-large: 16px; 
+    
+
 
     /* _____ BORDER RADIUS _____ */
-    --border-radius-xs: 6px; /**/
-    --border-radius-s: 8px; /**/
-    --border-radius-m: 10px; /**/
+    --border-radius-xs: 6px; 
+    --border-radius-s: 8px; 
+    --border-radius-m: 10px; 
     --border-radius-l: 12px;
     --border-radius-xl: 14px;
+
+    --border-radius-button-small: 6px;
+    --border-radius-button-medium: 8px;
+    --border-radius-button-large: 8px;
+
+
     /* _____ WIDTH _____ */
     --width-flag: 22px;
     --width-logo: 220px;
     --width-box: 60px;
 
-
     --pagination-size: 12px;
     --pagination-active-size: 14px;
-  --pagination-button-size: 38px;
-
+    --pagination-button-size: 38px;
   }
   .footer-main .navbar {
     min-width: 18%;
@@ -369,14 +416,20 @@ body {
     --font-size-l: 18px;
     --font-size-xl: 20px;
 
-    --font-size-header: 32px; /**/
-    --font-size-subheader: 20px; /**/
+    --font-size-header: 32px; 
+    --font-size-subheader: 20px; 
+
+    --font-size-header-medium:22px;
 
     --font-size-card-title: 24px;
     --font-size-card-description: 18px;
 
+    --font-size-button-small: 14px;
+    --font-size-button-medium: 16px;
+    --font-size-button-large: 18px;
+
     /* _____ PADDING _____ */
-    --padding-main: 60px; /**/
+    --padding-main: 60px; 
     --padding-main-top: 24px;
     --padding-list: 24px;
     --padding-input: 14px 16px;
@@ -389,29 +442,37 @@ body {
     --padding-date: 8px 12px;
     --padding-acordion: 28px;
 
-
-    --padding-xs: 14px; /**/
-    --padding-s: 16px; /**/
-    --padding-m: 18px; /**/
-    --padding-l: 20px; /**/
+    --padding-xs: 14px; 
+    --padding-s: 16px; 
+    --padding-m: 18px; 
+    --padding-l: 20px; 
 
     /* _____ GAP _____ */
-    --gap-section: 100px; /**/
-    --gap-main: 50px; /**/
-    --gap-card-main: 30px; /**/
+    --gap-section: 100px; 
+    --gap-main: 50px; 
+    --gap-card-main: 30px; 
 
-    --gap-xs: 10px; /**/
-    --gap-s: 12px; /**/
-    --gap-m: 14px; /**/
-    --gap-l: 18px; /**/
-    --gap-xl: 20px; /**/
+    --gap-xs: 10px; 
+    --gap-s: 12px; 
+    --gap-m: 14px; 
+    --gap-l: 18px; 
+    --gap-xl: 20px; 
+
+    --gap-button-small: 12px; 
+    --gap-button-medium: 16px; 
+    --gap-button-large: 18px; 
 
     /* _____ BORDER RADIUS _____ */
-    --border-radius-xs: 6px; 
-    --border-radius-s: 10px; /**/
-    --border-radius-m: 12px; /**/
+    --border-radius-xs: 6px;
+    --border-radius-s: 10px; 
+    --border-radius-m: 12px; 
     --border-radius-l: 14px;
     --border-radius-xl: 16px;
+
+    --border-radius-button-small: 6px;
+    --border-radius-button-medium: 8px;
+    --border-radius-button-large: 8px;
+
     /* _____ WIDTH _____ */
     --width-flag: 24px;
     --width-logo: 240px;
@@ -419,8 +480,7 @@ body {
 
     --pagination-size: 14px;
     --pagination-active-size: 16px;
-  --pagination-button-size: 42px;
-
+    --pagination-button-size: 42px;
   }
   .footer-main .navbar {
     gap: var(--gap-s);
@@ -654,7 +714,7 @@ body {
          HEADER MENU -  START
 ========================================
 */
-header{
+header {
   position: relative;
 }
 .header {
@@ -917,7 +977,6 @@ footer {
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
-
 }
 
 .footer-main .navbar .social-platforms a:hover {
@@ -1017,7 +1076,7 @@ footer {
   font-size: var(--font-size-s);
   transition: all 0.3s ease;
 }
-.footer-development a h3{
+.footer-development a h3 {
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-l);
 }
@@ -1051,6 +1110,15 @@ footer {
   font-weight: var(--font-weight-xl);
   text-align: center;
 }
+
+.section-header .title.medium {
+  color: var(--color-dark-blue);
+  text-transform: capitalize;
+  font-size: var(--font-size-header-medium);
+  font-weight: var(--font-weight-xl);
+  text-align: center;
+}
+
 .section-header.one .title {
   text-align: start;
 }
@@ -1081,16 +1149,16 @@ footer {
 
 /* ----- SMALL BUTTON _ START ----- */
 
-.btn-small a{
+.btn-small a {
   width: max-content;
   display: flex;
   padding: var(--padding-button-small);
   justify-content: center;
   align-items: center;
-  gap: var(--gap-s);
-  border-radius: var(--border-radius-xs);
+  gap: var(--gap-button-small);
+  border-radius: var(--border-radius-button-small);
   background: var(--color-blue-soft);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-button-small);
   color: var(--color-white);
   text-decoration: none;
   transition: all 0.3s ease !important;
@@ -1100,8 +1168,6 @@ footer {
   background: var(--color-blue);
   color: var(--color-white);
 }
-
-
 
 /* ----- SMALL BUTTON _ END ----- */
 
@@ -1113,9 +1179,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: var(--gap-l);
-  border-radius: var(--border-radius-s);
+  border-radius: var(--border-radius-button-medium);
   background: var(--color-blue-soft);
-  font-size: var(--font-size-m);
+  font-size: var( --font-size-button-medium);
   color: var(--color-white);
   text-decoration: none;
   transition: all 0.3s ease !important;
@@ -1136,9 +1202,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: var(--gap-l);
-  border-radius: var(--border-radius-m);
+  border-radius: var(--border-radius-button-large);
   background: var(--color-blue-soft);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-button-large);
   color: var(--color-white);
   text-decoration: none;
   transition: all 0.3s ease !important;
@@ -1173,7 +1239,6 @@ footer {
 }
 /* ----- BIG BUTTON _ END ----- */
 
-
 /* ----- LEARN BUTTON _ START ----- */
 
 .btn-small.learn {
@@ -1182,17 +1247,17 @@ footer {
   flex: start;
 }
 
- .btn-small.learn a {
+.btn-small.learn a {
   background: transparent;
   color: var(--color-blue-soft);
   border: 1px solid var(--color-blue-soft);
 }
- .btn-small.learn a:hover {
+.btn-small.learn a:hover {
   background: var(--color-blue-soft);
   color: var(--color-white);
   gap: var(--gap-xl);
 }
- .btn-small.learn a:active {
+.btn-small.learn a:active {
   background: var(--color-blue);
   color: var(--color-white);
 }
@@ -1289,8 +1354,6 @@ footer {
 ========================================
 */
 
-
-
 /*
 ========================================
          SELECETION -  START
@@ -1302,8 +1365,7 @@ footer {
   background: var(--color-blue-soft);
   border-radius: var(--border-radius-s);
   position: relative;
-  transition: all 0.3s ease; 
-
+  transition: all 0.3s ease;
 }
 
 .selection .selection-selected {
@@ -1339,10 +1401,9 @@ footer {
   border-radius: var(--border-radius-s) var(--border-radius-s) 0 0;
 }
 
-.selection.active i{
+.selection.active i {
   transform: rotate(180deg);
 }
-
 
 /*******************************/
 .selection-dropdown {
@@ -1354,9 +1415,9 @@ footer {
   background: var(--color-white);
   border-radius: 0 0 var(--border-radius-s) var(--border-radius-s);
   overflow: hidden;
-  max-height: 0; 
-  opacity: 0; 
-  transition: max-height 0.3s ease, opacity 0.3s ease; 
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .selection-dropdown .selection-dropdown-item {
@@ -1377,15 +1438,12 @@ footer {
   background: var(--color-card);
 }
 
-
-
-
 .selection.active .selection-dropdown {
   max-height: 500px;
-  opacity: 1; 
+  opacity: 1;
 }
 
-.description-p{
+.description-p {
   font-size: var(--font-size-m);
   color: var(--color-grey);
   line-height: 1.6;

@@ -112,7 +112,7 @@
         </div>
       </aside>
 
-      <div class="header ">
+      <div class="header">
         <div class="burger">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -327,11 +327,7 @@
           </div>
         </div>
       </div>
-
-     
     </header>
-
-  
 
     <section class="section">
       <div class="container">
@@ -340,10 +336,7 @@
         </a>
 
         <div class="form-wrapper">
-
-         
-
-          <form action="">
+          <form action="" method="POST" onsubmit="encryptData(event)">
             <div class="form-inputs">
               <div class="form-group">
                 <label for="email">Email</label>
@@ -367,32 +360,21 @@
               </div>
 
               <div class="form-group checkbox">
-
                 <div class="last-goup">
-                  <input
-                    type="checkbox"
-                    id="checkbox"
-                    name="checkbox"
-                    
-                  />
+                  <input type="checkbox" id="checkbox" name="checkbox" />
                   <label for="checkbox">Remember my login</label>
                 </div>
 
                 <div class="forget-password">
                   <a href="#">Forget Password</a>
                 </div>
-
               </div>
-
-
             </div>
 
             <div class="form-group">
               <button class="btn-large" type="submit">Join Event</button>
             </div>
           </form>
-
-          
         </div>
       </div>
     </section>
@@ -495,8 +477,26 @@
         </a>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("form")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
 
+          const data = {
+            username: document.getElementById("username").value,
+            password: document.getElementById("password").value,
+          };
 
+          await fetch("/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+        });
+    </script>
     <script src="./client/js/layout.js"></script>
   </body>
 </html>

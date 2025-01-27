@@ -1,20 +1,31 @@
 /* CK EDITOR --- POSTS */
+.header {
+  background: var(--color-blue);
+  position: relative;
+}
+
+.header.scroll{
+  position: fixed;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .ck-post h1 {
-    font-size: 2em;
     color: #2c3e50;
     margin-bottom: 20px;
   }
   
   .ck-post h2 {
-    font-size: 2em;
     color: #34495e;
     margin-top: 30px;
     margin-bottom: 15px;
   }
   
   .ck-post p {
-    font-size: 1em;
     margin-bottom: 15px;
   }
   
@@ -26,7 +37,6 @@ list-style: none;
   
   .ck-post ul li {
     margin-bottom: 10px;
-    font-size: 1em;
   }
   
   .ck-post strong {

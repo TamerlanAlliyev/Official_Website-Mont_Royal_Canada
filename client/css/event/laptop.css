@@ -8,6 +8,22 @@
     min-width: 25%;
     width: 25%;
   }
+
+  .events .card .event-head .event-date {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-main);
+    font-size: var(--font-size-xs);
+  }
+  .events.past-events  .card .event-head .info{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-main);
+    font-size: var(--font-size-xs);
+    width: auto;
+  }
+
+  
   /*
 ========================================
          SECTION: EVENT  -  END
