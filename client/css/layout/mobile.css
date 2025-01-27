@@ -120,6 +120,7 @@ body {
   --color-main-color: #ecf0f5;
   --color-white-soft: #ecececc9;
   --color-white: #fff;
+  --color-success: #5cb85c;
 
   --color-blue-linear: #092c6c 0%, #2b5fc1 100%;
   --color-blue-linear-column: #2b5fc1 0%, #01a9f2 50%, #2b5fc1 100%;
@@ -143,7 +144,7 @@ body {
   --font-size-header: 24px;
   --font-size-subheader: 16px;
 
-  --font-size-header-medium:18px;
+  --font-size-header-medium: 18px;
 
   --font-size-card-title: 20px;
   --font-size-card-description: 14px;
@@ -152,7 +153,6 @@ body {
   --font-size-button-medium: 14px;
   --font-size-button-medium: 16px;
 
-
   /* _____ PADDING _____ */
   --padding-main: 20px;
   --padding-main-top: 20px;
@@ -160,8 +160,8 @@ body {
   --padding-input: 12px 14px;
 
   --padding-button-small: 10px 12px;
-  --padding-button-medium: 12px 16px; 
-  --padding-button-large: 14px 20px; 
+  --padding-button-medium: 12px 16px;
+  --padding-button-large: 14px 20px;
   --padding-button-big: 18px 26px;
 
   --padding-card: 24px 20px;
@@ -185,10 +185,9 @@ body {
   --gap-l: 12px;
   --gap-xl: 14px;
 
-  --gap-button-small: 10px; 
-  --gap-button-medium: 14px; 
-  --gap-button-large: 16px; 
-
+  --gap-button-small: 10px;
+  --gap-button-medium: 14px;
+  --gap-button-large: 16px;
 
   /* _____ BORDER RADIUS _____ */
   --border-radius-xs: 4px;
@@ -196,7 +195,6 @@ body {
   --border-radius-m: 8px;
   --border-radius-l: 10px;
   --border-radius-xl: 12px;
-
 
   --border-radius-button-small: 4px;
   --border-radius-button-medium: 6px;
@@ -218,7 +216,11 @@ body {
     scrollbar-color: var(--color-blue) var(--color-blue);
   }
 
-  .header .auth {
+  .header .auth{
+    background: transparent;
+  }
+  .header .auth .user,
+  .header .auth p {
     display: none;
   }
   .subheader .search-language .search .search-box .search-result li a .map {
@@ -243,14 +245,14 @@ body {
 @media (min-width: 769px) {
   :root {
     /* _____ FONT SIZE _____ */
-    --font-size-xs: 10px; 
-    --font-size-s: 12px; 
-    --font-size-m: 14px; 
-    --font-size-l: 16px; 
-    --font-size-xl: 18px; 
+    --font-size-xs: 10px;
+    --font-size-s: 12px;
+    --font-size-m: 14px;
+    --font-size-l: 16px;
+    --font-size-xl: 18px;
 
-    --font-size-header: 28px; 
-    --font-size-subheader: 18px; 
+    --font-size-header: 28px;
+    --font-size-subheader: 18px;
 
     --font-size-header-medium: 20px;
 
@@ -261,15 +263,14 @@ body {
     --font-size-button-medium: 14px;
     --font-size-button-large: 16px;
 
-
     /* _____ PADDING _____ */
-    --padding-main: 24px; 
-    --padding-main-top: 20px; 
+    --padding-main: 24px;
+    --padding-main-top: 20px;
     --padding-list: 10px 16px;
-    --padding-input: 14px 16px; 
-    --padding-button-small: 10px 12px; 
-    --padding-button-medium: 12px 16px; 
-    --padding-button-large: 16px 22px; 
+    --padding-input: 14px 16px;
+    --padding-button-small: 10px 12px;
+    --padding-button-medium: 12px 16px;
+    --padding-button-large: 16px 22px;
     --padding-button-big: 20px 28px;
 
     --padding-card: 26px 22px;
@@ -277,26 +278,25 @@ body {
     --padding-date: 4px 6px;
     --padding-acordion: 22px;
 
-    --padding-xs: 10px; 
-    --padding-s: 12px; 
-    --padding-m: 14px; 
-    --padding-l: 16px; 
+    --padding-xs: 10px;
+    --padding-s: 12px;
+    --padding-m: 14px;
+    --padding-l: 16px;
 
     /* _____ GAP _____ */
     --gap-section: 40px;
-    --gap-main: 30px; 
-    --gap-card-main: 24px; 
+    --gap-main: 30px;
+    --gap-card-main: 24px;
 
-    --gap-xs: 6px; 
-    --gap-s: 8px; 
-    --gap-m: 10px; 
-    --gap-l: 14px; 
-    --gap-xl: 16px; 
+    --gap-xs: 6px;
+    --gap-s: 8px;
+    --gap-m: 10px;
+    --gap-l: 14px;
+    --gap-xl: 16px;
 
-    --gap-button-small: 10px; 
-    --gap-button-medium: 14px; 
-    --gap-button-large: 14px; 
-
+    --gap-button-small: 10px;
+    --gap-button-medium: 14px;
+    --gap-button-large: 14px;
 
     /* _____ BORDER RADIUS _____ */
     --border-radius-xs: 4px;
@@ -309,10 +309,9 @@ body {
     --border-radius-button-medium: 6px;
     --border-radius-button-large: 8px;
 
-
     /* _____ WIDTH _____ */
-    --width-flag: 20px; 
-    --width-logo: 220px; 
+    --width-flag: 20px;
+    --width-logo: 220px;
     --width-box: 55px;
 
     --pagination-size: 10px;
@@ -336,7 +335,7 @@ body {
     --font-size-header: 28px;
     --font-size-subheader: 18px;
 
-    --font-size-header-medium:20px;
+    --font-size-header-medium: 20px;
 
     --font-size-card-title: 22px;
     --font-size-card-description: 16px;
@@ -345,11 +344,10 @@ body {
     --font-size-button-medium: 16px;
     --font-size-button-large: 18px;
 
-
     /* _____ PADDING _____ */
-    --padding-main: 46px; 
-    --padding-main-top: 24px; 
-    --padding-list: 24px; 
+    --padding-main: 46px;
+    --padding-main-top: 24px;
+    --padding-list: 24px;
     --padding-input: 14px 16px;
     --padding-button-small: 12px 14px;
     --padding-button-medium: 12px 16px;
@@ -360,39 +358,36 @@ body {
     --padding-date: 6px 8px;
     --padding-acordion: 24px;
 
-    --padding-xs: 12px; 
-    --padding-s: 14px; 
-    --padding-m: 16px; 
-    --padding-l: 18px; 
+    --padding-xs: 12px;
+    --padding-s: 14px;
+    --padding-m: 16px;
+    --padding-l: 18px;
 
     /* _____ GAP _____ */
-    --gap-section: 80px; 
-    --gap-main: 40px; 
+    --gap-section: 80px;
+    --gap-main: 40px;
     --gap-card-main: 28px;
 
-    --gap-xs: 8px; 
-    --gap-s: 10px; 
-    --gap-m: 12px; 
-    --gap-l: 16px; 
-    --gap-xl: 18px; 
+    --gap-xs: 8px;
+    --gap-s: 10px;
+    --gap-m: 12px;
+    --gap-l: 16px;
+    --gap-xl: 18px;
 
-    --gap-button-small: 12px; 
-    --gap-button-medium: 16px; 
-    --gap-button-large: 16px; 
-    
-
+    --gap-button-small: 12px;
+    --gap-button-medium: 16px;
+    --gap-button-large: 16px;
 
     /* _____ BORDER RADIUS _____ */
-    --border-radius-xs: 6px; 
-    --border-radius-s: 8px; 
-    --border-radius-m: 10px; 
+    --border-radius-xs: 6px;
+    --border-radius-s: 8px;
+    --border-radius-m: 10px;
     --border-radius-l: 12px;
     --border-radius-xl: 14px;
 
     --border-radius-button-small: 6px;
     --border-radius-button-medium: 8px;
     --border-radius-button-large: 8px;
-
 
     /* _____ WIDTH _____ */
     --width-flag: 22px;
@@ -416,10 +411,10 @@ body {
     --font-size-l: 18px;
     --font-size-xl: 20px;
 
-    --font-size-header: 32px; 
-    --font-size-subheader: 20px; 
+    --font-size-header: 32px;
+    --font-size-subheader: 20px;
 
-    --font-size-header-medium:22px;
+    --font-size-header-medium: 22px;
 
     --font-size-card-title: 24px;
     --font-size-card-description: 18px;
@@ -429,7 +424,7 @@ body {
     --font-size-button-large: 18px;
 
     /* _____ PADDING _____ */
-    --padding-main: 60px; 
+    --padding-main: 60px;
     --padding-main-top: 24px;
     --padding-list: 24px;
     --padding-input: 14px 16px;
@@ -442,30 +437,30 @@ body {
     --padding-date: 8px 12px;
     --padding-acordion: 28px;
 
-    --padding-xs: 14px; 
-    --padding-s: 16px; 
-    --padding-m: 18px; 
-    --padding-l: 20px; 
+    --padding-xs: 14px;
+    --padding-s: 16px;
+    --padding-m: 18px;
+    --padding-l: 20px;
 
     /* _____ GAP _____ */
-    --gap-section: 100px; 
-    --gap-main: 50px; 
-    --gap-card-main: 30px; 
+    --gap-section: 100px;
+    --gap-main: 50px;
+    --gap-card-main: 30px;
 
-    --gap-xs: 10px; 
-    --gap-s: 12px; 
-    --gap-m: 14px; 
-    --gap-l: 18px; 
-    --gap-xl: 20px; 
+    --gap-xs: 10px;
+    --gap-s: 12px;
+    --gap-m: 14px;
+    --gap-l: 18px;
+    --gap-xl: 20px;
 
-    --gap-button-small: 12px; 
-    --gap-button-medium: 16px; 
-    --gap-button-large: 18px; 
+    --gap-button-small: 12px;
+    --gap-button-medium: 16px;
+    --gap-button-large: 18px;
 
     /* _____ BORDER RADIUS _____ */
     --border-radius-xs: 6px;
-    --border-radius-s: 10px; 
-    --border-radius-m: 12px; 
+    --border-radius-s: 10px;
+    --border-radius-m: 12px;
     --border-radius-l: 14px;
     --border-radius-xl: 16px;
 
@@ -1181,7 +1176,7 @@ footer {
   gap: var(--gap-l);
   border-radius: var(--border-radius-button-medium);
   background: var(--color-blue-soft);
-  font-size: var( --font-size-button-medium);
+  font-size: var(--font-size-button-medium);
   color: var(--color-white);
   text-decoration: none;
   transition: all 0.3s ease !important;
@@ -1251,6 +1246,7 @@ footer {
   background: transparent;
   color: var(--color-blue-soft);
   border: 1px solid var(--color-blue-soft);
+  background: var(--color-white);
 }
 .btn-small.learn a:hover {
   background: var(--color-blue-soft);
@@ -1258,6 +1254,16 @@ footer {
   gap: var(--gap-xl);
 }
 .btn-small.learn a:active {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.btn-small.learn.blue a {
+  background: var(--color-blue-soft);
+  color: var(--color-white);
+}
+
+.btn-small.learn.blue a:hover {
   background: var(--color-blue);
   color: var(--color-white);
 }
@@ -1453,5 +1459,222 @@ footer {
 /*
 ========================================
          SELECETION -  END
+========================================
+*/
+
+/*
+========================================
+         NOTIFICATION -  START
+========================================
+*/
+
+.auth .auth-user .notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.auth .auth-user .notification sup {
+  position: absolute;
+  bottom: 45%;
+  right: -40%;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+}
+
+.notification-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  width: 0;
+  height: 100vh;
+  background: var(--color-white);
+  padding: var(--padding-acordion) 0;
+  z-index: 9 !important;
+  right: 0;
+  transition: all 0.5s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.notification-container.active {
+  width: 100%;
+  padding: var(--padding-acordion);
+}
+
+.notification-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-close {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-blue);
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s ease;
+  font-size: var(--font-size-m);
+}
+
+.notification-close:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.notification-head {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-l);
+  color: var(--color-blue);
+}
+
+.not-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+
+.not-box .not-date {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-xs);
+  gap: var(--gap-xs);
+  width: max-content;
+  color: var(--color-grey);
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  overflow: auto;
+}
+
+.notification-list::-webkit-scrollbar {
+  display: none;
+}
+
+.notification-container .not {
+  display: flex;
+  width: 100%;
+  padding: var(--padding-m);
+  gap: var(--gap-m);
+  background: var(--color-card);
+  border-radius: var(--border-radius-l);
+  text-decoration: none;
+  color: var(--color-black);
+  flex-direction: column;
+}
+
+.notification-container .readed .not {
+  background: var(--color-main-color);
+}
+
+.notification-container  .read-btn {
+  cursor: pointer;
+}
+.notification-container .readed .read-btn a {
+  display: none;
+
+}
+.notification-container .not-body .show-btn a {
+  background: transparent;
+  color: var(--color-blue);
+}
+.notification-container .not-body .show-btn i {
+  transition: all 0.3s ease;
+}
+.notification-container .not-body.active .show-btn i {
+  transform: rotate(180deg);
+}
+
+.notification-container .not .not-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 1px solid var(--color-grey);
+  padding-bottom: var(--padding-xs);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-m);
+  color: var(--color-dark-blue);
+}
+
+.notification-container .not .not-head .not-title {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-xs);
+  flex-direction: column;
+}
+
+.notification-container .not .not-head .not-remove i{
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.notification-container .not .not-head .not-remove:hover i {
+  transform: scale(1.05);
+  color: red;
+}
+
+.notification-container .not .not-head .not-remove:active i {
+  transform: rotate(45deg);
+}
+
+
+.notification-container .not .not-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+}
+
+.notification-container .not .not-body .not-body-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.notification-container .not .not-body .not-body-head .not-body-title {
+  color: var(--color-black);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-l);
+  text-decoration: none;
+  line-height: 1.5;
+}
+.notification-container .not .not-body .not-body-head .not-body-text {
+  color: var(--color-grey);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-s);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  line-height: 1.5;
+  max-height: calc(1.5em * 3);
+}
+
+.notification-container .not .not-body.active .not-body-head .not-body-text {
+  display: block;
+  overflow: visible;
+  text-overflow: unset;
+  -webkit-line-clamp: unset;
+  max-height: none;
+}
+
+.notification-container .not .not-body .not-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+========================================
+         NOTIFICATION -  END
 ========================================
 */

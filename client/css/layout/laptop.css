@@ -130,4 +130,7 @@
     width: 25% !important;
   }
 
+  .notification-container.active {
+    width: 35% !important;
+  }
 }

@@ -1,92 +1,84 @@
 function toggleDropdown() {
-    const dropdown = document.querySelector(".dropdown");
-    const arrow = document.querySelector(".arrow");
+  const dropdown = document.querySelector(".dropdown");
+  const arrow = document.querySelector(".arrow");
 
-    const isDropdownVisible = dropdown.style.display === "block";
-    dropdown.style.display = isDropdownVisible ? "none" : "block";
+  const isDropdownVisible = dropdown.style.display === "block";
+  dropdown.style.display = isDropdownVisible ? "none" : "block";
 
-    arrow.style.transform = isDropdownVisible
-      ? "rotate(0deg)"
-      : "rotate(180deg)";
+  arrow.style.transform = isDropdownVisible ? "rotate(0deg)" : "rotate(180deg)";
+}
+
+function selectLanguage(language) {
+  const selectedLanguage = document.querySelector(".selected-language span");
+  const flag = document.querySelector(".selected-language .flag");
+  const dropdown = document.querySelector(".dropdown");
+  const arrow = document.querySelector(".arrow");
+
+  if (language === "EN") {
+    selectedLanguage.textContent = "EN";
+    flag.src = "https://flagcdn.com/gb.svg";
+  } else if (language === "AZ") {
+    selectedLanguage.textContent = "AZ";
+    flag.src = "https://flagcdn.com/az.svg";
+  } else if (language === "RU") {
+    selectedLanguage.textContent = "RU";
+    flag.src = "https://flagcdn.com/ru.svg";
   }
 
-  function selectLanguage(language) {
-    const selectedLanguage = document.querySelector(
-      ".selected-language span"
-    );
-    const flag = document.querySelector(".selected-language .flag");
-    const dropdown = document.querySelector(".dropdown");
-    const arrow = document.querySelector(".arrow");
+  dropdown.style.display = "none";
+  arrow.style.transform = "rotate(0deg)";
+}
 
-    if (language === "EN") {
-      selectedLanguage.textContent = "EN";
-      flag.src = "https://flagcdn.com/gb.svg";
-    } else if (language === "AZ") {
-      selectedLanguage.textContent = "AZ";
-      flag.src = "https://flagcdn.com/az.svg";
-    } else if (language === "RU") {
-      selectedLanguage.textContent = "RU";
-      flag.src = "https://flagcdn.com/ru.svg";
-    }
+window.addEventListener("click", function (event) {
+  const languagePicker = document.querySelector(".language-picker");
+  const dropdown = document.querySelector(".dropdown");
+  const arrow = document.querySelector(".arrow");
 
+  if (!languagePicker.contains(event.target)) {
     dropdown.style.display = "none";
-    arrow.style.transform = "rotate(0deg)"; 
+    arrow.style.transform = "rotate(0deg)";
   }
+});
 
-  window.addEventListener("click", function (event) {
-    const languagePicker = document.querySelector(".language-picker");
-    const dropdown = document.querySelector(".dropdown");
-    const arrow = document.querySelector(".arrow");
+const searchBoxLanguage = document.querySelector(".search-language .search");
+const searchBtnLanguage = document.querySelector(
+  ".search-language .search-btn"
+);
+const searchInputLanguage = document.querySelector(
+  ".search-language .search-input"
+);
+const searchResultLanguage = document.querySelector(
+  ".search-language .search-result"
+);
+const searchInputBoxLanguage = document.querySelector(
+  ".search-language .search-box"
+);
 
-    if (!languagePicker.contains(event.target)) {
-      dropdown.style.display = "none";
-      arrow.style.transform = "rotate(0deg)";
-    }
-  });
+searchBtnLanguage.addEventListener("click", () => {
+  searchBoxLanguage.classList.toggle("active");
+  searchInputBoxLanguage.classList.remove("active");
+  searchInputLanguage.value = "";
+});
 
+searchInputLanguage.addEventListener("input", () => {
+  searchInputBoxLanguage.classList.add("active");
+  if (searchInputLanguage.value == "") {
+    searchInputBoxLanguage.classList.remove("active");
+  }
+});
 
-
-  const searchBoxLanguage = document.querySelector(".search-language .search");
-  const searchBtnLanguage = document.querySelector(".search-language .search-btn");
-  const searchInputLanguage = document.querySelector(".search-language .search-input");
-  const searchResultLanguage = document.querySelector(".search-language .search-result");
-  const searchInputBoxLanguage = document.querySelector(".search-language .search-box");
-  
-  searchBtnLanguage.addEventListener("click", () => {
-    searchBoxLanguage.classList.toggle("active");
+document.addEventListener("click", (event) => {
+  if (
+    !searchInputBoxLanguage.contains(event.target) &&
+    !searchBtnLanguage.contains(event.target)
+  ) {
+    searchBoxLanguage.classList.remove("active");
     searchInputBoxLanguage.classList.remove("active");
     searchInputLanguage.value = "";
- 
-  });
-  
-  searchInputLanguage.addEventListener("input", () => {
-    searchInputBoxLanguage.classList.add("active");
-    if(searchInputLanguage.value==""){
-      searchInputBoxLanguage.classList.remove("active");
-      }
-  });
-  
-  document.addEventListener("click", (event) => {
-    if (
-      !searchInputBoxLanguage.contains(event.target) &&
-      !searchBtnLanguage.contains(event.target)
-    ) {
-      searchBoxLanguage.classList.remove("active");
-      searchInputBoxLanguage.classList.remove("active");
-      searchInputLanguage.value = "";
-    }
-  });
-  
+  }
+});
 
-
-
-
-
-
-
-
-
-  // Burger Menu
+// Burger Menu
 const burgerMenu = document.querySelector(".burger-menu");
 const burgerBtb = document.querySelector(".burger");
 const burgerCloseBtn = document.querySelector(".burger-menu .close");
@@ -99,7 +91,6 @@ burgerCloseBtn.addEventListener("click", () => {
   burgerMenu.classList.remove("active");
 });
 
-
 // HEADER SCROLL
 const headerSection = document.querySelector(".header");
 document.addEventListener("scroll", () => {
@@ -109,9 +100,6 @@ document.addEventListener("scroll", () => {
     headerSection.classList.remove("scroll");
   }
 });
-
-
-
 
 // BURGER MENU
 document.addEventListener("DOMContentLoaded", () => {
@@ -141,12 +129,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
 // PAGES NAVBAR
 
 const menuItems = document.querySelectorAll(".parent-row");
-let currentSubList = null; 
+let currentSubList = null;
 let currentParentRow = null;
 
 menuItems.forEach((menuItem) => {
@@ -160,8 +146,8 @@ menuItems.forEach((menuItem) => {
         currentParentRow.classList.remove("active");
       }
 
-      currentSubList = subList; 
-      currentParentRow = menuItem; 
+      currentSubList = subList;
+      currentParentRow = menuItem;
       subList.style.display = "flex";
       menuItem.classList.add("active");
     }
@@ -178,7 +164,7 @@ menuItems.forEach((menuItem) => {
         !subList.matches(":hover")
       ) {
         subList.style.display = "none";
-        menuItem.classList.remove("active"); 
+        menuItem.classList.remove("active");
       }
     }, 100);
   });
@@ -195,23 +181,81 @@ menuItems.forEach((menuItem) => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
         subList.style.display = "none";
-        menuItem.classList.remove("active"); 
+        menuItem.classList.remove("active");
       }, 100);
     });
   }
 });
 
-
-
-
-
-
-
 // LOADING
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
   setTimeout(() => {
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('content').style.display = 'block';
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("content").style.display = "block";
   }, 500);
 });
 
+// NOTIFICATION
+let notification = document.querySelector(".notification-container");
+let notificationOpen = document.querySelector(".notification");
+let notificationClose = document.querySelector(".notification-close");
+
+notificationOpen.addEventListener("click", (event) => {
+  event.stopPropagation();
+  notification.classList.toggle("active");
+});
+
+notificationClose.addEventListener("click", (event) => {
+  event.stopPropagation();
+  notification.classList.toggle("active");
+});
+
+notification.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+document.addEventListener("click", (event) => {
+  if (!notification.contains(event.target)) {
+    notification.classList.remove("active");
+  }
+});
+
+// NOTIFICATION COUNT
+let notificationCount = document.querySelector(".not-count");
+let notBoxes = document.querySelectorAll(".not-box");
+
+notBoxes.forEach((not) => {
+  let showBtn = not.querySelector(".show-btn");
+  let readBtn = not.querySelector(".read-btn");
+  let notRemoveBtn = not.querySelector(".not-remove");
+
+  notRemoveBtn.addEventListener("click", () => {
+    not.remove();
+    if (!not.classList.contains("readed")) {
+      let count = parseInt(notificationCount.innerText);
+      notificationCount.innerText = count - 1;
+
+      if (parseInt(notificationCount.innerText) == 0) {
+        document.querySelector(".notification sup").remove();
+      }
+    }
+  });
+
+  if (showBtn) {
+    showBtn.addEventListener("click", () => {
+      not.querySelector(".not-body").classList.toggle("active");
+    });
+  }
+
+  if (readBtn) {
+    readBtn.addEventListener("click", () => {
+      not.classList.add("readed");
+      let count = parseInt(notificationCount.innerText);
+      notificationCount.innerText = count - 1;
+
+      if (parseInt(notificationCount.innerText) == 0) {
+        document.querySelector(".notification sup").remove();
+      }
+    });
+  }
+});
