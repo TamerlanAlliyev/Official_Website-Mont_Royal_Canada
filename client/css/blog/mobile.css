@@ -262,7 +262,7 @@
 }
 
 .categories .category-list label span:hover {
-  background-color: var(--color-main-color);
+  background-color: var(--color-card);
 }
 
 .category-list input[type="radio"]:checked + span {
@@ -294,7 +294,7 @@
 }
 
 .country .country-list label span:hover {
-  background-color: var(--color-main-color);
+  background-color: var(--color-card);
 }
 
 .country-list input[type="radio"]:checked + span {
