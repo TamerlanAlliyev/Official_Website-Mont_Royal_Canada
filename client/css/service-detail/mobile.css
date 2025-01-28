@@ -1,0 +1,206 @@
+/*
+========================================
+         SECTION: SERVICE-DETAIL  -  START
+========================================
+*/
+.header {
+  background: var(--color-blue);
+  position: relative;
+}
+
+.header.scroll {
+  position: fixed;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.service .container {
+  display: flex;
+  flex-direction: column;/*row*/
+  gap: var(--gap-main);
+}
+
+/* ----------  OTHER SERVICE - START ---------- */
+
+.service-other {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;/*25*/
+  gap: var(--gap-main);
+}
+.service-other .item {
+  display: flex !important;
+  flex-direction: column;
+  gap: var(--gap-m);
+  width: 100%;
+  background: var(--color-card);
+  border-radius: var(--border-radius-l);
+  padding: var(--padding-card);
+  width: 100%;
+}
+
+.service-other .item h3 {
+  font-size: var(--font-size-xl);
+  padding: var(--padding-xs) 0;
+  text-decoration: underline solid var(--color-blue-soft) 2px;
+  text-underline-offset: var(--gap-xs);
+}
+.service-other ul {
+  list-style: none;
+  width: 100%;
+}
+.service-other ul li {
+  display: flex;
+  width: 100%;
+  min-width: 100%;
+
+}
+.service-other ul li a {
+  width: 100%;
+  min-width: 100%;
+
+  color: var(--color-blue);
+  text-decoration: none;
+  font-size: var(--font-size-s);
+  display: inline-block;
+  max-width: 30ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: var(--padding-xs);
+  transition: all 0.3s ease;
+  border-radius: var(--border-radius-xs);
+}
+.service-other ul li a:hover {
+  background: var(--color-card);
+}
+.service-other ul li a:active {
+  background: var(--color-blue-soft);
+  color: var(--color-white);
+}
+
+.service-other .services .show-btn a {
+  background: transparent;
+  color: var(--color-blue-soft);
+  cursor: pointer;
+}
+
+.service-other .services .show-btn i {
+  transition: all 0.3s ease;
+}
+
+.service-other .services.active .show-btn i {
+  transform: rotate(180deg);
+}
+
+.service-other .item .services-list {
+  display: flex;  
+  flex-direction: column;
+  width: 100%;
+}
+
+.service-other .item .services-list li {
+  display: flex;  
+  width: 100%;
+}
+
+.service-other .item .services-list li:nth-child(n + 6) {
+  display: none;
+}
+.service-other .item.active .services-list li {
+  display: flex;  
+  width: 100%;
+}
+
+.service-other .item.contact .contact-list li a {
+  display: flex;
+  gap: var(--gap-xs);
+  align-items: center;
+}
+
+/* ----------  OTHER SERVICE - END  ---------- */
+
+/* ----------  SERVICE-DETAIL - START ---------- */
+
+.service-detail {
+  width: 100%;/*70*/
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-main);
+}
+
+.service-detail .service-image {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+}
+
+.service-detail .service-image img {
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* ----------  SERVICE-DETAIL - END  ---------- */
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-m);
+overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+  object-position: center center;
+
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+  width: 38px !important;
+  height: 38px !important;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: var(--font-size-s) !important;
+  font-weight: var(--font-weight-xl) !important;
+  color: var(--color-white-soft);
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: var(--color-white);
+}
+
+/*
+========================================
+         SECTION: SERVICE-DETAIL  -  END
+========================================
+*/

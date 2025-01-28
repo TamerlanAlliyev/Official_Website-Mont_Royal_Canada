@@ -243,7 +243,14 @@ notBoxes.forEach((not) => {
 
   if (showBtn) {
     showBtn.addEventListener("click", () => {
-      not.querySelector(".not-body").classList.toggle("active");
+      let notBody = not.querySelector(".not-body");
+      if (notBody.classList.contains("active")) {
+        notBody.classList.remove("active");
+        showBtn.querySelector("span").innerText = `Show more`; 
+      } else {
+        notBody.classList.add("active");
+        showBtn.querySelector("span").innerText = `Show less`; 
+      }
     });
   }
 

@@ -1,0 +1,24 @@
+@media (min-width: 1024px) {
+  /*
+========================================
+         SECTION: SERVICE-DETAIL  -  START
+========================================
+*/
+.service .container {
+  flex-direction: row;/*row*/
+}
+.service-other {
+  min-width: 25%;/*25*/
+}
+.service-detail {
+  width: 70%;/*70*/
+}
+
+
+
+  /*
+========================================
+         SECTION: SERVICE-DETAIL  -  END
+========================================
+*/
+}

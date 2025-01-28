@@ -219,8 +219,15 @@ body {
   .header .auth{
     background: transparent;
   }
-  .header .auth .user,
-  .header .auth p {
+
+  .header .auth .auth-user{
+   display: none;
+  }
+  .header .auth .auth-user.logined{
+    display: flex;
+   }
+  .header .auth .auth-user.logined .user,
+  .header .auth .auth-user.logined p {
     display: none;
   }
   .subheader .search-language .search .search-box .search-result li a .map {
@@ -1503,7 +1510,12 @@ footer {
   padding: var(--padding-acordion);
 }
 
-.notification-header {
+.notification-container .notification-header {
+  display: none;
+}
+
+
+.notification-container.active .notification-header {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -1529,6 +1541,11 @@ footer {
   color: var(--color-white);
 }
 
+.notification-close:active {
+opacity: 0;
+}
+
+
 .notification-head {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-l);
@@ -1550,7 +1567,12 @@ footer {
   color: var(--color-grey);
 }
 
-.notification-list {
+.notification-container .notification-list {
+  display: none;
+}
+
+
+.notification-container.active .notification-list {
   display: flex;
   flex-direction: column;
   gap: var(--gap-xl);
@@ -1586,7 +1608,7 @@ footer {
 }
 .notification-container .not-body .show-btn a {
   background: transparent;
-  color: var(--color-blue);
+  color: var(--color-blue-soft);
 }
 .notification-container .not-body .show-btn i {
   transition: all 0.3s ease;
