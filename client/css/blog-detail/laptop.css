@@ -8,12 +8,13 @@
 
 
 .grid-container {
-  grid-template-columns: 4fr 1.1fr; 
+  grid-template-columns: 70% 25%; 
 }
 
 .item:nth-child(1) {
   grid-column: 1 / 2;
   grid-row: 1 / span 5;
+  width: 100%;
 }
 
 .item:nth-child(2) {

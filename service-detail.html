@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS  LAYOUT-->
-    <link rel="stylesheet" href="./client/css/layout/desktop.css" />
     <link rel="stylesheet" href="./client/css/layout/laptop.css" />
     <link rel="stylesheet" href="./client/css/layout/tablet.css" />
     <link rel="stylesheet" href="./client/css/layout/mobile.css" />
 
-    <!-- CSS  SERVICE -->
+    <!-- CSS  SERVICE-DETAIL -->
     <link rel="stylesheet" href="./client/css/service-detail/mobile.css" />
-    <link rel="stylesheet" href="./client/css/service-detail/tablet.css" />
     <link rel="stylesheet" href="./client/css/service-detail/laptop.css" />
-    <link rel="stylesheet" href="./client/css/service-detail/desktop.css" />
 
     <!-- CSS  CKEDITOR -->
     <link rel="stylesheet" href="./client/css/ckeditor-style/mobile.css" />
@@ -780,41 +777,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 18,
-          },
-          480: {
-            slidesPerView: 2,
-            spaceBetween: 18,
-          },
-        },
-      });
-    </script>
-    <script>
-      let items = document.querySelectorAll(".item");
-
-      items.forEach((item) => {
-        let showBtn = item.querySelector(".show-btn");
-        showBtn.addEventListener("click", () => {
-          if (item.classList.contains("active")) {
-            item.classList.remove("active");
-            showBtn.querySelector("span").innerText = "Show more";
-          } else {
-            item.classList.add("active");
-            showBtn.querySelector("span").innerText = "Show less";
-          }
-        });
-      });
-    </script>
+    <script src="./client/js/service-detail.js"></script>
 
     <script src="./client/js/layout.js"></script>
   </body>

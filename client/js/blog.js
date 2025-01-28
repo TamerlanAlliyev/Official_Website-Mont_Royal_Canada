@@ -22,3 +22,20 @@ document.addEventListener("click", (event) => {
 });
 
 
+var swiper = new Swiper(".section-blogs-filters .mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 18,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+  },
+});

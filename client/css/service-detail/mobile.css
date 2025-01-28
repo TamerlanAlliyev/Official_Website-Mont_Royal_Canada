@@ -151,6 +151,8 @@
 /* ----------  SERVICE-DETAIL - END  ---------- */
 .swiper {
   width: 100%;
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
 }
 
 .swiper-slide {

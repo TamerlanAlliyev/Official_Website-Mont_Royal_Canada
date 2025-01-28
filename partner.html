@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS  LAYOUT-->
-    <link rel="stylesheet" href="./client/css/layout/desktop.css" />
     <link rel="stylesheet" href="./client/css/layout/laptop.css" />
     <link rel="stylesheet" href="./client/css/layout/tablet.css" />
     <link rel="stylesheet" href="./client/css/layout/mobile.css" />
@@ -819,23 +818,9 @@
       </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-      let selection = document.querySelector(".selection");
-      let selectionBtn = document.querySelector(".selection-selected");
-
-      selectionBtn.addEventListener("click", () => {
-        selection.classList.toggle("active");
-      });
-
-      window.addEventListener("click", (e) => {
-        if (!selection.contains(e.target)) {
-          selection.classList.remove("active");
-        }
-      });
-    </script>
+    <script src="./client/js/partner.js"></script>
     <script src="./client/js/layout.js"></script>
+    
   </body>
 </html>

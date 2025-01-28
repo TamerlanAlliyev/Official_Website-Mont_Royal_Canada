@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS  LAYOUT-->
-    <link rel="stylesheet" href="./client/css/layout/desktop.css" />
     <link rel="stylesheet" href="./client/css/layout/laptop.css" />
     <link rel="stylesheet" href="./client/css/layout/tablet.css" />
     <link rel="stylesheet" href="./client/css/layout/mobile.css" />
 
-    <!-- CSS  HOME-->
+    <!-- CSS  LOGIN -->
     <link rel="stylesheet" href="./client/css/login/mobile.css" />
     <link rel="stylesheet" href="./client/css/login/tablet.css" />
     <link rel="stylesheet" href="./client/css/login/laptop.css" />
@@ -523,26 +522,6 @@
       </div>
     </footer>
 
-    <script>
-      document
-        .getElementById("form")
-        .addEventListener("submit", async (event) => {
-          event.preventDefault();
-
-          const data = {
-            username: document.getElementById("username").value,
-            password: document.getElementById("password").value,
-          };
-
-          await fetch("/submit", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-          });
-        });
-    </script>
     <script src="./client/js/layout.js"></script>
   </body>
 </html>
