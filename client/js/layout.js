@@ -15,13 +15,13 @@ function selectLanguage(language) {
   const arrow = document.querySelector(".arrow");
 
   if (language === "EN") {
-    selectedLanguage.textContent = "EN";
+    selectedLanguage.textContent = "English";
     flag.src = "https://flagcdn.com/gb.svg";
   } else if (language === "AZ") {
-    selectedLanguage.textContent = "AZ";
+    selectedLanguage.textContent = "Azerbaijan";
     flag.src = "https://flagcdn.com/az.svg";
   } else if (language === "RU") {
-    selectedLanguage.textContent = "RU";
+    selectedLanguage.textContent = "Russian";
     flag.src = "https://flagcdn.com/ru.svg";
   }
 

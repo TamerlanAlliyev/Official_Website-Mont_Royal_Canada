@@ -681,8 +681,8 @@ body {
   display: none;
   position: absolute;
   top: 200%;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: max-content;
   background-color: var(--color-white);
   border-radius: var(--border-radius-xs);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -696,10 +696,12 @@ body {
   padding: var(--padding-xs);
   cursor: pointer;
   gap: var(--gap-s);
+  text-decoration: none;
+  color: var(--color-blue);
 }
 
 .subheader .search-language .option:hover {
-  background-color: var(--color-white-soft);
+  background-color: var(--color-card);
 }
 
 .subheader .search-language .option .flag {
