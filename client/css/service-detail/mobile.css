@@ -87,6 +87,22 @@
   cursor: pointer;
 }
 
+
+
+.service-other .services .less {
+  display: none;
+}
+.service-other .services .more {
+  display: inline-block;
+}
+
+.service-other .services.active .show-btn .less {
+  display: inline-block;
+}
+.service-other .services.active .show-btn .more {
+  display: none;
+}
+
 .service-other .services .show-btn i {
   transition: all 0.3s ease;
 }
@@ -94,6 +110,9 @@
 .service-other .services.active .show-btn i {
   transform: rotate(180deg);
 }
+
+
+
 
 .service-other .item .services-list {
   display: flex;  

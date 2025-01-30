@@ -3,11 +3,11 @@
         flex-direction: row;
       }
       .card-header {
-        width: 28%;
+        width: 15%;
         max-height: 100%; 
       }
       .card-body {
-        width: 78%; 
+        width: 85%; 
       }
       
 }

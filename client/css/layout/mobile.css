@@ -1604,17 +1604,32 @@ opacity: 0;
 }
 .notification-container .readed .read-btn a {
   display: none;
-
 }
 .notification-container .not-body .show-btn a {
   background: transparent;
   color: var(--color-blue-soft);
+  cursor: pointer;
 }
 .notification-container .not-body .show-btn i {
   transition: all 0.3s ease;
 }
 .notification-container .not-body.active .show-btn i {
   transform: rotate(180deg);
+}
+
+
+.notification-container .not-body .less {
+  display: none;
+}
+.notification-container .not-body .more {
+  display: inline-block;
+}
+
+.notification-container .not-body.active .less {
+  display: inline-block;
+}
+.notification-container .not-body.active .more {
+  display: none;
 }
 
 .notification-container .not .not-head {

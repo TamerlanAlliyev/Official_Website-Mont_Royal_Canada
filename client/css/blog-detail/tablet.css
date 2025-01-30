@@ -4,32 +4,9 @@
          SECTION: BLOGS  -  START
 ========================================
 */
-  .grid-container {
-    grid-template-columns: 3fr 1.2fr;
-  }
+ 
 
-  .item:nth-child(1) {
-    grid-column: 1 / 2;
-    order: 1;
-    grid-row: 1 / span 5;
-  }
-
-  .item:nth-child(2) {
-    order: 2;
-  }
-
-  .item:nth-child(3) {
-    order: 3;
-  }
-
-  .item:nth-child(4) {
-    order: 4;
-  }
-
-  .item:nth-child(5) {
-    order: 5;
-  }
-
+  
  
   
 

@@ -54,7 +54,7 @@
   text-decoration: none;
   display: flex;
   width: max-content;
-  gap: var(--gap-s);
+  gap: var(--gap-xs);
   align-items: center;
   text-decoration: none;
   position: relative;

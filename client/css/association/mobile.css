@@ -6,7 +6,7 @@
   gap: var(--gap-main);
   justify-content: space-between;
   transition: all 0.3s ease;
-  flex-direction: column;/**/
+  flex-direction: column; /**/
 }
 
 .show-btn {
@@ -16,9 +16,9 @@
 
 .card-header {
   display: flex;
-  width: 100%;/*14*/
+  width: 100%; /*14*/
   max-height: 250px; /*100%*/
-  aspect-ratio: 1.5/1;
+  aspect-ratio: 1/1;
   height: 100%;
 }
 
@@ -30,7 +30,6 @@
   object-fit: cover;
   object-position: top left;
   border-radius: var(--border-radius-s);
-
 }
 
 .card-body {
@@ -56,8 +55,6 @@
   font-size: var(--font-size-xl);
   color: var(--color-dark-blue);
 }
-
-
 
 .small-description {
   display: -webkit-box;
@@ -89,6 +86,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: var(--border-radius-m);
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .card-box .show-btn i {
@@ -97,6 +95,20 @@
 
 .card-box.active .show-btn i {
   transform: rotate(180deg);
+}
+
+.card-box .show-btn .less {
+  display: none;
+}
+.card-box .show-btn .more {
+  display: inline-block;
+}
+
+.card-box.active .show-btn .less {
+  display: inline-block;
+}
+.card-box.active .show-btn .more {
+  display: none;
 }
 
 .card-box.active .card-description {
