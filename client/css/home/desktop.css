@@ -52,14 +52,14 @@
 */
 
 .partners .container .partner-list {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.partners .container .partner-list li:nth-child(n - 16) {
+.partners .container .partner-list li:nth-child(n - 13) {
   display: flex ;
 }
 
-.partners .container .partner-list li:nth-child(n + 16) {
+.partners .container .partner-list li:nth-child(n + 13) {
   display: none;
 }
 

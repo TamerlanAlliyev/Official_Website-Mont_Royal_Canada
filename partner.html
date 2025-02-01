@@ -44,10 +44,10 @@
     <title>Mont-Royal Canada</title>
   </head>
   <body>
-    <div id="loading">
+    <!-- <div id="loading">
       <div class="spinner"></div>
       <p>Loading...</p>
-    </div>
+    </div> -->
 
     <header>
       <aside class="subheader">
@@ -85,7 +85,7 @@
 
           <p>|</p>
 
-        <div class="language-picker">
+          <div class="language-picker">
             <div class="selected-language" onclick="toggleDropdown()">
               <div class="lang">
                 <img src="https://flagcdn.com/gb.svg" alt="EN" class="flag" />
@@ -123,7 +123,7 @@
           </a>
         </div>
 
-    <ul class="menu">
+        <ul class="menu">
           <li class="menu-list-li">
             <a class="parent-row">About Us</a>
             <ul class="sub-list">
@@ -148,7 +148,7 @@
                   >Export of Azerbaijani Products</a
                 >
               </li>
-              <li><a>Market Entry Assistance</a></li>
+              <li><a href="./privacy-policy.html">Market Entry Assistance</a></li>
               <li>
                 <a
                   href="./client/documents/Sample Product List Template.pdf"
@@ -215,10 +215,9 @@
             <a href="./register.html">Sign up</a>
           </div>
         </div>
-
       </div>
 
-     <div class="burger-menu">
+      <div class="burger-menu">
         <div class="menu-header">
           <div class="close">
             <i class="fa-solid fa-times"></i>
@@ -358,20 +357,20 @@
       </div>
 
       <section
-      class="main-section"
-      style="
-        background-image: linear-gradient(
-            rgba(9, 44, 108, 0.8),
-            rgba(9, 44, 108, 0.8)
-          ),
-          url('/client/images/settings/business-concept-glass-world-laptop.jpg');
-      "
-    >
-      <div class="container">
-        <h1 class="title">Partnerships</h1>
-        <p class="description"></p>
-      </div>
-    </section>
+        class="main-section"
+        style="
+          background-image: linear-gradient(
+              rgba(9, 44, 108, 0.8),
+              rgba(9, 44, 108, 0.8)
+            ),
+            url('/client/images/settings/business-concept-glass-world-laptop.jpg');
+        "
+      >
+        <div class="container">
+          <h1 class="title">Partnerships</h1>
+          <p class="description"></p>
+        </div>
+      </section>
     </header>
 
     <section class="section navigator">
@@ -389,65 +388,112 @@
     </section>
 
     <section class="partners section">
+      
       <div class="container">
+        <div class="selections">
+          <form
+            id="Industry"
+            method="post"
+            action="/Home/"
+            class="form-selection"
+          >
+            <div class="selection">
+              <div class="selection-selected">
+                <div class="selection-title">
+                  <p>Industry:</p>
+                  <span>All</span>
+                </div>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
 
-        <form id="Industry" method="post" action="/Home/" class="selection">
-          <div class="selection-selected">
-            <div class="selection-title">
-              <p>Industry:</p>
-              <span>All</span>
+              <div class="selection-dropdown">
+                <div class="selection-dropdown-item">
+                  <input
+                    type="radio"
+                    id="all"
+                    name="industry"
+                    value="all"
+                    hidden
+                    checked
+                    onchange="document.getElementById('Industry').submit()"
+                  />
+                  <label for="all">All</label>
+                </div>
+                <div class="selection-dropdown-item">
+                  <input
+                    type="radio"
+                    id="agriculture"
+                    name="industry"
+                    value="agriculture"
+                    hidden
+                    onchange="document.getElementById('Industry').submit()"
+                  />
+                  <label for="agriculture">Agriculture</label>
+                </div>
+                <div class="selection-dropdown-item">
+                  <input
+                    type="radio"
+                    id="construction"
+                    name="industry"
+                    value="construction"
+                    hidden
+                    onchange="document.getElementById('Industry').submit()"
+                  />
+                  <label for="construction">Construction</label>
+                </div>
+                <div class="selection-dropdown-item">
+                  <input
+                    type="radio"
+                    id="finance"
+                    name="industry"
+                    value="finance"
+                    hidden
+                    onchange="document.getElementById('Industry').submit()"
+                  />
+                  <label for="finance">Finance</label>
+                </div>
+              </div>
             </div>
-            <i class="fa-solid fa-caret-down"></i>
-          </div>
 
-          <div class="selection-dropdown">
-            <div class="selection-dropdown-item">
-              <input
-                type="radio"
-                id="all"
-                name="industry"
-                value="all"
-                hidden
-                checked
-                onchange="document.getElementById('Industry').submit()"
-              />
-              <label for="all">All</label>
+            <div class="selection">
+              <div class="selection-selected">
+                <div class="selection-title">
+                  <p>Countries:</p>
+                  <span>All</span>
+                </div>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+
+              <div class="selection-dropdown">
+                <div class="selection-dropdown-item">
+                  <input
+                    type="radio"
+                    id="all"
+                    name="industry"
+                    value="all"
+                    hidden
+                    checked
+                    onchange="document.getElementById('Industry').submit()"
+                  />
+                  <label for="all">Canada</label>
+                </div>
+                <div class="selection-dropdown-item">
+                  <input
+                    type="radio"
+                    id="agriculture"
+                    name="industry"
+                    value="agriculture"
+                    hidden
+                    onchange="document.getElementById('Industry').submit()"
+                  />
+                  <label for="agriculture">Azerbaijan</label>
+                </div>
+                
+              </div>
             </div>
-            <div class="selection-dropdown-item">
-              <input
-                type="radio"
-                id="agriculture"
-                name="industry"
-                value="agriculture"
-                hidden
-                onchange="document.getElementById('Industry').submit()"
-              />
-              <label for="agriculture">Agriculture</label>
-            </div>
-            <div class="selection-dropdown-item">
-              <input
-                type="radio"
-                id="construction"
-                name="industry"
-                value="construction"
-                hidden
-                onchange="document.getElementById('Industry').submit()"
-              />
-              <label for="construction">Construction</label>
-            </div>
-            <div class="selection-dropdown-item">
-              <input
-                type="radio"
-                id="finance"
-                name="industry"
-                value="finance"
-                hidden
-                onchange="document.getElementById('Industry').submit()"
-              />
-              <label for="finance">Finance</label>
-            </div>
-          </div>
-        </form>
+
+          </form>
+        </div>
 
         <ul class="partner-list">
           <li>
@@ -473,7 +519,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -484,7 +531,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -494,45 +542,6 @@
           <li>
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
-            /></a>
-          </li> <li>
-            <a href="./partner-detail.html"
-              ><img
-                src="./client/images/content/partners/image 15 (1).png"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="./partner-detail.html"
-              ><img src="./client/images/content/partners/image 16.png" alt=""
-            /></a>
-          </li> <li>
-            <a href="./partner-detail.html"
-              ><img
-                src="./client/images/content/partners/image 15 (1).png"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="./partner-detail.html"
-              ><img src="./client/images/content/partners/image 16.png" alt=""
-            /></a>
-          </li> <li>
-            <a href="./partner-detail.html"
-              ><img
-                src="./client/images/content/partners/image 15 (1).png"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="./partner-detail.html"
-              ><img src="./client/images/content/partners/image 16.png" alt=""
-            /></a>
-          </li> <li>
-            <a href="./partner-detail.html"
-              ><img
-                src="./client/images/content/partners/image 15 (1).png"
-                alt=""
             /></a>
           </li>
           <li>
@@ -558,7 +567,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -569,51 +579,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
-            <a href="./partner-detail.html"
-              ><img
-                src="./client/images/content/partners/image 15 (1).png"
-                alt=""
-            /></a>
           </li>
           <li>
-            <a href="./partner-detail.html"
-              ><img src="./client/images/content/partners/image 16.png" alt=""
-            /></a>
-          </li> <li>
-            <a href="./partner-detail.html"
-              ><img
-                src="./client/images/content/partners/image 15 (1).png"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="./partner-detail.html"
-              ><img src="./client/images/content/partners/image 16.png" alt=""
-            /></a>
-          </li> <li>
-            <a href="./partner-detail.html"
-              ><img
-                src="./client/images/content/partners/image 15 (1).png"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="./partner-detail.html"
-              ><img src="./client/images/content/partners/image 16.png" alt=""
-            /></a>
-          </li> <li>
-            <a href="./partner-detail.html"
-              ><img
-                src="./client/images/content/partners/image 15 (1).png"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="./partner-detail.html"
-              ><img src="./client/images/content/partners/image 16.png" alt=""
-            /></a>
-          </li> <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -643,7 +610,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -654,7 +622,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -665,7 +634,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -676,7 +646,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -687,7 +658,8 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
@@ -698,13 +670,99 @@
             <a href="./partner-detail.html"
               ><img src="./client/images/content/partners/image 16.png" alt=""
             /></a>
-          </li> <li>
+          </li>
+          <li>
             <a href="./partner-detail.html"
               ><img
                 src="./client/images/content/partners/image 15 (1).png"
                 alt=""
             /></a>
           </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img
+                src="./client/images/content/partners/image 15 (1).png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img src="./client/images/content/partners/image 16.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img
+                src="./client/images/content/partners/image 15 (1).png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img src="./client/images/content/partners/image 16.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img
+                src="./client/images/content/partners/image 15 (1).png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img src="./client/images/content/partners/image 16.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img
+                src="./client/images/content/partners/image 15 (1).png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img src="./client/images/content/partners/image 16.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img
+                src="./client/images/content/partners/image 15 (1).png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img src="./client/images/content/partners/image 16.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img
+                src="./client/images/content/partners/image 15 (1).png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img src="./client/images/content/partners/image 16.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img
+                src="./client/images/content/partners/image 15 (1).png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./partner-detail.html"
+              ><img src="./client/images/content/partners/image 16.png" alt=""
+            /></a>
+          </li>
+  
         </ul>
       </div>
     </section>
@@ -726,9 +784,8 @@
       </div>
     </section>
 
-
-
     <footer>
+
       <div
         class="footer-main"
         style="background-image: url(./client/images/settings/footer-bg.png)"
@@ -789,8 +846,14 @@
           <ul class="menu">
             <li><a href="./service.html">Services</a></li>
             <li><a href="./privacy-policy.html">Market Entry Assistance</a></li>
-            <li><a href="./import-canada.html">Import of Canada Products</a></li>
-            <li><a href="./export-azerbaijan.html">Export of Azerbaijan Products</a></li>
+            <li>
+              <a href="./import-canada.html">Import of Canada Products</a>
+            </li>
+            <li>
+              <a href="./export-azerbaijan.html"
+                >Export of Azerbaijan Products</a
+              >
+            </li>
           </ul>
         </div>
         <div class="navbar">
@@ -799,7 +862,9 @@
             <li><a href="./home.html">Home</a></li>
             <li><a href="./blog.html">Business news</a></li>
             <li><a href="event.html">Events</a></li>
-            <li><a href="./privacy-policy.html">Networking Opportunities</a></li>
+            <li>
+              <a href="./privacy-policy.html">Networking Opportunities</a>
+            </li>
             <li><a href="./partner.html">Partnerships</a></li>
           </ul>
         </div>
@@ -830,9 +895,7 @@
       </div>
     </footer>
 
-
     <script src="./client/js/partner.js"></script>
     <script src="./client/js/layout.js"></script>
-    
   </body>
 </html>

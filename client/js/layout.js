@@ -187,13 +187,13 @@ menuItems.forEach((menuItem) => {
   }
 });
 
-// LOADING
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("loading").style.display = "none";
-    document.getElementById("content").style.display = "block";
-  }, 500);
-});
+// // LOADING
+// window.addEventListener("load", () => {
+//   setTimeout(() => {
+//     document.getElementById("loading").style.display = "none";
+//     document.getElementById("content").style.display = "block";
+//   }, 500);
+// });
 
 // NOTIFICATION
 let notification = document.querySelector(".notification-container");

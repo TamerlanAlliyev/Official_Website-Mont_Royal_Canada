@@ -1,12 +1,13 @@
-let selection = document.querySelector(".selection");
-let selectionBtn = document.querySelector(".selection-selected");
+let selections = document.querySelectorAll(".selection");
 
-selectionBtn.addEventListener("click", () => {
-  selection.classList.toggle("active");
-});
-
-window.addEventListener("click", (e) => {
-  if (!selection.contains(e.target)) {
-    selection.classList.remove("active");
-  }
+selections.forEach((selc)=>{
+  selc.addEventListener("click", () => {
+    selc.classList.toggle("active");
+  });
+  
+  window.addEventListener("click", (e) => {
+    if (!selc.contains(e.target)) {
+      selc.classList.remove("active");
+    }
+  });
 });
