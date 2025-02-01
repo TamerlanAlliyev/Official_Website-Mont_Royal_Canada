@@ -29,3 +29,29 @@ const countdownElements = document.querySelectorAll(
     }
     setInterval(updateCountdown, 1000);
   });
+
+
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 18,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 18,
+      }, 760: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 18,
+      },
+    },
+  });
