@@ -1342,7 +1342,7 @@ footer {
   font-size: var(--font-size-xl);
   line-height: 1.5;
   letter-spacing: 0.5px;
-  word-spacing: 1px;
+  word-spacing: 1px; 
 }
 .navigator-list {
   display: flex;

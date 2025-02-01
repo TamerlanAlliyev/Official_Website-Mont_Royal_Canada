@@ -86,4 +86,23 @@ height: 70px; /**/
          SECTION: PARTNERS  -  END
 ========================================
 */
+
+
+.partner-detail .partner-container {
+  flex-direction: row; /*row*/
+}
+.partner-detail .partner-container .img-box {
+  width: 100%; /*100*/
+}
+.partner-detail .partner-container .partner-profile {
+  width: 24%; /*14*/
+}
+.partner-detail .partner-container .partner-info {
+  width: 76%; /*86*/
+}
+.partner-detail .partner-container .partner-profile .social-platforms {
+  gap: var(--gap-xs); /*var(--gap-xs)*/
+  justify-content: space-around; /*space-around*/
+}
+
 }

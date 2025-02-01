@@ -79,5 +79,10 @@
          SECTION: PARTNERS  -  END
 ========================================
 */
-
+.partner-detail .partner-container .partner-profile {
+  width: 20%; /*14*/
+}
+.partner-detail .partner-container .partner-info {
+  width: 80%; /*86*/
+}
 }

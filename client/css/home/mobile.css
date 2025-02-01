@@ -637,6 +637,7 @@
 .partner-detail .partner-container {
   display: flex;
   gap: var(--gap-main);
+  flex-direction: column; /*row*/
 }
 
 .partner-detail .partner-container .img-box {
@@ -647,6 +648,7 @@
   background: var(--color-white);
   border-radius: var(--border-radius-m);
   aspect-ratio: 1/1;
+  width: 50%; /*100*/
 }
 
 .partner-detail .partner-container .img-box img {
@@ -657,14 +659,14 @@
 }
 
 .partner-detail .partner-container .partner-profile {
-  width: 14%;
+  width: 100%; /*100*/
   gap: var(--gap-l);
   display: flex;
   flex-direction: column;
 }
 
 .partner-detail .partner-container .partner-info {
-  width: 86%;
+  width: 100%; /*86*/
   gap: var(--gap-l);
   display: flex;
   flex-direction: column;
@@ -689,10 +691,10 @@
 .partner-detail .partner-container .partner-profile .social-platforms {
   list-style: none;
   display: flex;
-  gap: var(--gap-xs);
+  gap: var(--gap-xl); /*var(--gap-xs)*/
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: start; /*space-around*/
 }
 
 .partner-detail .partner-container .partner-profile .social-platforms li {
