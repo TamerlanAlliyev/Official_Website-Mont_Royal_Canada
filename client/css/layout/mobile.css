@@ -202,7 +202,7 @@ body {
 
   /* _____ WIDTH _____ */
   --width-flag: 14px;
-  --width-logo: 140px;
+  --width-logo: 170px;
   --width-box: 50px;
 
   --pagination-size: 8px;
@@ -398,7 +398,7 @@ body {
 
     /* _____ WIDTH _____ */
     --width-flag: 22px;
-    --width-logo: 220px;
+    --width-logo: 250px;
     --width-box: 60px;
 
     --pagination-size: 12px;
@@ -477,7 +477,7 @@ body {
 
     /* _____ WIDTH _____ */
     --width-flag: 24px;
-    --width-logo: 240px;
+    --width-logo: 290px;
     --width-box: 70px;
 
     --pagination-size: 14px;
