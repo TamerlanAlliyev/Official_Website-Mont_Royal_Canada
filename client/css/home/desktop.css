@@ -69,10 +69,15 @@
 ========================================
 */
 
-.partner-detail .partner-container .partner-profile {
-  width: 14%; /*14*/
+.partner-detail .swiper-slide {
+  flex-direction: row;/*row*/
+  align-items: start;/*start*/
 }
-.partner-detail .partner-container .partner-info {
-  width: 86%; /*86*/
+.partner-detail .image-box{
+  width: 14%;/*14*/
+}
+
+.partner-detail .partner-info{
+  width: 86%;
 }
 }

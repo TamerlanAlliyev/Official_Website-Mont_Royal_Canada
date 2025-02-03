@@ -87,22 +87,16 @@ height: 70px; /**/
 ========================================
 */
 
+.partner-detail .swiper-slide {
+  flex-direction: row;/*row*/
+  align-items: start;/*start*/
+}
+.partner-detail .image-box{
+  width: 24%;/*14*/
+}
 
-.partner-detail .partner-container {
-  flex-direction: row; /*row*/
-}
-.partner-detail .partner-container .img-box {
-  width: 100%; /*100*/
-}
-.partner-detail .partner-container .partner-profile {
-  width: 24%; /*14*/
-}
-.partner-detail .partner-container .partner-info {
-  width: 76%; /*86*/
-}
-.partner-detail .partner-container .partner-profile .social-platforms {
-  gap: var(--gap-xs); /*var(--gap-xs)*/
-  justify-content: space-around; /*space-around*/
+.partner-detail .partner-info{
+  width: 76%;
 }
 
 }

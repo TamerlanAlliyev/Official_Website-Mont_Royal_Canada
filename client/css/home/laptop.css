@@ -79,10 +79,16 @@
          SECTION: PARTNERS  -  END
 ========================================
 */
-.partner-detail .partner-container .partner-profile {
-  width: 20%; /*14*/
+.partner-detail .swiper-slide {
+  flex-direction: row;/*row*/
+  align-items: start;/*start*/
 }
-.partner-detail .partner-container .partner-info {
-  width: 80%; /*86*/
+.partner-detail .image-box{
+  width: 20%;/*14*/
 }
+
+.partner-detail .partner-info{
+  width: 80%;
+}
+
 }
