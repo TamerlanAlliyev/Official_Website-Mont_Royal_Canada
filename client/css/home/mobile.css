@@ -303,9 +303,9 @@
   padding: var(--padding-card);
   background: var(--color-white);
   border-radius: var(--border-radius-l);
+  min-height: max-content;
   height: 100%;
   transform: scale(0.97);
-
   transition: all 0.3s ease;
 }
 
@@ -319,7 +319,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  height: 100%;
+  height:max-content;
   gap: var(--gap-xl);
 }
 
