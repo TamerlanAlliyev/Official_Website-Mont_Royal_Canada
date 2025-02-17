@@ -32,6 +32,13 @@
   .partner {
     flex-direction: row; /**/ /**/
   }
+  .partner .partner-image {
+    width: 25%; 
+  }
+  .partner .info {
+    width: 75%; 
+  }
+  
 /*
 ========================================
     SECTION: PARTNER-DETAIL  -  END
