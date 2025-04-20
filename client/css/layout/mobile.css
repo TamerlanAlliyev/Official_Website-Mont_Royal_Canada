@@ -29,12 +29,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 p {
-    white-space: pre-line;
+    /* white-space: pre-line; */
     line-height: 200%;
 }
-    p::first-line {
-        line-height: 100%;
-    }
+   
 body {
   background: var(--color-main-color);
   display: flex;
