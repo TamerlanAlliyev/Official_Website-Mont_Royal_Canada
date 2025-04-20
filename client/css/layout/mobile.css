@@ -28,10 +28,7 @@
   font-family: "Outfit", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
-p {
-    /* white-space: pre-line; */
-    line-height: 200%;
-}
+
    
 body {
   background: var(--color-main-color);
